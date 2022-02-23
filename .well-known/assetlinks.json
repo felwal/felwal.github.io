@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.example.trackfield",
+    "package_name": "me.felwal.trackfield",
     "sha256_cert_fingerprints":
     ["8F:CB:E9:FF:3D:32:A0:0E:A8:9E:91:A6:D6:8E:DF:EB:50:C2:A4:7C:CB:62:4D:2E:FF:9D:03:6A:B7:0E:C8:4B"]
   }
