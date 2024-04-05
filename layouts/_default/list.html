@@ -1,11 +1,20 @@
 {{ define "main" }}
 
-    <h1>List</h1>
-    {{ range .Pages }}
+    <main>
         <article>
-            <h2>{{ .Title }}</h2>
-            {{ .Content | truncate 50 }}
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
         </article>
-    {{ end }}
+
+        {{ range .Pages }}
+            <article>
+                <a href="{{ .RelPermalink }}">
+                    <h3>{{ .Title }}</h3>
+                </a>
+                {{ .Content | truncate 100 }}
+            </article>
+        {{ end }}
+
+    </main>
 
 {{ end }}
