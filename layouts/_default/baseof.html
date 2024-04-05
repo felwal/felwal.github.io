@@ -2,8 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
         <link rel="stylesheet" href="/css/index.css">
+
+        {{ if eq .Page.Title "" }}
+            <title>{{ .Site.Title }}</title>
+        {{ else }}
+            <title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+        {{ end }}
+
     </head>
     <body>
         {{ partial "header.html" . }}
