@@ -1,0 +1,26 @@
+.column, article {
+  max-width: 42rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  text-align: center;
+}
+
+p, a, li, blockquote, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
