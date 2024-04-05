@@ -2,4 +2,4 @@
 title: 'Posts'
 ---
 
-Here are some recent posts:
+Here you can find some of my writing. [TODO: write stuff]

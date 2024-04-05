@@ -1,7 +1,11 @@
 ---
 title: 'Trackfield'
-created: 2024-04-03T19:05:05+02:00
+created: 2024-04-05T18:35:00+02:00
 modified:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, magna sit amet elementum porta, tortor erat eleifend sem, at consequat sem orci a ligula. Cras venenatis vulputate tortor vel pulvinar. Fusce efficitur nibh ex, nec scelerisque ligula varius gravida. Proin sed ipsum fringilla, scelerisque lectus non, aliquet leo. Phasellus at est sit amet quam elementum porttitor. Nam non pretium urna. Proin at elit quis ex semper euismod. Nam ut diam sit amet urna tincidunt maximus sit amet at tellus.
+Trackfield is a running app for Android. It's my first venture into Android development, and so I have learnt a lot on the way. The problem is that it has taken _way_ too much time, and the lack of an MVP-strategy hasn't really been helpful in that regard.
+
+It's kind of like Strava, and currently uses Strava's API. Which is a problem since now they disallow similar apps from using the API.
+
+We'll see if I manage to complete the project some day.

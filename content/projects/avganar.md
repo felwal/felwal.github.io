@@ -1,7 +1,11 @@
 ---
 title: 'Avgånär'
-created: 2024-04-03T19:05:05+02:00
+created: 2024-04-04T18:20:00+02:00
 modified:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor, magna sit amet elementum porta, tortor erat eleifend sem, at consequat sem orci a ligula. Cras venenatis vulputate tortor vel pulvinar. Fusce efficitur nibh ex, nec scelerisque ligula varius gravida. Proin sed ipsum fringilla, scelerisque lectus non, aliquet leo. Phasellus at est sit amet quam elementum porttitor. Nam non pretium urna. Proin at elit quis ex semper euismod. Nam ut diam sit amet urna tincidunt maximus sit amet at tellus.
+Avgånär is a Garmin Connect IQ widget displaying (public transport) nearby stops and departures within Stockholms Lokaltrafik (SL) in Sweden.
+
+I started development in April 2021, and released it in November 2022. It's the first project I've released officially.
+
+You can find it on [Github](https://github.com/felwal/avganar) and the [Connect IQ Store](https://apps.garmin.com/en-GB/apps/a96ddb52-3edd-4298-8348-5bd818376a2a).
