@@ -1,0 +1,7 @@
+{{ range .Sections }}
+    {{ partial "section_nested.html" . }}
+{{ end }}
+
+{{ range .RegularPages }}
+    {{ partial "item.html" . }}
+{{ end }}

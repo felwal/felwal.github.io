@@ -1,8 +1,14 @@
 <article>
-    <h2><a class="heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <h2><a class="heading-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
     {{ .Content }}
 </article>
 
-{{ range .Pages }}
+<!-- get all nested RegularPages -->
+<!-- TODO: merge with first-level RegularPages somehow -->
+{{ range .Sections }}
+    {{ partial "section_nested.html" . }}
+{{ end }}
+
+{{ range .RegularPages }}
     {{ partial "item.html" . }}
 {{ end }}
