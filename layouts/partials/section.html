@@ -1,12 +1,16 @@
-<article>
-    <h2><a class="heading-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-    {{ .Content }}
-</article>
+{{ if .RegularPages }}
 
-<!-- get all nested RegularPages -->
-<!-- TODO: merge with first-level RegularPages somehow -->
-{{ range .Sections }}
-    {{ partial "section_nested.html" . }}
+    <article>
+        <h2><a class="heading-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+        {{ .Content }}
+    </article>
+
+    <!-- get all nested RegularPages -->
+    <!-- TODO: merge with first-level RegularPages somehow -->
+    {{ range .Sections }}
+        {{ partial "section_nested.html" . }}
+    {{ end }}
+
+    {{ partial "item_grid.html" .RegularPages }}
+
 {{ end }}
-
-{{ partial "item_grid.html" .RegularPages }}

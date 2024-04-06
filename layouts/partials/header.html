@@ -6,7 +6,9 @@
             <a href="/">Home</a>
 
             {{ range .Site.Sections }}
-                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                {{ if .RegularPages }}
+                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                {{ end }}
             {{ end }}
 
             <a href="/about/">About</a>
