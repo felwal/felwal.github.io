@@ -3,13 +3,13 @@
 
     <nav>
         <span>
-          <a href="/">Home</a>
+            <a href="/">Home</a>
 
-          {{ range .Site.Sections }}
-              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-          {{ end }}
+            {{ range .Site.Sections }}
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{ end }}
 
-          <a href="/about/">About</a>
+            <a href="/about/">About</a>
         </span>
     </nav>
 </header>
