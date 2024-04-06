@@ -11,6 +11,6 @@
         {{ partial "section_nested.html" . }}
     {{ end }}
 
-    {{ partial "item_grid.html" .RegularPages }}
+    {{ partial "item_grid.html" (.RegularPages.Limit 4) }}
 
 {{ end }}
