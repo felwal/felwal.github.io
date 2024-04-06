@@ -8,9 +8,7 @@
 
         {{ range .Pages }}
             <article>
-                <a href="{{ .RelPermalink }}">
-                    <h3>{{ .Title }}</h3>
-                </a>
+                <h3><a class="heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
                 {{ .Content | truncate 100 }}
             </article>
         {{ end }}
