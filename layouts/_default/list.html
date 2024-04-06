@@ -7,24 +7,11 @@
         </article>
 
         {{ range .RegularPages }}
-            <article>
-                <h3><a class="heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                {{ .Content | truncate 100 }}
-            </article>
+            {{ partial "item.html" . }}
         {{ end }}
 
         {{ range .Sections }}
-            <article>
-                <h2><a class="heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                {{ .Content }}
-            </article>
-
-            {{ range .Pages }}
-                <article>
-                    <h3><a class="heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                    {{ .Content | truncate 100 }}
-                </article>
-            {{ end }}
+            {{ partial "section.html" . }}
         {{ end }}
 
     </main>

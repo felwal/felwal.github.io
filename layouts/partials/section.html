@@ -1,0 +1,8 @@
+<article>
+    <h2><a class="heading-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ .Content }}
+</article>
+
+{{ range .Pages }}
+    {{ partial "item.html" . }}
+{{ end }}
