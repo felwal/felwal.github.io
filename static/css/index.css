@@ -5,6 +5,14 @@
   margin-right: auto;
 }
 
+.grid {
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
 header {
   text-align: center;
 }
@@ -18,8 +26,12 @@ a.heading-link {
   color: black;
 }
 
-a.heading-link:hover {
+a.heading-link:hover h3, h2:hover a.heading-link {
   text-decoration: underline;
+}
+
+article h2 {
+  width: fit-content;
 }
 
 p {

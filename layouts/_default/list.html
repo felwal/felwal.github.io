@@ -6,9 +6,11 @@
             {{ .Content }}
         </article>
 
-        {{ range .RegularPages }}
-            {{ partial "item.html" . }}
-        {{ end }}
+        <section class="grid">
+            {{ range .RegularPages }}
+                {{ partial "item.html" . }}
+            {{ end }}
+        </section>
 
         {{ range .Sections }}
             {{ partial "section.html" . }}

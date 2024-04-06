@@ -1,4 +1,6 @@
 <article>
-    <h3><a class="heading-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-    {{ .Content | truncate 100 }}
+    <a href="{{ .RelPermalink }}" class="heading-link">
+        <h3>{{ .LinkTitle }}</h3>
+        {{ .Content | truncate 100 }}
+    </a>
 </article>

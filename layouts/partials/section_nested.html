@@ -2,6 +2,8 @@
     {{ partial "section_nested.html" . }}
 {{ end }}
 
-{{ range .RegularPages }}
-    {{ partial "item.html" . }}
-{{ end }}
+<section class="grid">
+    {{ range .RegularPages }}
+        {{ partial "item.html" . }}
+    {{ end }}
+</section>
