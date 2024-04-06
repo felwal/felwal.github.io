@@ -9,8 +9,4 @@
     {{ partial "section_nested.html" . }}
 {{ end }}
 
-<section class="grid">
-    {{ range where .RegularPages "Params.hidden" "!=" true }}
-        {{ partial "item.html" . }}
-    {{ end }}
-</section>
+{{ partial "item_grid.html" .RegularPages }}

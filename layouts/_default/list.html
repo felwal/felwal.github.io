@@ -6,11 +6,7 @@
             {{ .Content }}
         </article>
 
-        <section class="grid">
-            {{ range where .RegularPages "Params.hidden" "!=" true }}
-                {{ partial "item.html" . }}
-            {{ end }}
-        </section>
+        {{ partial "item_grid.html" .RegularPages }}
 
         {{ range .Sections }}
             {{ partial "section.html" . }}

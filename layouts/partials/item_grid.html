@@ -1,0 +1,5 @@
+<section class="grid">
+    {{ range where . "Params.hidden" "!=" true }}
+        {{ partial "item.html" . }}
+    {{ end }}
+</section>
