@@ -3,7 +3,7 @@
 {{ end }}
 
 <section class="grid">
-    {{ range .RegularPages }}
+    {{ range where .RegularPages "Params.hidden" "!=" true }}
         {{ partial "item.html" . }}
     {{ end }}
 </section>
