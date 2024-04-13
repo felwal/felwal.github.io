@@ -1,5 +1,9 @@
 <section class="grid">
     {{ range where . "Params.hidden" "!=" true }}
-        {{ partial "item.html" . }}
+        {{ if or (eq .Section "art") (eq .Section "photography") }}
+            {{ partial "item_image.html" . }}
+        {{ else }}
+            {{ partial "item.html" . }}
+        {{ end }}
     {{ end }}
 </section>

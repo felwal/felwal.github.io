@@ -1,6 +1,6 @@
 ---
 title: Trackfield
-created: 2024-04-05
+published: 2024-04-05
 modified:
 summary: An Android exercising app.
 ---

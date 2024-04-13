@@ -2,8 +2,13 @@
 
     <article class="column">
         <h1>{{ .Title }}</h1>
-        <p class="caption">{{ .Params.Created | time.Format "2 January 2006" }}</p>
+        <p class="caption">{{ .Params.Published | time.Format "January 2 2006" }}</p>
         <strong>{{ .Params.Summary }}</strong>
+
+        {{ if .Params.image }}
+            <img class="img-photo-single" src="/{{ .Params.image }}" />
+        {{ end }}
+
         {{ .Content }}
     </article>
 

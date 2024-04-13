@@ -1,6 +1,6 @@
 ---
 title: Avgånär
-created: 2024-04-04
+published: 2024-04-04
 modified:
 summary: A Garmin Connect IQ widget displaying public transport departures for Stockholm, Sweden.
 ---

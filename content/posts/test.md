@@ -1,6 +1,6 @@
 ---
 title: Test
-created: 2024-04-03
+published: 2024-04-03
 modified:
 summary: Lorem ipsum dolor sit amet
 ---
