@@ -6,7 +6,9 @@
         <strong>{{ .Params.Summary }}</strong>
 
         {{ if .Params.image }}
-            <img class="img-photo-single" src="/{{ .Params.image }}" />
+            <a href="/{{ .Params.image }}">
+                <img class="img-photo-single" src="/{{ .Params.image }}" />
+            </a>
         {{ end }}
 
         {{ .Content }}
