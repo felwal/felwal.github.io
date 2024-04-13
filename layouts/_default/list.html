@@ -6,7 +6,11 @@
             {{ .Content }}
         </article>
 
-        {{ partial "item_grid.html" .RegularPages }}
+        {{ if or (eq .Section "art") (eq .Section "photography") }}
+            {{ partial "item_grid_image.html" .RegularPages }}
+        {{ else }}
+            {{ partial "item_grid.html" .RegularPages }}
+        {{ end }}
 
         {{ range .Sections }}
             {{ partial "section.html" . }}

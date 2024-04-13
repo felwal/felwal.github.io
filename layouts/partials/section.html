@@ -5,6 +5,12 @@
         {{ .Content }}
     </article>
 
-    {{ partial "item_grid.html" (.RegularPagesRecursive.Limit 3) }}
+    {{ $pages := .RegularPagesRecursive.Limit 3 }}
+
+    {{ if or (eq .Section "art") (eq .Section "photography") }}
+        {{ partial "item_grid_image.html" $pages }}
+    {{ else }}
+        {{ partial "item_grid.html" $pages }}
+    {{ end }}
 
 {{ end }}

@@ -1,5 +1,5 @@
-<section class="grid">
+<section class="grid-image">
     {{ range where . "Params.hidden" "!=" true }}
-        {{ partial "item.html" . }}
+        {{ partial "item_image.html" . }}
     {{ end }}
 </section>
