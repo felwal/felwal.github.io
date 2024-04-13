@@ -17,7 +17,7 @@ header {
   text-align: center;
 }
 
-p, a, li, blockquote, h1, h2, h3, h4, h5, h6 {
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
@@ -41,6 +41,10 @@ p {
 p.caption {
   color: gray;
   font-variant: small-caps;
+}
+
+p.summary {
+  font-weight: 700;
 }
 
 h1 {

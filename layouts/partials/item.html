@@ -1,7 +1,7 @@
 <article>
     <a href="{{ .RelPermalink }}" class="heading-link">
         <h3>{{ .LinkTitle }}</h3>
-        {{ .Content | truncate 100 }}
+        {{ .Params.Summary }}
         <p class="caption">{{ .Params.Created | time.Format "2 Jan 2006" }}</p>
     </a>
 </article>
