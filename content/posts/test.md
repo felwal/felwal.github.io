@@ -1,6 +1,6 @@
 ---
-title: 'Test'
-created: 2024-04-03T19:05:05+02:00
+title: Test
+created: 2024-04-03
 modified:
 ---
 

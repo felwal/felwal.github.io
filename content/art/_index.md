@@ -1,5 +1,5 @@
 ---
-title: 'Art'
+title: Art
 weight: 4
 ---
 

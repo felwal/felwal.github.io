@@ -1,7 +1,7 @@
 ---
-title: 'About'
-created: 2024-04-05T14:42:48+02:00
-modified: 2024-04-05T18:36:00+02:00
+title: About
+created: 2024-04-05
+modified: 2024-04-05
 hidden: true
 ---
 

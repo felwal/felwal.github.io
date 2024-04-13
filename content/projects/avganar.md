@@ -1,6 +1,6 @@
 ---
-title: 'Avgånär'
-created: 2024-04-04T18:20:00+02:00
+title: Avgånär
+created: 2024-04-04
 modified:
 ---
 
