@@ -3,4 +3,4 @@ title: Photography
 weight: 3
 ---
 
-Pretty cool images, right?
+Here are some cool images for you to look at.
