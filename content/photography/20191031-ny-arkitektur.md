@@ -2,7 +2,7 @@
 title: Ny arkitektur
 taken: 2019-10-31
 published: 2019-10-31
-image: images/20191031-123558.jpg
+image: 20191031-ny-arkitektur.jpg
 ---
 
 Spännande ny arkitektur i utmanande läge!

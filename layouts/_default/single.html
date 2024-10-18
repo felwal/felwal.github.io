@@ -2,12 +2,26 @@
 
     <article class="column">
         <h1>{{ .Title }}</h1>
-        <p class="caption">{{ .Params.Published | time.Format "January 2 2006" }}</p>
-        <strong>{{ .Params.Summary }}</strong>
+
+        {{ $format := "2006-01-02" }}
+
+        {{ if .Params.taken }}
+            <p class="caption">Taken {{ .Params.published | time.Format $format }}</p>
+        {{ end }}
+
+        {{ if .Params.published }}
+            <p class="caption">Published {{ .Params.published | time.Format $format }}</p>
+        {{ end }}
+
+        {{ if .Params.modified }}
+            <p class="caption">Modified {{ .Params.published | time.Format $format }}</p>
+        {{ end }}
+
+        <strong>{{ .Params.summary }}</strong>
 
         {{ if .Params.image }}
-            <a href="/{{ .Params.image }}">
-                <img class="img-photo-single" src="/{{ .Params.image }}" />
+            <a href="/images/{{ .Params.image }}">
+                <img class="img-photo-single" src="/images/{{ .Params.image }}" />
             </a>
         {{ end }}
 

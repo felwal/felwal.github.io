@@ -2,6 +2,6 @@
     <a href="{{ .RelPermalink }}" class="heading-link">
         <h3>{{ .LinkTitle }}</h3>
         {{ .Params.Summary }}
-        <p class="caption">{{ .Params.Published | time.Format "Jan 2 2006" }}</p>
+        <p class="caption">{{ .Params.published | time.Format "Jan 2 2006" }}</p>
     </a>
 </article>
