@@ -19,9 +19,9 @@
 
         <strong>{{ .Params.summary }}</strong>
 
-        {{ if .Params.image }}
-            <a href="/images/{{ .Params.image }}">
-                <img class="img-photo-single" src="/images/{{ .Params.image }}" />
+        {{ range .Params.images }}
+            <a href="/images/{{ . }}">
+                <img class="img-photo-single" src="/images/{{ . }}" />
             </a>
         {{ end }}
 

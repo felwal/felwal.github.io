@@ -1,5 +1,5 @@
 <article>
     <a href="{{ .RelPermalink }}" class="heading-link">
-        <img class="img-photo-item" src="/images/{{ .Params.image }}" />
+        <img class="img-photo-item" src="/images/{{ index .Params.images 0 }}" />
     </a>
 </article>
