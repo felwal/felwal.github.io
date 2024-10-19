@@ -1,7 +1,11 @@
 {{ define "main" }}
 
     <article class="column">
-        <h1>{{ .Title }}</h1>
+        {{ if .Title }}
+            <h1>{{ .Title }}</h1>
+        {{ else }}
+            <h1>Unnamed</h1>
+        {{ end }}
 
         {{ $format := "2006-01-02" }}
 
