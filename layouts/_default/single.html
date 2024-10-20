@@ -1,6 +1,7 @@
 {{ define "main" }}
 
     <article class="column">
+        <!-- title -->
         {{ if .Title }}
             <h1>{{ .Title }}</h1>
         {{ else }}
@@ -9,24 +10,31 @@
 
         {{ $format := "2006-01-02" }}
 
-        {{ if .Params.taken }}
-            <p class="caption">Taken {{ .Params.published | time.Format $format }}</p>
+        <!-- article metadata -->
+        {{ with .Params.published }}
+            <p class="caption">Published {{ . | time.Format $format }}</p>
+        {{ end }}
+        {{ with .Params.modified }}
+            <p class="caption">Modified {{ . | time.Format $format }}</p>
         {{ end }}
 
-        {{ if .Params.published }}
-            <p class="caption">Published {{ .Params.published | time.Format $format }}</p>
+        {{ with .Params.summary }}
+            <strong>{{ . }}</strong>
         {{ end }}
 
-        {{ if .Params.modified }}
-            <p class="caption">Modified {{ .Params.published | time.Format $format }}</p>
-        {{ end }}
-
-        <strong>{{ .Params.summary }}</strong>
-
+        <!-- images -->
         {{ range .Params.images }}
-            <a href="/images/{{ . }}">
-                <img class="img-photo-single" src="/images/{{ . }}" />
+            {{ $path := printf "%s" . | printf "%s%s" "images/" | printf "%s" }}
+            {{ $image := resources.Get $path }}
+
+            <a href="{{ $image.RelPermalink }}">
+                <img class="img-photo-single" src="{{ $image.RelPermalink }}" />
             </a>
+
+            <!-- image metadata -->
+            {{ with $image.Exif }}
+                <p class="caption">Taken {{ .Date | time.Format $format }}</p>
+            {{ end }}
         {{ end }}
 
         {{ .Content }}
