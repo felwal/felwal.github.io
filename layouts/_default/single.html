@@ -27,13 +27,17 @@
             {{ $path := printf "%s" . | printf "%s%s" "images/" | printf "%s" }}
             {{ $image := resources.Get $path }}
 
-            <a href="{{ $image.RelPermalink }}">
-                <img class="img-photo-single" src="{{ $image.RelPermalink }}" />
-            </a>
+            {{ with $image }}
+                <a href="{{ $image.RelPermalink }}">
+                    <img class="img-photo-single" src="{{ $image.RelPermalink }}" />
+                </a>
 
-            <!-- image metadata -->
-            {{ with $image.Exif }}
-                <p class="caption">Taken {{ .Date | time.Format $format }}</p>
+                <!-- image metadata -->
+                {{ with $image.Exif }}
+                    <p class="caption">Taken {{ .Date | time.Format $format }}</p>
+                {{ end }}
+            {{ else }}
+                {{ fmt.Warnf ( printf "%s" $path | printf "%s%s" "Single: unable to find " | printf "%s") }}
             {{ end }}
         {{ end }}
 
