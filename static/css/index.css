@@ -1,9 +1,13 @@
+/* layout */
+
 .column {
   max-width: 42rem;
   padding: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* list */
 
 .grid, .grid-image {
   list-style-type: none;
@@ -19,11 +23,7 @@
   }
 }
 
-img.img-photo-item {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
+/* single */
 
 img.img-photo-single {
   max-width: 100%;
@@ -31,13 +31,37 @@ img.img-photo-single {
   object-fit: cover;
 }
 
-header {
-  text-align: center;
+/* item */
+
+img.img-photo-item {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 2%;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+.photo-item-container {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.photo-item-container:hover img.img-photo-item {
+  width: 92.5%;
+  /*opacity: 0.75;*/
+  border-radius: 5%;
+}
+
+.photo-item-cover {
+  /*background: rgba(0, 100, 0, 0.5);*/
+  border-radius: 5%;
+}
+
+/* link */
 
 a.heading-link {
   text-decoration: none;
@@ -48,8 +72,18 @@ a.heading-link:hover h3, h2:hover a.heading-link {
   text-decoration: underline;
 }
 
+/* type */
+
 article h2 {
   width: fit-content;
+}
+
+header {
+  text-align: center;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 p {
