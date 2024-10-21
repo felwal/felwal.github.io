@@ -29,6 +29,7 @@ img.img-photo-single {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 0.25em;
 }
 
 /* item */
@@ -40,6 +41,27 @@ img.img-photo-item {
   object-fit: cover;
   transition: 0.3s;
   border-radius: 2%;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+img.item-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / .5;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 2%;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.item-icon {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / .5;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 2%;
+  background-color: rgba(128, 128, 128, 0.25);
 }
 
 .photo-item-container {
@@ -56,11 +78,6 @@ img.img-photo-item {
   border-radius: 5%;
 }
 
-.photo-item-cover {
-  /*background: rgba(0, 100, 0, 0.5);*/
-  border-radius: 5%;
-}
-
 /* link */
 
 a.heading-link {
@@ -69,6 +86,14 @@ a.heading-link {
 }
 
 a.heading-link:hover h3, h2:hover a.heading-link {
+  text-decoration: underline;
+}
+
+a.tag-link {
+  text-decoration: none;
+}
+
+a.tag-link:hover {
   text-decoration: underline;
 }
 

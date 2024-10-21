@@ -1,5 +1,11 @@
 <article>
     <a href="{{ .RelPermalink }}" class="heading-link">
+        {{ with .Params.images }}
+            <img class="item-image" src="/images/{{ index . 0 }}" />
+        {{ else }}
+            <div class="item-icon"></div>
+        {{ end }}
+
         <h3>{{ .LinkTitle }}</h3>
         {{ .Params.Summary }}
         <p class="caption">{{ .Params.published | time.Format "Jan 2 2006" }}</p>

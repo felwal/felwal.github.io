@@ -18,10 +18,6 @@
             <p class="caption">Modified {{ . | time.Format $format }}</p>
         {{ end }}
 
-        {{ with .Params.summary }}
-            <strong>{{ . }}</strong>
-        {{ end }}
-
         <!-- images -->
         {{ range .Params.images }}
             {{ $path := printf "%s" . | printf "%s%s" "images/" | printf "%s" }}
@@ -39,6 +35,19 @@
             {{ else }}
                 {{ fmt.Warnf ( printf "%s" $path | printf "%s%s" "Single: unable to find " | printf "%s") }}
             {{ end }}
+        {{ end }}
+
+        {{ with .Params.tags }}
+            <p>
+                Tags:
+                {{ range . }}
+                    <a href="/tags/{{ . }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
+            </p>
+        {{ end }}
+
+        {{ with .Params.summary }}
+            <strong>{{ . }}</strong>
         {{ end }}
 
         {{ .Content }}

@@ -5,6 +5,5 @@ images: [20180505-blasippan.jpg, 20180505-blasippan-2.jpg, 20180505-blasippan-3.
 ---
 
 Blåsippan ute i backarna står\
-niger och säger att nu är det vår
-
+niger och säger att nu är det vår\
 tur att gå runt och trampa på folk

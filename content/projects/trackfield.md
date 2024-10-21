@@ -3,6 +3,7 @@ title: Trackfield
 published: 2024-04-05
 modified:
 summary: An Android exercising app.
+images: []
 ---
 
 Trackfield is a running app for Android. It's my first venture into Android development, and so I have learnt a lot on the way. The problem is that it has taken _way_ too much time, and the lack of an MVP-strategy hasn't really been helpful in that regard.

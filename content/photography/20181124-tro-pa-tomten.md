@@ -1,7 +1,9 @@
 ---
 title: Tro på tomten
 published: 2018-12-12
+summary: Lucka 12
+tags: [julkalender-2018]
 images: [20181124-tro-pa-tomten.jpg]
 ---
 
-lucka 12: vissa tror på tomten, andra tror i kyrkan
+vissa tror på tomten, andra tror i kyrkan

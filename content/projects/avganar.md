@@ -2,7 +2,8 @@
 title: Avgånär
 published: 2024-04-04
 modified:
-summary: A Garmin Connect IQ widget displaying public transport departures for Stockholm, Sweden.
+summary: A Garmin public transport widget.
+images: []
 ---
 
 Avgånär is a Garmin Connect IQ widget displaying (public transport) nearby stops and departures within Stockholms Lokaltrafik (SL) in Sweden.

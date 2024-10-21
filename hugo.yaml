@@ -1,3 +1,5 @@
 baseURL: https://felwal.github.io/
 languageCode: en-us
 title: Felix Wallin
+taxonomies:
+  tag: tags
