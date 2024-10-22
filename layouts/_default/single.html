@@ -24,8 +24,10 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
+                {{ $thumb := .Resize "1500x" }}
+
                 <a href="{{ $image.RelPermalink }}">
-                    <img class="img-photo-single" src="{{ $image.RelPermalink }}" />
+                    <img class="img-photo-single" src="{{ $thumb.RelPermalink }}" />
                 </a>
 
                 <!-- image metadata -->
