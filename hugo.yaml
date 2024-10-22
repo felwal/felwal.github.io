@@ -5,3 +5,4 @@ taxonomies:
   tag: tags
   tool: tools
   course: courses
+timeout: 300s
