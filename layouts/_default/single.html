@@ -24,7 +24,7 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $thumb := .Resize "1500x" }}
+                {{ $thumb := .Resize "1500x webp" }}
 
                 <a href="{{ $image.RelPermalink }}">
                     <img class="img-photo-single" src="{{ $thumb.RelPermalink }}" />
