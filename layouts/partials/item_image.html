@@ -6,7 +6,7 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $thumb := .Fill "500x500 webp q50 Center" }}
+                {{ $thumb := .Fill "500x500 webp Center" }}
                 <img class="img-photo-item" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ end }}

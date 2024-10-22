@@ -6,7 +6,7 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $thumb := .Fill "500x250 webp q50 Center" }}
+                {{ $thumb := .Fill "500x250 webp Center" }}
                 <img class="item-image" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
@@ -17,7 +17,7 @@
         {{ with .Params.summary }}
             <p>{{ . }}</p>
         {{ end }}
-        {{ with .Params.published }}
+        {{ with .Params.date }}
             <p class="caption">{{ . | time.Format "Jan 2 2006" }}</p>
         {{ end }}
     </a>
