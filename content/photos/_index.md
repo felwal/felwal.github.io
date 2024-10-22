@@ -1,5 +1,5 @@
 ---
-title: Photography
+title: Photos
 weight: 3
 ---
 

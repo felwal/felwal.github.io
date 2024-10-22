@@ -6,7 +6,7 @@
             {{ .Content }}
         </article>
 
-        {{ if or (eq .Section "art") (eq .Section "photography") }}
+        {{ if or (eq .Section "art") (eq .Section "photos") }}
             {{ partial "item_grid_image.html" .RegularPages }}
         {{ else }}
             {{ partial "item_grid.html" .RegularPages }}
