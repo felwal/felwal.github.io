@@ -19,6 +19,9 @@
                 <p class="caption">Updated {{ . | time.Format $format }}</p>
             {{ end }}
         {{ end }}
+        {{ with .Params.end }}
+            <p class="caption">Completed {{ . | time.Format $format }}</p>
+        {{ end }}
         {{ with .Params.released }}
             <p class="caption">Released {{ . | time.Format $format }}</p>
         {{ end }}
