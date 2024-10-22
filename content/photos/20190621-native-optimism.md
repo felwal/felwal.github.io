@@ -1,6 +1,6 @@
 ---
 title: Native optimism
-published:
+published: 2019-11-29
 images: [20190621-native-optimism.jpg]
 ---
 

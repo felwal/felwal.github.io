@@ -1,6 +1,6 @@
 ---
 title: Lurvigt virus
-published:
+published: 2020-03-24
 images: [20200119-lurvigt-virus.jpg]
 ---
 

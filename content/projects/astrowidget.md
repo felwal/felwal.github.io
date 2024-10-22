@@ -3,8 +3,8 @@ title: Astrowidget
 summary:
 published:
 modified:
-start: 2021-03-27
-end:
+started: 2021-03-27
+date:
 released:
 links:
   - source:

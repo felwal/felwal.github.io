@@ -1,6 +1,6 @@
 ---
 title: Likt en snubbe på marken
-published:
+published: 2018-10-19
 images: [20181007-likt-en-snubbe-pa-marken.jpg]
 ---
 

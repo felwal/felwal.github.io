@@ -4,8 +4,8 @@ summary:
 team: [Carl Holmqvist, William Rolf, Alexander Widman]
 published:
 modified:
-start:
-end:
+started:
+date:
 tags: [xr]
 tools: [unity, csharp]
 courses: [dm2350]

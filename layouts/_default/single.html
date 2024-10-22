@@ -19,7 +19,7 @@
                 <p class="caption">Updated {{ . | time.Format $format }}</p>
             {{ end }}
         {{ end }}
-        {{ with .Params.end }}
+        {{ with .Params.completed }}
             <p class="caption">Completed {{ . | time.Format $format }}</p>
         {{ end }}
         {{ with .Params.released }}

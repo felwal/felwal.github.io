@@ -1,6 +1,7 @@
 ---
 title: Cykel i åtta månader
 published: 2019-06-12
+weight: 3
 images: [20190604-cykel-i-atta-manader.jpg]
 ---
 

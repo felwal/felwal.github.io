@@ -4,8 +4,8 @@ summary:
 team: [Elliot Darth, William Rolf, Alexander Widman]
 published:
 modified:
-start:
-end:
+started:
+date:
 tags: [physical-interaction]
 tools: [arduino, cpp, puredata]
 courses: [dm1588]

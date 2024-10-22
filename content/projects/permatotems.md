@@ -3,8 +3,8 @@ title: Permatotems
 summary:
 published:
 modified:
-start: 2024-01-04
-end:
+started: 2024-01-04
+date:
 released:
 tags: [totems]
 tools: [unity, csharp]

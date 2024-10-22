@@ -3,8 +3,8 @@ title: Trackfield
 summary: An running app for Android
 published: 2024-04-05
 modified:
-start: 2019-09-15
-end:
+started: 2019-09-15
+date:
 released:
 links:
   - source: https://github.com/felwal/trackfield

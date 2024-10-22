@@ -6,3 +6,8 @@ taxonomies:
   tool: tools
   course: courses
 timeout: 300s
+frontmatter:
+  date:
+    - completed
+    - started
+    - :default
