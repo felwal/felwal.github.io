@@ -6,6 +6,8 @@ published:
 modified:
 start:
 end:
-tags: [physical-interaction, arduino, cpp, puredata]
+tags: [physical-interaction]
+tools: [arduino, cpp, puredata]
+courses: [dm1588]
 images: []
 ---

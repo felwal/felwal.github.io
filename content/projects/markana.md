@@ -8,6 +8,6 @@ end:
 released:
 links:
   - source: https://github.com/felwal/markana
-tags: [android, kotlin]
+tools: [android, kotlin]
 images: []
 ---

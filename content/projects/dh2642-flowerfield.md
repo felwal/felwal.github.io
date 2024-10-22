@@ -10,6 +10,7 @@ released:
 links:
   - source: https://github.com/felwal-edu/dh2642-flowerfield
   - release: https://dh2642-flowerfield.web.app
-tags: [vue, javascript]
+tools: [vue, javascript]
+courses: [dh2642]
 images: []
 ---

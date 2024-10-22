@@ -9,6 +9,6 @@ released:
 links:
   - source: https://github.com/felwal/felixwallin.se
   - release: https://felwal.github.io
-tags: [hugo, go]
+tools: [hugo, go]
 images: []
 ---

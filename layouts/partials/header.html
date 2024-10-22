@@ -3,16 +3,29 @@
 
     <nav>
         <span>
-            <a href="/">Home</a>
+            <a href="/" class="link-tab">Home</a>
+
+            |
 
             {{ range .Site.Sections }}
                 {{ if .RegularPages }}
-                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    <a href="{{ .RelPermalink }}" class="link-tab">{{ .LinkTitle }}</a>
                 {{ end }}
             {{ end }}
 
-            <a href="/tags/">Tags</a>
-            <a href="/about/">About</a>
+            |
+
+            {{ range $taxonomy, $terms := .Site.Taxonomies }}
+                {{ with $taxonomy }}
+                    {{ if $terms }}
+                        <a href="/{{ . }}" class="link-tab">{{ strings.FirstUpper . }}</a>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            |
+
+            <a href="/about/" class="link-tab">About</a>
         </span>
     </nav>
 </header>

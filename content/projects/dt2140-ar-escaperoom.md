@@ -6,6 +6,8 @@ published:
 modified:
 start: 2023-11-23
 end: 2024-01-10
-tags: [xr, unity, csharp]
+tags: [xr]
+tools: [unity, csharp]
+courses: [dt2140]
 images: []
 ---

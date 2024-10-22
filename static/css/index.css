@@ -97,6 +97,14 @@ a.tag-link:hover {
   text-decoration: underline;
 }
 
+a.link-tab {
+  text-decoration: none;
+}
+
+a.link-tab:hover {
+  text-decoration: underline;
+}
+
 /* type */
 
 article h2 {

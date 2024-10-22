@@ -8,7 +8,7 @@ end:
 released:
 links:
   - source: https://github.com/felwal/trackfield
-tags: [android, java]
+tools: [android, java]
 images: []
 ---
 

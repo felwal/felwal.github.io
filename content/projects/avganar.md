@@ -9,7 +9,7 @@ released: 2022-11-26
 links:
   - source: https://github.com/felwal/avganar
   - release: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
-tags: [garmin, monkeyc]
+tools: [garmin, monkeyc]
 images: []
 ---
 

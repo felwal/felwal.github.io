@@ -8,6 +8,6 @@ end:
 released:
 links:
   - source:
-tags: [garmin, monkeyc]
+tools: [garmin, monkeyc]
 images: []
 ---

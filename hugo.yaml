@@ -3,3 +3,5 @@ languageCode: en-us
 title: Felix Wallin
 taxonomies:
   tag: tags
+  tool: tools
+  course: courses

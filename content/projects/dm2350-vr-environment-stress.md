@@ -6,6 +6,8 @@ published:
 modified:
 start:
 end:
-tags: [xr, unity, csharp]
+tags: [xr]
+tools: [unity, csharp]
+courses: [dm2350]
 images: []
 ---
