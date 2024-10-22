@@ -40,29 +40,23 @@
         {{ end }}
 
         <!-- taxonomies -->
-        <ul>
+        <p>
             {{ with index .Params.courses 0 }}
-                <li>
-                    Course: <a href="/courses/{{ . }}" class="tag-link">#{{ . }}</a>
-                </li>
+                Course: <a href="/courses/{{ . }}" class="tag-link">#{{ . }}</a>
             {{ end }}
             {{ with .Params.tags }}
-                <li>
-                    Tags:
-                    {{ range . }}
-                        <a href="/tags/{{ . }}" class="tag-link">#{{ . }}</a>
-                    {{ end }}
-                </li>
+                Tags:
+                {{ range . }}
+                    <a href="/tags/{{ . }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
             {{ end }}
             {{ with .Params.tools }}
-                <li>
-                    Tools:
-                    {{ range . }}
-                        <a href="/tools/{{ . }}" class="tag-link">#{{ . }}</a>
-                    {{ end }}
-                </li>
+                Tools:
+                {{ range . }}
+                    <a href="/tools/{{ . }}" class="tag-link">#{{ . }}</a>
+                {{ end }}
             {{ end }}
-        </ul>
+            </p>
 
         {{ with .Params.summary }}
             <strong>{{ . }}</strong>
