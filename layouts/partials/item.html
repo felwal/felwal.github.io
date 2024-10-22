@@ -7,7 +7,11 @@
         {{ end }}
 
         <h3>{{ .LinkTitle }}</h3>
-        {{ .Params.Summary }}
-        <p class="caption">{{ .Params.published | time.Format "Jan 2 2006" }}</p>
+        {{ with .Params.summary }}
+            <p>{{ . }}</p>
+        {{ end }}
+        {{ with .Params.published }}
+            <p class="caption">{{ . | time.Format "Jan 2 2006" }}</p>
+        {{ end }}
     </a>
 </article>

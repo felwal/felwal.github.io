@@ -1,8 +1,14 @@
 ---
 title: Trackfield
+summary: An running app for Android
 published: 2024-04-05
 modified:
-summary: An Android exercising app.
+start: 2019-09-15
+end:
+released:
+links:
+  - source: https://github.com/felwal/trackfield
+tags: [android, java]
 images: []
 ---
 

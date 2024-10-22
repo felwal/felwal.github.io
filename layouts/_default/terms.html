@@ -7,7 +7,7 @@
         </article>
 
         {{ range $taxonomy, $terms := .Site.Taxonomies }}
-            <!-- only show from the current taxonomy (eg tags) -->
+            <!-- only show from the current taxonomy (eg tags) [TODO: some better way] -->
             {{ if strings.Contains $.RelPermalink $taxonomy }}
                 {{ range $term, $weightedPages := $terms }}
                     {{ partial "section_term.html" (dict "taxonomyLink" $.RelPermalink "term" $term "pages" $weightedPages) }}

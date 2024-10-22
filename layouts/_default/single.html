@@ -15,7 +15,7 @@
             <p class="caption">Published {{ . | time.Format $format }}</p>
         {{ end }}
         {{ with .Params.modified }}
-            <p class="caption">Modified {{ . | time.Format $format }}</p>
+            <p class="caption">Updated {{ . | time.Format $format }}</p>
         {{ end }}
 
         <!-- images -->
