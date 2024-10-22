@@ -39,6 +39,17 @@
             {{ end }}
         {{ end }}
 
+        <!-- links -->
+        {{ with .Params.links }}
+            <p>Links:
+            {{ range $i, $map := . }}
+                {{ range $key, $val := $map }}
+                    <a href="{{ $val }}">{{ $key }}</a>
+                {{ end }}
+            {{ end }}
+            </p>
+        {{ end }}
+
         <!-- taxonomies -->
         <p>
             {{ with index .Params.courses 0 }}
