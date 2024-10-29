@@ -4,7 +4,7 @@ summary: My personal website
 published:
 modified:
 started: 2024-04-03
-date:
+completed:
 released:
 links:
   - source: https://github.com/felwal/felwal.github.io
@@ -12,3 +12,7 @@ links:
 tools: [hugo, go]
 images: []
 ---
+
+This website, built and designed using static site generator Hugo.
+
+Why did I build it?

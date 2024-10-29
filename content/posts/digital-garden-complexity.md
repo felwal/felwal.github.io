@@ -1,8 +1,8 @@
 ---
 title: Complexity, control and wildness in the digital garden
-summary:
+summary: Some thoughts on making evergreen notes in Obsidian
 published:
 modified:
-tags: []
+tags: [notes, complexity]
 images: []
 ---

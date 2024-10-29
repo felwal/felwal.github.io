@@ -1,10 +1,10 @@
 ---
 title: Astrowidget
-summary:
+summary: A sun position widget for Garmin watches
 published:
 modified:
 started: 2021-03-27
-date:
+completed:
 released:
 links:
   - source:

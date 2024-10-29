@@ -5,9 +5,11 @@ team: [Carl Holmqvist, William Rolf, Alexander Widman]
 published:
 modified:
 started:
-date:
+completed:
 tags: [xr]
 tools: [unity, csharp]
 courses: [dm2350]
 images: []
 ---
+
+Group project for the course DM123350.

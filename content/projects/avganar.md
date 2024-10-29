@@ -1,14 +1,16 @@
 ---
 title: Avgånär
 summary: A public transport widget for Garmin watches
-published: 2024-04-04
+published:
 modified:
 started: 2021-04-24
-date:
+completed:
 released: 2022-11-26
+weight: 1
 links:
   - source: https://github.com/felwal/avganar
   - release: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
+tags: [mobility]
 tools: [garmin, monkeyc]
 images: []
 ---
