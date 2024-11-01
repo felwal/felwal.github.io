@@ -82,6 +82,14 @@
         {{ end }}
 
         {{ .Content }}
+
+        {{ with .Params.related }}
+            <h2>Related</h2>
+
+            {{ range . }}
+                {{ partial "item_link" (site.GetPage .) }}
+            {{ end }}
+        {{ end }}
     </article>
 
 {{ end }}
