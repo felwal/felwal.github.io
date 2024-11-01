@@ -21,12 +21,17 @@
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  img.item-link-image, .item-link-icon {
+    aspect-ratio: 1 / 1 !important;
+  }
 }
 
 /* single */
 
 img.img-photo-single {
   max-width: 100%;
+  max-height: 80vh;
   height: auto;
   object-fit: cover;
   border-radius: 0.25em;
@@ -54,6 +59,37 @@ img.item-image {
   background-color: rgba(128, 128, 128, 0.15);
 }
 
+img.item-link-image {
+  display: block;
+  height: 7rem;
+  aspect-ratio: 1 / .5;
+  object-fit: cover;
+  transition: 0.2s;
+  border-radius: 2%;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.item-link-icon {
+  display: block;
+  height: 7rem;
+  aspect-ratio: 1 / .5;
+  object-fit: cover;
+  transition: 0.2s;
+  border-radius: 2%;
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+div.item-link-text {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+div.item-link-text * {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
 .item-icon {
   display: block;
   width: 100%;
@@ -70,6 +106,12 @@ img.item-image {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.link-item-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .photo-item-container:hover img.img-photo-item {

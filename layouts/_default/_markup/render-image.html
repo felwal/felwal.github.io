@@ -1,0 +1,9 @@
+<img class="img-photo-single" src="{{ .Destination | safeURL }}"
+    {{- with .Text }}
+        alt="{{ . }}"
+    {{ end -}}
+
+    {{- with .Title }}
+        title="{{ . }}"
+    {{ end -}}
+>
