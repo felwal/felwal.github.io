@@ -1,5 +1,5 @@
 <article>
-    <a href="{{ .RelPermalink }}" class="heading-link">
+    <a href="{{ .RelPermalink }}" class="link-heading">
         {{ with .Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := printf "%s" $filename | printf "%s%s" "images/" | printf "%s" }}

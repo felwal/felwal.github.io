@@ -2,7 +2,7 @@
 
     <article>
         <!-- TODO: use info (title, content) from content/tags somehow -->
-        <h2><a class="heading-link" href="{{ .taxonomyLink }}{{ .term }}">{{ .term }}</a></h3>
+        <h2><a class="link-heading" href="{{ .taxonomyLink }}{{ .term }}">{{ .term }}</a></h3>
     </article>
 
     {{ $pages := .pages.Pages.Limit 3 }}

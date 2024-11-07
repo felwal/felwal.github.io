@@ -23,7 +23,7 @@
                 {{ $thumb := .Resize "1500x webp" }}
 
                 <a href="{{ $image.RelPermalink }}">
-                    <img class="img-photo-single" src="{{ $thumb.RelPermalink }}" />
+                    <img class="single-photo-image" src="{{ $thumb.RelPermalink }}" />
                 </a>
 
                 <!-- image metadata -->
@@ -65,18 +65,18 @@
         <!-- taxonomies -->
         <p>
             {{ with index .Params.courses 0 }}
-                Course: <a href="/courses/{{ . }}" class="tag-link">#{{ . }}</a>
+                Course: <a href="/courses/{{ . }}" class="link-tag">#{{ . }}</a>
             {{ end }}
             {{ with .Params.tags }}
                 Tags:
                 {{ range . }}
-                    <a href="/tags/{{ . }}" class="tag-link">#{{ . }}</a>
+                    <a href="/tags/{{ . }}" class="link-tag">#{{ . }}</a>
                 {{ end }}
             {{ end }}
             {{ with .Params.tools }}
                 Tools:
                 {{ range . }}
-                    <a href="/tools/{{ . }}" class="tag-link">#{{ . }}</a>
+                    <a href="/tools/{{ . }}" class="link-tag">#{{ . }}</a>
                 {{ end }}
             {{ end }}
             </p>

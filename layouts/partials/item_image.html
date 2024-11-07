@@ -1,5 +1,5 @@
 <article>
-    <a href="{{ .RelPermalink }}" class="heading-link photo-item-container">
+    <a href="{{ .RelPermalink }}" class="link-heading item-photo-container">
         {{ with .Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := printf "%s" $filename | printf "%s%s" "images/" | printf "%s" }}
@@ -7,7 +7,7 @@
 
             {{ with $image }}
                 {{ $thumb := .Fill "500x500 webp Center" }}
-                <img class="img-photo-item" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item-photo-image" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ end }}
     </a>
