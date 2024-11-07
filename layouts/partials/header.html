@@ -1,20 +1,19 @@
 <header class="column">
-    <h2><a class="heading-link" href="/">Felix Wallin</a></h2>
-
     <nav>
-        <span>
-            <a href="/" class="link-tab">Home</a>
+        <span id="header-title">
+            <a class="link-tab" href="/">Felix Wallin</a>
+        </span>
 
-            |
+        <span id="header-tabs">
+            {{ partial "header-tab.html" (dict "link" "/" "text" "Home") }}
 
             {{ range .Site.Sections }}
                 {{ if .RegularPages }}
-                    <a href="{{ .RelPermalink }}" class="link-tab">{{ .LinkTitle }}</a>
+                    {{ partial "header-tab.html" (dict "link" .RelPermalink "text" .LinkTitle) }}
                 {{ end }}
             {{ end }}
 
-            |
-
+            <!--
             {{ range $taxonomy, $terms := .Site.Taxonomies }}
                 {{ with $taxonomy }}
                     {{ if $terms }}
@@ -22,10 +21,9 @@
                     {{ end }}
                 {{ end }}
             {{ end }}
+            -->
 
-            |
-
-            <a href="/about/" class="link-tab">About</a>
+            {{ partial "header-tab.html" (dict "link" "/about/" "text" "About") }}
         </span>
     </nav>
 </header>

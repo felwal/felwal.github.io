@@ -10,20 +10,8 @@
 
         {{ $format := "2006-01-02" }}
 
-        <!-- dates -->
-        {{ with .Params.published }}
-            <p class="caption">Published {{ . | time.Format $format }}</p>
-        {{ end }}
-        {{ with .Params.modified }}
-            {{ if ne . $.Params.published }}
-                <p class="caption">Updated {{ . | time.Format $format }}</p>
-            {{ end }}
-        {{ end }}
-        {{ with .Params.completed }}
-            <p class="caption">Completed {{ . | time.Format $format }}</p>
-        {{ end }}
-        {{ with .Params.released }}
-            <p class="caption">Released {{ . | time.Format $format }}</p>
+        {{ with .Params.summary }}
+            <p><strong>{{ . }}</strong></p>
         {{ end }}
 
         <!-- images -->
@@ -47,12 +35,28 @@
             {{ end }}
         {{ end }}
 
+        <!-- dates -->
+        {{ with .Params.published }}
+            <p class="caption">Published {{ . | time.Format $format }}</p>
+        {{ end }}
+        {{ with .Params.modified }}
+            {{ if ne . $.Params.published }}
+                <p class="caption">Updated {{ . | time.Format $format }}</p>
+            {{ end }}
+        {{ end }}
+        {{ with .Params.completed }}
+            <p class="caption">Completed {{ . | time.Format $format }}</p>
+        {{ end }}
+        {{ with .Params.released }}
+            <p class="caption">Released {{ . | time.Format $format }}</p>
+        {{ end }}
+
         <!-- links -->
         {{ with .Params.links }}
             <p>Links:
             {{ range $i, $map := . }}
                 {{ range $key, $val := $map }}
-                    <a href="{{ $val }}">{{ $key }}</a>
+                    {{ partial "link-external.html" (dict "link" $val "text" $key) }}
                 {{ end }}
             {{ end }}
             </p>
@@ -77,17 +81,15 @@
             {{ end }}
             </p>
 
-        {{ with .Params.summary }}
-            <strong>{{ . }}</strong>
-        {{ end }}
-
         {{ .Content }}
 
+        <!-- related pages -->
         {{ with .Params.related }}
             <h2>Related</h2>
 
             {{ range . }}
                 {{ partial "item_link" (site.GetPage .) }}
+                <p />
             {{ end }}
         {{ end }}
     </article>

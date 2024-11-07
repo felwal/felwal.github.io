@@ -1,6 +1,6 @@
 ---
 title: Posts
-weight: 1
+weight: 2
 ---
 
 Here you can find some of my writing. [TODO: write stuff]

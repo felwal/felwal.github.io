@@ -1,0 +1,6 @@
+{{ $class := "link-tab" }}
+{{ if eq .link page.RelPermalink }}
+    {{ $class = "link-tab link-tab-selected" }}
+{{ end }}
+
+<a href="{{ .link }}" class="{{ $class }}">{{ .text }}</a>

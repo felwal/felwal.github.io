@@ -1,6 +1,6 @@
 ---
 title: Projects
-weight: 2
+weight: 1
 ---
 
 Here are some projects I've been working on.
