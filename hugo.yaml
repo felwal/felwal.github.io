@@ -4,7 +4,7 @@ title: Felix Wallin
 taxonomies:
   tag: tags
   tool: tools
-  course: courses
+  series: series
 timeout: 300s
 frontmatter:
   date:

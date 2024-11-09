@@ -1,5 +1,10 @@
 {{ $class := "link-tab" }}
-{{ if eq .link page.RelPermalink }}
+
+{{ if or (eq page.RelPermalink "/") (eq .link "/") }}
+    {{ if eq .link page.RelPermalink }}
+        {{ $class = "link-tab link-tab-selected" }}
+    {{ end }}
+{{ else if strings.Contains page.RelPermalink .link }}
     {{ $class = "link-tab link-tab-selected" }}
 {{ end }}
 

@@ -64,14 +64,17 @@
 
         <!-- taxonomies -->
         <p>
-            {{ with index .Params.courses 0 }}
-                Course: <a href="/courses/{{ . }}" class="link-tag">#{{ . }}</a>
+            {{ with .Params.series }}
+                Series:
+                {{ range . }}
+                    <a href="/series/{{ . }}" class="link-tag">#{{ . }}</a>
+                {{ end }}
             {{ end }}
             {{ with .Params.tags }}
-                Tags:
-                {{ range . }}
-                    <a href="/tags/{{ . }}" class="link-tag">#{{ . }}</a>
-                {{ end }}
+            Tags:
+            {{ range . }}
+            <a href="/tags/{{ . }}" class="link-tag">#{{ . }}</a>
+            {{ end }}
             {{ end }}
             {{ with .Params.tools }}
                 Tools:
