@@ -16,7 +16,7 @@
 
         <!-- images -->
         {{ range .Params.images }}
-            {{ $path := printf "%s" . | printf "%s%s" "images/" | printf "%s" }}
+            {{ $path := partial "Concat" (slice "images/" .) }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
@@ -27,11 +27,14 @@
                 </a>
 
                 <!-- image metadata -->
-                {{ with $image.Exif }}
+                {{ with .Exif }}
                     <p class="caption">Taken {{ .Date | time.Format $format }}</p>
+                {{ else }}
+                    {{ fmt.Warnf (partial "Concat" (slice "Single: no exif for " $path)) }}
                 {{ end }}
+
             {{ else }}
-                {{ fmt.Warnf ( printf "%s" $path | printf "%s%s" "Single: unable to find " | printf "%s") }}
+                {{ fmt.Warnf (partial "Concat" (slice "Single: unable to find " $path)) }}
             {{ end }}
         {{ end }}
 
