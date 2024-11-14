@@ -1,14 +1,14 @@
-{{ with .start }}
-    {{ $formatInterYear := "Jan 2006" }}
-    {{ $formatSameYear := "Jan" }}
+{{ $formatInterYear := "Jan 2006" }}
+{{ $formatSameYear := "Jan" }}
 
+{{ with .start }}
     {{ $startYear := . | time.Format "2006" }}
-    {{ $startTime := . | time.Format "Jan 2006" }}
+    {{ $startTime := . | time.Format $formatInterYear }}
 
     <!-- completed -->
     {{ with $.end }}
         {{ $endYear := . | time.Format "2006" }}
-        {{ $endTime := . | time.Format "Jan 2006" }}
+        {{ $endTime := . | time.Format $formatInterYear }}
 
         <!-- same month -->
         {{ if eq $startTime $endTime }}
@@ -33,4 +33,10 @@
         <p class="caption">{{ $startTime }} – Ongoing</p>
     {{ end }}
 
+<!-- no start date -->
+{{ else }}
+    {{ with .end }}
+        {{ $endTime := . | time.Format $formatInterYear }}
+        <p class="caption">Completed {{ $endTime }}</p>
+    {{ end }}
 {{ end }}
