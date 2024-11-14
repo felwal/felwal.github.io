@@ -35,7 +35,7 @@
             {{ end }}
         {{ end }}
 
-        <!-- dates -->
+        <!-- article dates -->
         {{ with .Params.published }}
             <p class="caption">Published {{ . | time.Format $format }}</p>
         {{ end }}
@@ -44,9 +44,9 @@
                 <p class="caption">Updated {{ . | time.Format $format }}</p>
             {{ end }}
         {{ end }}
-        {{ with .Params.completed }}
-            <p class="caption">Completed {{ . | time.Format $format }}</p>
-        {{ end }}
+
+        <!-- project dates -->
+        {{ partial "caption-project-duration.html" (dict "start" .Params.started "end" .Params.completed) }}
         {{ with .Params.released }}
             <p class="caption">Released {{ . | time.Format $format }}</p>
         {{ end }}
