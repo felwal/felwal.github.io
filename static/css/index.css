@@ -151,7 +151,21 @@ div.item-link-text * {
   border-radius: 5%;
 }
 
+/* img */
+
+svg {
+  width: 1em;
+  height: 1em;
+  margin-bottom: -0.15em;
+}
+
 /* link */
+
+a {
+  color: #027DCB;
+  text-decoration-thickness: 0.075em !important;
+  /*text-decoration-color: #027DCB55 !important;*/
+}
 
 a.link-heading {
   text-decoration: none;
@@ -217,7 +231,8 @@ p.caption {
 }
 
 p.summary {
-  font-weight: 700;
+  font-weight: normal;
+  font-size: large;
 }
 
 h1 {

@@ -1,6 +1,10 @@
 <footer>
     <div class="column">
-        <hr />
-        <p class="caption">© Felix Wallin | felwal.studios@proton.me</p>
+        <p class="caption">
+            {{ range seq 3 }}
+                {{ partial "icons/asterisk.svg" }}
+            {{ end }}
+        </p>
+        <p class="caption">{{ partial "icons/copyright.svg" }} Felix Wallin 2024</p>
     </div>
 </footer>

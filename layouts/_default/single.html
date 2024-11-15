@@ -11,7 +11,7 @@
         {{ $format := "2006-01-02" }}
 
         {{ with .Params.summary }}
-            <p><strong>{{ . }}</strong></p>
+            <p class="summary">{{ . }}</p>
         {{ end }}
 
         <!-- images -->
@@ -49,7 +49,7 @@
         {{ end }}
 
         <!-- project dates -->
-        {{ partial "caption-project-duration.html" (dict "start" .Params.started "end" .Params.completed) }}
+        {{ partial "p-caption-project-duration.html" (dict "start" .Params.started "end" .Params.completed) }}
         {{ with .Params.released }}
             <p class="caption">Released {{ . | time.Format $format }}</p>
         {{ end }}
@@ -68,22 +68,15 @@
         <!-- taxonomies -->
         <p>
             {{ with .Params.series }}
-                Series:
-                {{ range . }}
-                    <a href="/series/{{ . }}" class="link-tag">#{{ . }}</a>
-                {{ end }}
+                {{ partial "p-link-tag-list.html" (dict "taxonomy" "series" "list" . ) }}
             {{ end }}
+
             {{ with .Params.tags }}
-            Tags:
-            {{ range . }}
-            <a href="/tags/{{ . }}" class="link-tag">#{{ . }}</a>
+                {{ partial "p-link-tag-list.html" (dict "taxonomy" "tags" "list" . ) }}
             {{ end }}
-            {{ end }}
+
             {{ with .Params.tools }}
-                Tools:
-                {{ range . }}
-                    <a href="/tools/{{ . }}" class="link-tag">#{{ . }}</a>
-                {{ end }}
+                {{ partial "p-link-tag-list.html" (dict "taxonomy" "tools" "list" . ) }}
             {{ end }}
             </p>
 
