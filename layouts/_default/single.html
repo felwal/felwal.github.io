@@ -54,19 +54,19 @@
             <p class="caption">Released {{ . | time.Format $format }}</p>
         {{ end }}
 
-        <!-- links -->
-        {{ with .Params.links }}
-            <p>Links:
-            {{ range $i, $map := . }}
-                {{ range $key, $val := $map }}
-                    {{ partial "link-external.html" (dict "link" $val "text" $key) }}
+
+        <p>
+            <!-- links -->
+            {{ with .Params.links }}
+            Links:
+                {{ range $i, $map := . }}
+                    {{ range $key, $val := $map }}
+                        {{ partial "link-external.html" (dict "link" $val "text" $key) }}
+                    {{ end }}
                 {{ end }}
             {{ end }}
-            </p>
-        {{ end }}
 
-        <!-- taxonomies -->
-        <p>
+            <!-- taxonomies -->
             {{ with .Params.series }}
                 {{ partial "p-link-tag-list.html" (dict "taxonomy" "series" "list" . ) }}
             {{ end }}

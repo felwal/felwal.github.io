@@ -14,11 +14,17 @@
         {{ end }}
 
         <h3>{{ .LinkTitle }}</h3>
+
         {{ with .Params.summary }}
             <p>{{ . }}</p>
         {{ end }}
-        {{ with .Params.date }}
-            <p class="caption">{{ . | time.Format "Jan 2 2006" }}</p>
+
+        {{ with .Params.started }}
+            {{ partial "p-caption-project-duration.html" (dict "start" . "end" $.Params.completed) }}
+        {{ else }}
+            {{ with .Params.date }}
+                <p class="caption">{{ . | time.Format "Jan 2006" }}</p>
+            {{ end }}
         {{ end }}
     </a>
 </article>

@@ -8,7 +8,7 @@ taxonomies:
 timeout: 300s
 frontmatter:
   date:
-    - released
     - completed
+    - released
     - started
     - :default

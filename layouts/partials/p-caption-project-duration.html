@@ -37,6 +37,6 @@
 {{ else }}
     {{ with .end }}
         {{ $endTime := . | time.Format $formatInterYear }}
-        <p class="caption">Completed {{ $endTime }}</p>
+        <p class="caption">{{ $endTime }}</p>
     {{ end }}
 {{ end }}
