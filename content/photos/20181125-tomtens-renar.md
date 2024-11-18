@@ -2,7 +2,7 @@
 title: Tomtens renar
 summary: Lucka 7
 published: 2018-12-07
-tags: [julkalender-2018, friends]
+series: [julkalender-2018]
 images: [20181125-tomtens-renar.jpg]
 ---
 

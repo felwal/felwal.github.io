@@ -1,6 +1,6 @@
 ---
 title: Trackfield
-summary: A running app for Android
+summary: Running app for Android
 published:
 modified:
 started: 2019-09-15
@@ -9,7 +9,7 @@ released:
 links:
   - source: https://github.com/felwal/trackfield
 tags: [mobility]
-tools: [android, java]
+tools: [android, java, sql]
 images: []
 ---
 

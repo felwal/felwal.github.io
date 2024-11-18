@@ -2,7 +2,7 @@
 title: Skejtbårdskills
 summary: Lucka 9
 published: 2018-12-09
-tags: [julkalender-2018]
+series: [julkalender-2018]
 images: [20181125-skejtbardskills.jpg]
 ---
 

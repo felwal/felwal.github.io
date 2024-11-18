@@ -1,7 +1,6 @@
 ---
 title: Flowerfield
-summary: A website for collecting and categorising images of plants
-team: [Elliot Darth, Matias Eriksson, Linus Wallin]
+summary: Web app for collecting and categorising images of plants
 published:
 modified:
 started: 2022-11-23
@@ -9,11 +8,11 @@ completed: 2022-12-19
 released:
 links:
   - source: https://github.com/felwal-edu/dh2642-flowerfield
-  - release: https://dh2642-flowerfield.web.app
-tags: [ai]
+  - live: https://dh2642-flowerfield.web.app
+tags: [web-development, ai]
 tools: [vue, javascript]
-courses: [dh2642]
-images: []
+series: [dh2642]
+images: [flowerfield-home.png]
 ---
 
 Group project for the course DH2642.

@@ -3,8 +3,8 @@ title: Complexity and magic of AI systems and interfaces
 summary: Is AI too complex? Are the benefits worth the costs?
 published:
 modified:
-courses: [dm2585]
-tags: [ai, complexity]
+series: [dm2585]
+tags: [ai, complexity, sustainability]
 images: []
 ---
 

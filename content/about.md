@@ -1,8 +1,13 @@
 ---
 title: About
-published: 2024-04-05
-modified: 2024-04-05
 hidden: true
 ---
 
-Hello. This is me. This is what I do. Bye-bye!
+I currently study Interactive Media Technology at KTH Royal Institute of Technology. Topics include interaction design, human-computer interaction, computer graphics, and game design – complemented with a focus on sustainability and social aspects of technology. You can find all my courses at [TODO].
+
+## Contact
+
+- Email: felwal.studios@proton.me
+- Github: [@felwal](https://github.com/felwal)
+- Instagram: [@felix_wallin](https://www.instagram.com/felix_wallin)
+- Garmin Connect IQ: [@felwalstudios](https://apps.garmin.com/developer/29f9576d-0084-4471-8daf-8d617888d37d/apps)

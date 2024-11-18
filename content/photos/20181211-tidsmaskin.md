@@ -2,7 +2,8 @@
 title: Tidsmaskin
 summary: Lucka 16
 published: 2018-12-15
-tags: [julkalender-2018, abstract]
+tags: [abstract]
+series: [julkalender-2018]
 images: [20181211-tidsmaskin.jpg]
 ---
 

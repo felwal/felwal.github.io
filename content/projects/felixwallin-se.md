@@ -8,9 +8,10 @@ completed:
 released:
 links:
   - source: https://github.com/felwal/felwal.github.io
-  - release: https://felwal.github.io
+  - live: https://felwal.github.io
+tags: [web-development]
 tools: [hugo, go]
-images: []
+images: [felixwallin-se.png]
 ---
 
 This website, built and designed using static site generator Hugo.

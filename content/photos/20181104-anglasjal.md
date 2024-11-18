@@ -2,7 +2,7 @@
 title: Änglasjäl
 summary: Lucka 3
 published: 2018-12-03
-tags: [julkalender-2018]
+series: [julkalender-2018]
 images: [20181104-anglasjal.jpg]
 ---
 

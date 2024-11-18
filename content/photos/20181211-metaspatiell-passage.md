@@ -2,7 +2,8 @@
 title: Metaspatiell passage
 summary: Lucka ???
 published: 2018-12-16
-tags: [julkalender-2018, abstract]
+tags: [abstract]
+series: [julkalender-2018]
 images: [20181211-metaspatiell-passage.jpg]
 ---
 

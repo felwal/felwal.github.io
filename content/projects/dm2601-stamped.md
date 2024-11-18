@@ -1,13 +1,12 @@
 ---
 title: Stamped
 summary:
-team: [Edina Niculescu, Lennard Sheibel, Aikaterini Tsioutsia]
 published:
 modified:
-started:
+started: 2023-09-01
 completed: 2023-10-24
 tags: [concept]
-courses: [dm2601]
+series: [dm2601]
 images: []
 ---
 

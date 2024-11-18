@@ -1,12 +1,13 @@
 ---
-title: Game of life
-summary: Python implementation of Conway's Game of life
+title: Game of Life
+summary: Python implementation of Conway's Game of Life
 published:
 modified:
-started: 2021-0-18
+started: 2021-02-02
 completed: 2021-04-12
+tags: [game-design]
 tools: [python]
-courses: [dd1318]
+series: [dd1318]
 images: []
 ---
 

@@ -1,14 +1,13 @@
 ---
 title: Airduino
 summary:
-team: [Elliot Darth, William Rolf, Alexander Widman]
 published:
 modified:
 started:
 completed:
 tags: [physical-interaction]
 tools: [arduino, cpp, puredata]
-courses: [dm1588]
+series: [dm1588]
 images: []
 ---
 
