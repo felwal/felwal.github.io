@@ -1,7 +1,6 @@
 ---
 title: Acorn, Nocorn
 summary: Critical design involving acorns, basket, and squirrel
-published:
 modified:
 started: 2024-02-19
 completed: 2024-03-01

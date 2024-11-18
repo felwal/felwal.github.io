@@ -1,7 +1,6 @@
 ---
 title: Toteometer
 summary: Tangible RGB color mixer, inspired by totems
-published:
 modified:
 started: 2024-01-26
 completed: 2024-02-02
@@ -41,8 +40,6 @@ Further, I would have liked to make it actually resemble totems, with the classi
 Time constrained these ideas, however; I had already spent 30 hours on the ten-hour project.
 
 The idea of using totems originated from another project I'm brainstorming at the moment. Working with this adjacent design space has given me some new insights and inspiration – the explorations fuel each other, even though they're not directly linked.
-
-[](/projects/permatotems)
 
 ## Process
 
