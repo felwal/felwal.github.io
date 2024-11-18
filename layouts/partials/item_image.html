@@ -6,7 +6,10 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $thumb := .Fill "500x500 webp Center" }}
+                {{ $rot := partial "GetExifRotation" .Exif }}
+                {{ $mod := partial "Concat" (slice "500x500 webp Center" $rot) }}
+                {{ $thumb := .Fill $mod }}
+
                 <img class="item-photo-image" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ end }}

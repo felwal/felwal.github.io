@@ -1,9 +1,2 @@
-<img class="single-photo-image" src="{{ .Destination | safeURL }}"
-    {{- with .Text }}
-        alt="{{ . }}"
-    {{ end -}}
-
-    {{- with .Title }}
-        title="{{ . }}"
-    {{ end -}}
-/>
+{{ $image := resources.Get .Destination }}
+{{ partial "image-wide.html" (dict "image" $image "title" $.Title "text" $.Text) }}

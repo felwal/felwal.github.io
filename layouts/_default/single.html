@@ -20,11 +20,7 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $thumb := .Resize "1500x webp" }}
-
-                <a href="{{ $image.RelPermalink }}">
-                    <img class="single-photo-image" src="{{ $thumb.RelPermalink }}" />
-                </a>
+                {{ partial "image-wide.html" (dict "image" .) }}
 
                 <!-- image metadata -->
                 {{ with .Exif }}

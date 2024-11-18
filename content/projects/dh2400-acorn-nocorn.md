@@ -54,10 +54,10 @@ We decided that I would make the acorns out of Fimo clay and acrylics, and Willi
 
 Here are some images[^inspiration] used as inspiration and reference:
 
-| ![](https://live.staticflickr.com/65535/52380699715_16f9181749_b.jpg)| ![](https://live.staticflickr.com/6024/6016784701_8ca545f3c6_b.jpg) | ![](https://live.staticflickr.com/3075/2881856339_67e390ff12_b.jpg) |
+| ![](images/shaunstreeper-squirrel-house.jpg)| ![](images/cwasteson-mushroom-basket.jpg) | ![](images/randihausken-acorn.jpg) |
 | - | - | - |
 
-[^inspiration]: "[Squirrel house](https://www.flickr.com/photos/141992429@N08/52380699715)" by shaunstreeper, licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/?ref=openverse); "[Mushroom Basket](https://www.flickr.com/photos/46202322@N03/6016784701)" by cwasteson, licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse); and "[Acorn](https://www.flickr.com/photos/46406832@N00/2881856339)" by randihausken, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse)
+[^inspiration]: "[Squirrel house](https://www.flickr.com/photos/141992429@N08/52380699715)" by shaunstreeper, licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/); "[Mushroom Basket](https://www.flickr.com/photos/46202322@N03/6016784701)" by cwasteson, licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/); and "[Acorn](https://www.flickr.com/photos/46406832@N00/2881856339)" by randihausken, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 
 Then we got the UV sensor and servo motor to work with Arduino and Processing, and started on the props. We made the basket out of toilet paper roll with some thread glued on to give it the classic look, and attached the UV sensor in the box underneath to register falling acorns:
 
