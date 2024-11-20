@@ -20,7 +20,7 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ partial "image-wide.html" (dict "image" .) }}
+                {{ partial "image-single.html" (dict "image" . "class" "singe-banner-image") }}
 
                 <!-- image metadata -->
                 {{ with .Exif }}
