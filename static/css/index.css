@@ -83,7 +83,7 @@ footer > div > hr {
 
 img.single-image {
   max-width: calc(100%);
-  max-height: 85vh;
+  max-height: 80vh;
   height: auto;
   object-fit: cover;
   border-radius: 0.25em;
@@ -92,9 +92,17 @@ img.single-image {
 
 img.single-banner-image {
   max-width: calc(100%);
-  max-height: 85vh;
+  max-height: 80vh;
   height: auto;
   object-fit: cover;
+  border-radius: 0.25em;
+}
+
+.image-single-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.15) !important;
   border-radius: 0.25em;
 }
 
@@ -105,12 +113,10 @@ img.single-banner-image {
   }
 
   .image-single-container {
-    display: flex !important;
-    justify-content: center;
-    width: calc(100% + 2rem) !important;
+    width: calc(100% + 2rem);
     margin-left: -1rem;
     margin-right: -1rem;
-    background-color: rgba(128, 128, 128, 0.15) !important;
+    border-radius: 0;
   }
 }
 
