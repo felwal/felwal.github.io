@@ -1,24 +1,37 @@
 /* layout */
 
 body {
-  min-height: calc(100vh - 16px);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  /*min-height: calc(100vh - 16px);*/
+  margin: 1rem;
+}
+
+nav > span {
+  position: relative;
 }
 
 .column {
   max-width: 46rem;
-  padding: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
 #header-title {
-  position: relative;
-  float: left;
+  font-weight: normal;
 }
 
 #header-tabs {
   position: relative;
-  float: right;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
@@ -28,6 +41,8 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 footer > div > * {
@@ -211,14 +226,6 @@ a.link-tab-selected {
 
 article h2 {
   width: fit-content;
-}
-
-header {
-  text-align: center;
-}
-
-body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 p {

@@ -1,10 +1,8 @@
-<header class="column">
-    <nav>
-        <span id="header-title">
-            <a class="link-tab" href="/">Felix Wallin</a>
-        </span>
+<header>
+    <div id="nav-links" class="column">
+        <a id="header-title" class="link-tab" href="/">Felix Wallin</a>
 
-        <span id="header-tabs">
+        <nav id="header-tabs">
             {{ partial "header-tab.html" (dict "link" "/" "text" "Home") }}
 
             {{ range .Site.Sections }}
@@ -24,6 +22,6 @@
             -->
 
             {{ partial "header-tab.html" (dict "link" "/about/" "text" "About") }}
-        </span>
-    </nav>
+        </nav>
+    </div>
 </header>
