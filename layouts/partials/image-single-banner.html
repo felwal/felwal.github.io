@@ -1,0 +1,23 @@
+{{ with .image }}
+    {{ $thumb := . }}
+
+    {{ if compare.Gt .Width 1500 }}
+        {{ $rot := partial "GetExifRotation" .Exif }}
+        {{ $mod := partial "Concat" (slice "1500x webp" $rot) }}
+        {{ $thumb = .Resize $mod }}
+    {{ end }}
+
+    <div class="image-single-container">
+        <a href="{{ .RelPermalink }}">
+            <img class="single-banner-image" loading="lazy" src="{{ $thumb.RelPermalink }}"
+
+            {{ with $.text }}
+                alt="{{ . }}"
+            {{ end }}
+
+            {{ with $.title }}
+                title="{{ . }}"
+            {{ end }} />
+        </a>
+    </div>
+{{ end }}

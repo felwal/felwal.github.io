@@ -21,9 +21,11 @@
             {{ with .Params.summary }}
                 <p>{{ . }}</p>
             {{ end }}
+            <!--
             {{ with .Params.date }}
                 <p class="caption">{{ . | time.Format "Jan 2 2006" }}</p>
             {{ end }}
+            -->
         </div>
     </a>
 </article>
