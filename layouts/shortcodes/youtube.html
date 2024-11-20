@@ -1,4 +1,4 @@
 {{ with .Get 0 }}
-    {{ $src := partial "Concat" (slice "https://www.youtube.com/embed/" .) }}
+    {{ $src := partial "fun/Concat" (slice "https://www.youtube.com/embed/" .) }}
     {{ partial "iframe-video.html" $src }}
 {{ end }}

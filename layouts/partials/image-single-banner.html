@@ -2,8 +2,8 @@
     {{ $thumb := . }}
 
     {{ if compare.Gt .Width 1500 }}
-        {{ $rot := partial "GetExifRotation" .Exif }}
-        {{ $mod := partial "Concat" (slice "1500x webp" $rot) }}
+        {{ $rot := partial "fun/GetExifRotation" .Exif }}
+        {{ $mod := partial "fun/Concat" (slice "1500x webp" $rot) }}
         {{ $thumb = .Resize $mod }}
     {{ end }}
 
