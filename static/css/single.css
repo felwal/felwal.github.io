@@ -1,0 +1,29 @@
+/* image */
+
+img.single-image {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--corner-radius-small);
+}
+
+img.single-banner-image {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--corner-radius-small);
+}
+
+.image-single-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-surface) !important;
+  border-radius: var(--corner-radius-small);
+}
+
+.image-single-container > a {
+  display: flex;
+}

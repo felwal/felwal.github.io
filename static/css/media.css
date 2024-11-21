@@ -1,0 +1,34 @@
+/* icon */
+
+svg {
+  width: 1em;
+  height: 1em;
+  margin-bottom: -0.15em;
+}
+
+/* video */
+
+/* from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */
+div.video-div {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+/* also from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */
+iframe.video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--corner-radius-small) !important;
+  background-color: var(--color-surface);
+}
+
+iframe {
+  /* class doesn't work on yt */
+  border-radius: var(--corner-radius-small) !important;
+}
