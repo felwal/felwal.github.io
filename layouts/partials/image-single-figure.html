@@ -1,11 +1,5 @@
 {{ with .image }}
-    {{ $thumb := . }}
-
-    {{ if compare.Gt .Width 1500 }}
-        {{ $rot := partial "fun/GetExifRotation" .Exif }}
-        {{ $mod := partial "fun/Concat" (slice "1500x webp" $rot) }}
-        {{ $thumb = .Resize $mod }}
-    {{ end }}
+    {{ $thumb := partial "fun/ResizeSmart" (dict "image" . "length" 1500) }}
 
     <a href="{{ .RelPermalink }}">
         <img class="single-image" loading="lazy" src="{{ $thumb.RelPermalink }}"

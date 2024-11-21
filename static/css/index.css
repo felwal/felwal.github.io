@@ -84,7 +84,7 @@ footer > div > hr {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  img.item-link-image, .item-link-icon {
+  img.item-link-image, .item-link-bg {
     aspect-ratio: 1 / 1 !important;
   }
 
@@ -103,7 +103,6 @@ img.single-image {
   object-fit: cover;
   border-radius: var(--corner-radius-small);
 }
-
 
 img.single-banner-image {
   max-width: 100%;
@@ -172,7 +171,7 @@ img.item-link-image {
   background-color: var(--color-surface);
 }
 
-.item-link-icon {
+.item-link-bg {
   display: block;
   height: 7rem;
   aspect-ratio: 1 / .5;
@@ -193,7 +192,7 @@ div.item-link-text * {
   margin-bottom: 0.5rem;
 }
 
-.item-icon {
+.item-bg {
   display: block;
   width: 100%;
   aspect-ratio: 1 / .5;
