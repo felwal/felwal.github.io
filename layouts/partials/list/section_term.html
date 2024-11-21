@@ -6,6 +6,6 @@
     </article>
 
     {{ $pages := .pages.Pages.Limit 3 }}
-    {{ partial "item_grid" $pages }}
+    {{ partial "list/grid_post" $pages }}
 
 {{ end }}

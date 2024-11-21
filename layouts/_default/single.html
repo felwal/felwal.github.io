@@ -16,21 +16,21 @@
 
         <!-- images -->
         {{ range .Params.images }}
-            {{ $path := partial "fun/Concat" (slice "images/" .) }}
+            {{ $path := partial "fn/Concat" (slice "images/" .) }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ partial "image-single-banner" (dict "image" .) }}
+                {{ partial "single/image_banner" (dict "image" .) }}
 
                 <!-- image metadata -->
                 {{ with .Exif }}
                     <p class="caption">Taken {{ .Date | time.Format $format }}</p>
                 {{ else }}
-                    {{ fmt.Warnf (partial "fun/Concat" (slice "Single: no exif for " $path)) }}
+                    {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
                 {{ end }}
 
             {{ else }}
-                {{ fmt.Warnf (partial "fun/Concat" (slice "Single: unable to find " $path)) }}
+                {{ fmt.Warnf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
             {{ end }}
         {{ end }}
 
@@ -45,7 +45,7 @@
         {{ end }}
 
         <!-- project dates -->
-        {{ partial "p-caption-project-duration" (dict "start" .Params.started "end" .Params.completed) }}
+        {{ partial "p/caption_project_duration" (dict "start" .Params.started "end" .Params.completed) }}
         {{ with .Params.released }}
             <p class="caption">Released {{ . | time.Format $format }}</p>
         {{ end }}
@@ -57,22 +57,22 @@
             Links:
                 {{ range $i, $map := . }}
                     {{ range $key, $val := $map }}
-                        {{ partial "link-external" (dict "link" $val "text" $key) }}
+                        {{ partial "p/link_external" (dict "link" $val "text" $key) }}
                     {{ end }}
                 {{ end }}
             {{ end }}
 
             <!-- taxonomies -->
             {{ with .Params.series }}
-                {{ partial "p-link-tag-list" (dict "taxonomy" "series" "list" . ) }}
+                {{ partial "p/link_tag_list" (dict "taxonomy" "series" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tags }}
-                {{ partial "p-link-tag-list" (dict "taxonomy" "tags" "list" . ) }}
+                {{ partial "p/link_tag_list" (dict "taxonomy" "tags" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tools }}
-                {{ partial "p-link-tag-list" (dict "taxonomy" "tools" "list" . ) }}
+                {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
             {{ end }}
             </p>
 
@@ -83,7 +83,7 @@
             <h2>Related</h2>
 
             {{ range . }}
-                {{ partial "item_link" (site.GetPage .) }}
+                {{ partial "it/item_link" (site.GetPage .) }}
                 <p />
             {{ end }}
         {{ end }}

@@ -2,15 +2,15 @@
     <a href="{{ .RelPermalink }}" class="link-heading item-photo-container">
         {{ with .Params.images }}
             {{ $filename := index . 0 }}
-            {{ $path := partial "fun/Concat" (slice "images/" $filename) }}
+            {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $rot := partial "fun/GetExifRotation" .Exif }}
-                {{ $spec := partial "fun/Concat" (slice "500x500 webp Center" $rot) }}
+                {{ $rot := partial "fn/GetExifRotation" .Exif }}
+                {{ $spec := partial "fn/Concat" (slice "500x500 webp Center" $rot) }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item-photo-image" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item-photo-thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ end }}
     </a>

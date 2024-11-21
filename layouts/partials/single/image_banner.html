@@ -1,9 +1,9 @@
 {{ with .image }}
-    {{ $thumb := partial "fun/ResizeSmart" (dict "image" . "length" 1500) }}
+    {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
 
-    <div class="image-single-container">
+    <div class="banner-container">
         <a href="{{ .RelPermalink }}">
-            <img class="single-banner-image" loading="lazy" src="{{ $thumb.RelPermalink }}"
+            <img class="single-banner" loading="lazy" src="{{ $thumb.RelPermalink }}"
 
             {{ with $.text }}
                 alt="{{ . }}"

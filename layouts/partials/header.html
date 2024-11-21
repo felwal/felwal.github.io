@@ -3,11 +3,11 @@
         <a id="header-title" class="link-tab" href="/">Felix Wallin</a>
 
         <nav id="header-tabs">
-            {{ partial "header-tab" (dict "link" "/" "text" "Home") }}
+            {{ partial "header_tab" (dict "link" "/" "text" "Home") }}
 
             {{ range .Site.Sections }}
                 {{ if .RegularPages }}
-                    {{ partial "header-tab" (dict "link" .RelPermalink "text" .LinkTitle) }}
+                    {{ partial "header_tab" (dict "link" .RelPermalink "text" .LinkTitle) }}
                 {{ end }}
             {{ end }}
 
@@ -21,7 +21,7 @@
             {{ end }}
             -->
 
-            {{ partial "header-tab" (dict "link" "/about/" "text" "About") }}
+            {{ partial "header_tab" (dict "link" "/about/" "text" "About") }}
         </nav>
     </div>
 </header>

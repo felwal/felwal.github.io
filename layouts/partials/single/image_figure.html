@@ -1,8 +1,8 @@
 {{ with .image }}
-    {{ $thumb := partial "fun/ResizeSmart" (dict "image" . "length" 1500) }}
+    {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
 
     <a href="{{ .RelPermalink }}">
-        <img class="single-image" loading="lazy" src="{{ $thumb.RelPermalink }}"
+        <img class="single-figure" loading="lazy" src="{{ $thumb.RelPermalink }}"
 
         {{ with $.text }}
             alt="{{ . }}"

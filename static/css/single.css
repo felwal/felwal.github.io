@@ -1,6 +1,6 @@
 /* image */
 
-img.single-image {
+img.single-figure {
   max-width: 100%;
   max-height: 80vh;
   height: auto;
@@ -8,7 +8,7 @@ img.single-image {
   border-radius: var(--corner-radius-small);
 }
 
-img.single-banner-image {
+img.single-banner {
   max-width: 100%;
   max-height: 80vh;
   height: auto;
@@ -16,7 +16,7 @@ img.single-banner-image {
   border-radius: var(--corner-radius-small);
 }
 
-.image-single-container {
+.banner-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -24,6 +24,6 @@ img.single-banner-image {
   border-radius: var(--corner-radius-small);
 }
 
-.image-single-container > a {
+.banner-container > a {
   display: flex;
 }

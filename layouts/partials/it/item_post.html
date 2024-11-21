@@ -2,18 +2,18 @@
     <a href="{{ .RelPermalink }}" class="link-heading">
         {{ with .Params.images }}
             {{ $filename := index . 0 }}
-            {{ $path := partial "fun/Concat" (slice "images/" $filename) }}
+            {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ $rot := partial "fun/GetExifRotation" .Exif }}
-                {{ $spec := partial "fun/Concat" (slice "500x250 webp Center" $rot) }}
+                {{ $rot := partial "fn/GetExifRotation" .Exif }}
+                {{ $spec := partial "fn/Concat" (slice "500x250 webp Center" $rot) }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item-image" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item-post-thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
-            <div class="item-bg"></div>
+            <div class="item-post-bg"></div>
         {{ end }}
 
         <h3>{{ .LinkTitle }}</h3>
@@ -24,7 +24,7 @@
 
         <!--
         {{ with .Params.started }}
-            {{ partial "p-caption-project-duration" (dict "start" . "end" $.Params.completed) }}
+            {{ partial "p/caption_project_duration" (dict "start" . "end" $.Params.completed) }}
         {{ else }}
             {{ with .Params.date }}
                 <p class="caption">{{ . | time.Format "Jan 2006" }}</p>

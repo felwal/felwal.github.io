@@ -1,2 +1,2 @@
 {{ $image := resources.Get .Destination }}
-{{ partial "image-single-figure" (dict "image" $image "title" $.Title "text" $.Text) }}
+{{ partial "single/image_figure" (dict "image" $image "title" $.Title "text" $.Text) }}

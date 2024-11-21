@@ -1,5 +1,5 @@
 {{ with site.GetPage .Destination }}
-    {{ partial "item_link" . }}
+    {{ partial "it/item_link" . }}
 {{ else }}
-    {{ partial "link-external" (dict "link" .Destination "text" .Text) }}
+    {{ partial "p/link_external" (dict "link" .Destination "text" .Text) }}
 {{ end }}

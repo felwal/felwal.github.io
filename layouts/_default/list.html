@@ -7,13 +7,13 @@
         </article>
 
         {{ if or (eq .Section "art") (eq .Section "photos") }}
-            {{ partial "item_grid_image" .RegularPages }}
+            {{ partial "list/grid_photo" .RegularPages }}
         {{ else }}
-            {{ partial "item_grid" .RegularPages }}
+            {{ partial "list/grid_post" .RegularPages }}
         {{ end }}
 
         {{ range .Sections }}
-            {{ partial "section" . }}
+            {{ partial "list/section" . }}
         {{ end }}
     </main>
 

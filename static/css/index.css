@@ -26,7 +26,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  img.item-link-image, .item-link-bg {
+  img.item-link-thumb, .item-link-bg {
     aspect-ratio: 1 / 1 !important;
   }
 
@@ -38,11 +38,11 @@
 
 /* column full width */
 @media screen and (max-width: calc(46rem + 2 * 1rem)) {
-  img.single-banner-image {
+  img.single-banner {
     border-radius: 0 !important;
   }
 
-  .image-single-container {
+  .banner-container {
     width: calc(100% + 2 * var(--spacing-tiny));
     margin-left: calc(-1 * var(--spacing-tiny));
     margin-right: calc(-1 * var(--spacing-tiny));

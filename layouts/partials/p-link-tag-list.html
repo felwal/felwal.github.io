@@ -1,5 +1,0 @@
-{{ strings.FirstUpper .taxonomy }}:
-{{ range .list }}
-    {{ $link := partial "fun/Concat" (slice "/" $.taxonomy "/" .) }}
-    {{ partial "link-tag" (dict "link" $link "text" . ) }}
-{{ end }}

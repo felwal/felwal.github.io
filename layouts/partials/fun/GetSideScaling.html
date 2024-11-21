@@ -1,9 +1,0 @@
-{{ $sideScaling := "x" }}
-
-{{ if compare.Gt .width .height }}
-    {{ $sideScaling = partial "fun/Concat" (slice .length $sideScaling) }}
-{{ else }}
-    {{ $sideScaling = partial "fun/Concat" (slice $sideScaling .length) }}
-{{ end }}
-
-{{ return $sideScaling }}

@@ -1,6 +1,6 @@
 /* list */
 
-.grid, .grid-image {
+.grid, .grid-photo {
   list-style-type: none;
   width: 100%;
   display: grid;
@@ -10,7 +10,7 @@
 
 /* photo */
 
-img.item-photo-image {
+img.item-photo-thumb {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -28,15 +28,15 @@ img.item-photo-image {
   align-items: center;
 }
 
-.item-photo-container:hover img.item-photo-image {
+.item-photo-container:hover img.item-photo-thumb {
   width: 92.5%;
   /*opacity: 0.75;*/
   border-radius: var(--corner-radius-large);
 }
 
-/* default */
+/* post */
 
-img.item-image {
+img.item-post-thumb {
   display: block;
   width: 100%;
   aspect-ratio: 1 / .5;
@@ -46,7 +46,7 @@ img.item-image {
   background-color: var(--color-surface);
 }
 
-.item-bg {
+.item-post-bg {
   display: block;
   width: 100%;
   aspect-ratio: 1 / .5;
@@ -58,7 +58,7 @@ img.item-image {
 
 /* link */
 
-img.item-link-image {
+img.item-link-thumb {
   display: block;
   height: 7rem;
   aspect-ratio: 1 / .5;

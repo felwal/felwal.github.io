@@ -10,7 +10,7 @@
             <!-- only show from the current taxonomy (eg tags) [TODO: some better way] -->
             {{ if strings.Contains $.RelPermalink $taxonomy }}
                 {{ range $term, $weightedPages := $terms }}
-                    {{ partial "section_term" (dict "taxonomyLink" $.RelPermalink "term" $term "pages" $weightedPages) }}
+                    {{ partial "list/section_term" (dict "taxonomyLink" $.RelPermalink "term" $term "pages" $weightedPages) }}
                 {{ end }}
              {{ end }}
         {{ end }}
