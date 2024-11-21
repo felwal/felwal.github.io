@@ -24,7 +24,7 @@
 
         <!--
         {{ with .Params.started }}
-            {{ partial "p-caption-project-duration.html" (dict "start" . "end" $.Params.completed) }}
+            {{ partial "p-caption-project-duration" (dict "start" . "end" $.Params.completed) }}
         {{ else }}
             {{ with .Params.date }}
                 <p class="caption">{{ . | time.Format "Jan 2006" }}</p>

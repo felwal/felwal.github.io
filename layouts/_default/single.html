@@ -20,7 +20,7 @@
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
-                {{ partial "image-single-banner.html" (dict "image" .) }}
+                {{ partial "image-single-banner" (dict "image" .) }}
 
                 <!-- image metadata -->
                 {{ with .Exif }}
@@ -45,7 +45,7 @@
         {{ end }}
 
         <!-- project dates -->
-        {{ partial "p-caption-project-duration.html" (dict "start" .Params.started "end" .Params.completed) }}
+        {{ partial "p-caption-project-duration" (dict "start" .Params.started "end" .Params.completed) }}
         {{ with .Params.released }}
             <p class="caption">Released {{ . | time.Format $format }}</p>
         {{ end }}
@@ -57,22 +57,22 @@
             Links:
                 {{ range $i, $map := . }}
                     {{ range $key, $val := $map }}
-                        {{ partial "link-external.html" (dict "link" $val "text" $key) }}
+                        {{ partial "link-external" (dict "link" $val "text" $key) }}
                     {{ end }}
                 {{ end }}
             {{ end }}
 
             <!-- taxonomies -->
             {{ with .Params.series }}
-                {{ partial "p-link-tag-list.html" (dict "taxonomy" "series" "list" . ) }}
+                {{ partial "p-link-tag-list" (dict "taxonomy" "series" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tags }}
-                {{ partial "p-link-tag-list.html" (dict "taxonomy" "tags" "list" . ) }}
+                {{ partial "p-link-tag-list" (dict "taxonomy" "tags" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tools }}
-                {{ partial "p-link-tag-list.html" (dict "taxonomy" "tools" "list" . ) }}
+                {{ partial "p-link-tag-list" (dict "taxonomy" "tools" "list" . ) }}
             {{ end }}
             </p>
 

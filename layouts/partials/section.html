@@ -8,9 +8,9 @@
     {{ $pages := .RegularPagesRecursive.Limit 3 }}
 
     {{ if or (eq .Section "art") (eq .Section "photos") }}
-        {{ partial "item_grid_image.html" $pages }}
+        {{ partial "item_grid_image" $pages }}
     {{ else }}
-        {{ partial "item_grid.html" $pages }}
+        {{ partial "item_grid" $pages }}
     {{ end }}
 
 {{ end }}

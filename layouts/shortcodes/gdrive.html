@@ -1,4 +1,4 @@
 {{ with .Get 0 }}
     {{ $src := partial "fun/Concat" (slice "https://drive.google.com/file/d/" . "/preview") }}
-    {{ partial "iframe-video.html" $src }}
+    {{ partial "iframe-video" $src }}
 {{ end }}
