@@ -1,16 +1,14 @@
-{{ if .RegularPagesRecursive }}
+{{ with .RegularPagesRecursive.Limit 3 }}
 
-    <article>
-        <h2><a class="link-heading" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-        {{ .Content }}
-    </article>
+    <section>
+        <h2><a class="link-heading" href="{{ $.RelPermalink }}">{{ $.LinkTitle }}</a></h3>
+        {{ $.Content }}
 
-    {{ $pages := .RegularPagesRecursive.Limit 3 }}
-
-    {{ if or (eq .Section "art") (eq .Section "photos") }}
-        {{ partial "list/grid_photo" $pages }}
-    {{ else }}
-        {{ partial "list/grid_post" $pages }}
-    {{ end }}
+        {{ if or (eq $.Section "art") (eq $.Section "photos") }}
+            {{ partial "list/grid_photo" . }}
+        {{ else }}
+            {{ partial "list/grid_post" . }}
+        {{ end }}
+    </section>
 
 {{ end }}

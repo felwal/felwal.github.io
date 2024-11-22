@@ -1,20 +1,28 @@
 {{ define "main" }}
 
     <main class="column">
-        <article>
-            <h1>{{ .Title }}</h1>
+        <section>
+            <!-- sometimes title is provided in md instead -->
+            {{ with .Title }}
+                <h1>{{ . }}</h1>
+            {{ end }}
+
             {{ .Content }}
-        </article>
 
-        {{ if or (eq .Section "art") (eq .Section "photos") }}
-            {{ partial "list/grid_photo" .RegularPages }}
-        {{ else }}
-            {{ partial "list/grid_post" .RegularPages }}
-        {{ end }}
+            <!-- items -->
+            {{ with where .RegularPages "Params.hidden" "!=" true }}
+                {{ if or (eq $.Section "art") (eq $.Section "photos") }}
+                    {{ partial "list/grid_photo" . }}
+                {{ else }}
+                    {{ partial "list/grid_post" . }}
+                {{ end }}
+            {{ end }}
 
-        {{ range .Sections }}
-            {{ partial "list/section" . }}
-        {{ end }}
+            <!-- sections -->
+            {{ range .Sections }}
+                {{ partial "list/section" . }}
+            {{ end }}
+        </section>
     </main>
 
 {{ end }}

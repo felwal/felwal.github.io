@@ -2,8 +2,8 @@
 
     <article class="column">
         <!-- title -->
-        {{ if .Title }}
-            <h1>{{ .Title }}</h1>
+        {{ with .Title }}
+            <h1>{{ . }}</h1>
         {{ else }}
             <h1>Unnamed</h1>
         {{ end }}
@@ -19,7 +19,7 @@
 
             {{ with $image }}
                 {{ partial "single/image_banner" (dict "image" .) }}
-                <p />
+                <br />
 
             {{ else }}
                 {{ fmt.Warnf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
@@ -31,7 +31,7 @@
         <p>
             <!-- links -->
             {{ with .Params.links }}
-            Links:
+                Links:
                 {{ range $i, $map := . }}
                     {{ range $key, $val := $map }}
                         {{ partial "p/link_external" (dict "link" $val "text" $key) }}
