@@ -41,17 +41,14 @@
 
             <!-- taxonomies -->
             {{ with .Params.series }}
-                ·
                 {{ partial "p/link_tag_list" (dict "taxonomy" "series" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tags }}
-                ·
                 {{ partial "p/link_tag_list" (dict "taxonomy" "tags" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tools }}
-                ·
                 {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
             {{ end }}
         </p>

@@ -16,8 +16,9 @@
             <div class="item-link-bg"></div>
         {{ end }}
 
-        <div class="item-link-text">
+        <div class="item-text">
             <h3>{{ .LinkTitle }}</h3>
+
             {{ with .Params.summary }}
                 <p>{{ . }}</p>
             {{ end }}

@@ -16,11 +16,13 @@
             <div class="item-post-bg"></div>
         {{ end }}
 
-        <h3>{{ .LinkTitle }}</h3>
+        <div class="item-text">
+            <h3>{{ .LinkTitle }}</h3>
 
-        {{ with .Params.summary }}
-            <p>{{ . }}</p>
-        {{ end }}
+            {{ with .Params.summary }}
+                <p>{{ . }}</p>
+            {{ end }}
+        </div>
 
         <!--
         {{ with .Params.started }}

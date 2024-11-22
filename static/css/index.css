@@ -15,7 +15,9 @@
   --corner-radius-small: 0.25rem;
   --corner-radius-large: 0.5rem;
 
-  --spacing-tiny: 1rem;
+  --spacing-diminutive: 0.5rem; /* 4dp */
+  --spacing-tiny: 1rem; /* 8dp */
+
   --width-border: 0.1rem;
   --width-column: 46rem;
   --width-mobile: 36rem;
