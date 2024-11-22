@@ -1,6 +1,8 @@
 {{ $formatInterYear := "Jan 2006" }}
 {{ $formatSameYear := "Jan" }}
 
+{{ $s := "" }}
+
 {{ with .start }}
     {{ $startYear := . | time.Format "2006" }}
     {{ $startTime := . | time.Format $formatInterYear }}
@@ -12,7 +14,7 @@
 
         <!-- same month -->
         {{ if eq $startTime $endTime }}
-            <p class="caption">{{ $startTime }}</p>
+            {{ $s = $startTime }}
 
         {{ else }}
             <!-- same year, different months -->
@@ -25,18 +27,21 @@
                 {{ $startTime = $.start | time.Format $formatInterYear }}
             {{ end }}
 
-            <p class="caption">{{ $startTime }} – {{ $endTime }}</p>
+            {{ $s = collections.Delimit (slice $startTime $endTime) " – " }}
         {{ end }}
 
     <!-- ongoing -->
     {{ else }}
-        <p class="caption">{{ $startTime }} – Ongoing</p>
+        {{ $s = collections.Delimit (slice $startTime "Ongoing") " – " }}
     {{ end }}
 
 <!-- no start date -->
 {{ else }}
     {{ with .end }}
         {{ $endTime := . | time.Format $formatInterYear }}
-        <p class="caption">{{ $endTime }}</p>
+        {{ $s = $endTime }}
+        {{ fmt.Warnf (partial "fn/Concat" (slice "Project end without start")) }}
     {{ end }}
 {{ end }}
+
+{{ return $s }}

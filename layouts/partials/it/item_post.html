@@ -24,7 +24,8 @@
 
         <!--
         {{ with .Params.started }}
-            {{ partial "p/caption_project_duration" (dict "start" . "end" $.Params.completed) }}
+            {{ $duration := partial "fn/GetProjectDuration" (dict "start" . "end" $.Params.completed) }}
+            <p class="caption">{{ $duration }}</p>
         {{ else }}
             {{ with .Params.date }}
                 <p class="caption">{{ . | time.Format "Jan 2006" }}</p>

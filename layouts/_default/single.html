@@ -14,17 +14,20 @@
             <p class="summary">{{ . }}</p>
         {{ end }}
 
-        <!-- images -->
+        {{ $dateTaken := "" }}
+
+        <!-- banner(s) -->
         {{ range .Params.images }}
             {{ $path := partial "fn/Concat" (slice "images/" .) }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
                 {{ partial "single/image_banner" (dict "image" .) }}
+                <p></p>
 
                 <!-- image metadata -->
                 {{ with .Exif }}
-                    <p class="caption">Taken {{ .Date | time.Format $format }}</p>
+                    {{ $dateTaken = partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
                 {{ else }}
                     {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
                 {{ end }}
@@ -34,22 +37,37 @@
             {{ end }}
         {{ end }}
 
-        <!-- article dates -->
-        {{ with .Params.published }}
-            <p class="caption">Published {{ . | time.Format $format }}</p>
+        <!-- dates -->
+
+        {{ $dates := slice }}
+
+        {{ with partial "fn/GetProjectDuration" (dict "start" .Params.started "end" .Params.completed) }}
+            {{ $dates = collections.Append . $dates }}
         {{ end }}
+
+        {{ with .Params.released }}
+            {{ $d := partial "fn/Concat" (slice "Released " (. | time.Format $format)) }}
+            {{ $dates = collections.Append $d $dates }}
+        {{ end }}
+
+        {{ with .Params.published }}
+            {{ $d := partial "fn/Concat" (slice "Published " (. | time.Format $format)) }}
+            {{ $dates = collections.Append $d $dates }}
+        {{ end }}
+
         {{ with .Params.modified }}
             {{ if ne . $.Params.published }}
-                <p class="caption">Updated {{ . | time.Format $format }}</p>
+                {{ $d := partial "fn/Concat" (slice "Updated " (. | time.Format $format)) }}
+                {{ $dates = collections.Append $d $dates }}
             {{ end }}
         {{ end }}
 
-        <!-- project dates -->
-        {{ partial "p/caption_project_duration" (dict "start" .Params.started "end" .Params.completed) }}
-        {{ with .Params.released }}
-            <p class="caption">Released {{ . | time.Format $format }}</p>
+        {{ with $dateTaken }}
+            {{ $dates = collections.Append . $dates }}
         {{ end }}
 
+        {{ $datesCaption := collections.Delimit $dates " · " }}
+        <p class="caption">{{ $datesCaption }}</p>
 
         <p>
             <!-- links -->
@@ -74,7 +92,7 @@
             {{ with .Params.tools }}
                 {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
             {{ end }}
-            </p>
+        </p>
 
         {{ .Content }}
 
