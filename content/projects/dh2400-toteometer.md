@@ -11,6 +11,7 @@ tools: [arduino, cpp, processing]
 series: [dh2400]
 images: [toteometer-cover-2.png]
 related: [/projects/dh2400-acorn-nocorn, /art/solartotem]
+weight: 1
 ---
 
 Design for the course DH2400 Physical interaction design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way". _This text is an edited version of a hand-in for the course._

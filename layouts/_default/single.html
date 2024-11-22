@@ -19,7 +19,7 @@
 
             {{ with $image }}
                 {{ partial "single/image_banner" (dict "image" .) }}
-                <br />
+                <p />
 
             {{ else }}
                 {{ fmt.Warnf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
@@ -41,14 +41,17 @@
 
             <!-- taxonomies -->
             {{ with .Params.series }}
+                ·
                 {{ partial "p/link_tag_list" (dict "taxonomy" "series" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tags }}
+                ·
                 {{ partial "p/link_tag_list" (dict "taxonomy" "tags" "list" . ) }}
             {{ end }}
 
             {{ with .Params.tools }}
+                ·
                 {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
             {{ end }}
         </p>
