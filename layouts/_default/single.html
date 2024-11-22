@@ -8,13 +8,9 @@
             <h1>Unnamed</h1>
         {{ end }}
 
-        {{ $format := "2006-01-02" }}
-
         {{ with .Params.summary }}
             <p class="summary">{{ . }}</p>
         {{ end }}
-
-        {{ $dateTaken := "" }}
 
         <!-- banner(s) -->
         {{ range .Params.images }}
@@ -23,51 +19,14 @@
 
             {{ with $image }}
                 {{ partial "single/image_banner" (dict "image" .) }}
-                <p></p>
-
-                <!-- image metadata -->
-                {{ with .Exif }}
-                    {{ $dateTaken = partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
-                {{ else }}
-                    {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
-                {{ end }}
+                <p />
 
             {{ else }}
                 {{ fmt.Warnf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
             {{ end }}
         {{ end }}
 
-        <!-- dates -->
-
-        {{ $dates := slice }}
-
-        {{ with partial "fn/GetProjectDuration" (dict "start" .Params.started "end" .Params.completed) }}
-            {{ $dates = collections.Append . $dates }}
-        {{ end }}
-
-        {{ with .Params.released }}
-            {{ $d := partial "fn/Concat" (slice "Released " (. | time.Format $format)) }}
-            {{ $dates = collections.Append $d $dates }}
-        {{ end }}
-
-        {{ with .Params.published }}
-            {{ $d := partial "fn/Concat" (slice "Published " (. | time.Format $format)) }}
-            {{ $dates = collections.Append $d $dates }}
-        {{ end }}
-
-        {{ with .Params.modified }}
-            {{ if ne . $.Params.published }}
-                {{ $d := partial "fn/Concat" (slice "Updated " (. | time.Format $format)) }}
-                {{ $dates = collections.Append $d $dates }}
-            {{ end }}
-        {{ end }}
-
-        {{ with $dateTaken }}
-            {{ $dates = collections.Append . $dates }}
-        {{ end }}
-
-        {{ $datesCaption := collections.Delimit $dates " · " }}
-        <p class="caption">{{ $datesCaption }}</p>
+        {{ partial "p/caption_dates" .Params }}
 
         <p>
             <!-- links -->
