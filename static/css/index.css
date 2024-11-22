@@ -6,14 +6,17 @@
 
 :root {
   --color-surface: rgba(128, 128, 128, 0.15);
+  --color-border: rgba(128, 128, 128, 0.15);
+  --color-border-image: rgba(0, 0, 0, 0.1);
   --color-text-primary: black;
   --color-text-secondary: gray;
   --color-text-link: #027DCB;
 
-  --corner-radius-small: 0.25em;
-  --corner-radius-large: 0.5em;
+  --corner-radius-small: 0.25rem;
+  --corner-radius-large: 0.5rem;
 
   --spacing-tiny: 1rem;
+  --width-border: 0.1rem;
   --width-column: 46rem;
   --width-mobile: 36rem;
 

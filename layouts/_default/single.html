@@ -54,16 +54,23 @@
         </p>
 
         {{ .Content }}
+    </article>
 
-        <!-- related pages -->
-        {{ with .Params.related }}
+    <!-- related pages -->
+
+    {{ with .Params.related }}
+        <section class="column">
             <h2>Related</h2>
+
+            <!--
+            {{ partial "list/grid_post" (apply . "site.GetPage" ".") }}
+            -->
 
             {{ range . }}
                 {{ partial "it/item_link" (site.GetPage .) }}
-                <p />
+                <br />
             {{ end }}
-        {{ end }}
-    </article>
+        </section>
+    {{ end }}
 
 {{ end }}

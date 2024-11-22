@@ -42,16 +42,13 @@ a.link-external:hover {
 
 /* heading */
 
-article h2 {
-  width: fit-content;
-}
-
 h1 {
   font-size: 2rem;
 }
 
 h2 {
   font-size: 1.7rem;
+  width: fit-content;
 }
 
 h3 {
