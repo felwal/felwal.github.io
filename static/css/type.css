@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
+  line-height: 1.2;
   margin-top: 1.25em;
   margin-bottom: 0.5em;
 }
@@ -24,7 +24,7 @@ p.summary {
 a {
   color: var(--color-text-link);
   text-decoration: none;
-  text-decoration-thickness: 0.075em !important;
+  text-decoration-thickness: 0.08em !important;
   /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
@@ -58,14 +58,21 @@ h3 {
 a.link-heading {
   text-decoration: none;
   color: var(--color-text-primary);
+  text-decoration-thickness: 0.08em !important;
+  /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
 a.link-heading:hover h3, h2:hover a.link-heading {
   text-decoration: underline;
   text-decoration-thickness: 0.075em !important;
+  /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
 /* decoration */
+
+a.icon-link {
+  text-decoration: none !important;
+}
 
 hr {
   border: none;
@@ -85,5 +92,8 @@ hr::after {
 
 li::marker {
   color: var(--color-text-secondary);
+}
+
+ul > li::marker {
   font-size: smaller;
 }

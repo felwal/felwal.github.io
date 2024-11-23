@@ -1,6 +1,11 @@
 <header>
     <div id="nav-links" class="column">
-        <a id="header-title" class="link-tab" href="/">Felix Wallin</a>
+        <div>
+            {{ partial "ic/favicon.svg" }}
+            <a id="header-title" class="link-tab" href="/">
+                Felix Wallin
+            </a>
+        </div>
 
         <nav id="header-tabs">
             {{ partial "header_tab" (dict "link" "/" "text" "Home") }}
