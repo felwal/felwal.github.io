@@ -4,7 +4,7 @@
   list-style-type: none;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--spacing-diminutive);
 }
 
@@ -42,10 +42,12 @@ img.item-photo-thumb {
 div.item-text {
   padding: var(--spacing-tiny);
   margin: 0;
+
 }
 
 div.item-text > h3 {
   margin: 0;
+  word-wrap: break-word;
 }
 
 div.item-text > p {
@@ -110,6 +112,10 @@ img.item-post-thumb {
   box-shadow: inset 0 0 0 var(--width-border) var(--color-border);
   -webkit-box-shadow: inset 0 0 0 var(--width-border) var(--color-border);
   -moz-box-shadow: inset 0 0 0 var(--width-border) var(--color-border);
+}
+
+.item-link:hover {
+  border-radius: var(--corner-radius-large);
 }
 
 .item-link:hover a .item-link-thumb,
