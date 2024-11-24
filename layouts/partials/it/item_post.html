@@ -30,7 +30,9 @@
             <p class="caption">{{ $duration }}</p>
         {{ else }}
             {{ with .Params.date }}
-                <p class="caption">{{ . | time.Format "Jan 2006" }}</p>
+                <p class="caption">
+                    <time>{{ . | time.Format "Jan 2006" }}</time>
+                </p>
             {{ end }}
         {{ end }}
         -->
