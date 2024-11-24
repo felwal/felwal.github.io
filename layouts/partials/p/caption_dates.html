@@ -31,11 +31,15 @@
     {{ $path := partial "fn/Concat" (slice "images/" .) }}
     {{ $image := resources.Get $path }}
 
-    {{ with $image.Exif }}
-        {{ $d := partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
-        {{ $dates = collections.Append $d $dates }}
+    {{ with $image }}
+        {{ with .Exif }}
+            {{ $d := partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
+            {{ $dates = collections.Append $d $dates }}
+        {{ else }}
+            {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
+        {{ end }}
     {{ else }}
-        {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
+        {{ fmt.Errorf (partial "fn/Concat" (slice "Caption: unable to find " $path)) }}
     {{ end }}
 {{ end }}
 

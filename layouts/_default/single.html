@@ -22,7 +22,7 @@
                 <p />
 
             {{ else }}
-                {{ fmt.Warnf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
+                {{ fmt.Errorf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
             {{ end }}
         {{ end }}
 

@@ -41,12 +41,16 @@ We started with a looong brainstorming session where we got a lot of ideas in th
 
 ![](/images/acorn-nocorn-sketch.jpg)
 
-We decided that I would make the acorns out of Fimo clay and acrylics, and William the squirrel through origami[^a]:
+I made the acorns out of Fimo clay and acrylics:
 
 [^a]: Using the design by Oriol Esteve: https://www.youtube.com/watch?v=tYO3IKW0vZo
 
 | ![](/images/acorns-3.jpg) | ![](/images/acorns.jpg) |
 | - | - |
+
+[](/art/acorns)
+
+And William made the squirrel through origami[^a]:
 
 | ![](/images/acorn-nocorn-squirrel.jpg) | ![](/images/acorn-nocorn-squirrel-noose.jpg) |
 | - | - |

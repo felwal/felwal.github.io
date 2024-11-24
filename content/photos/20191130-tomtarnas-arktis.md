@@ -1,6 +1,7 @@
 ---
 title: Tomtarnas Arktis
 published: 2019-12-26
+tags: [sustainability]
 images: [20191130-tomtarnas-arktis.jpg]
 ---
 

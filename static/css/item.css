@@ -90,7 +90,7 @@ img.item-post-thumb {
 .item-post:hover a .item-link-bg {
   margin-top: calc(0.0375 * 7rem);
   margin-bottom: calc(0.0375 * 7rem);
-  margin-left: calc(2 * 0.0375 * 7rem);
+  margin-left: calc(0.0375 * 7rem);
   height: calc(0.925 * 7rem);
   border-radius: var(--corner-radius-large);
 }
