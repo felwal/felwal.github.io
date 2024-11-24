@@ -6,11 +6,12 @@ started: 2024-01-26
 completed: 2024-02-02
 links:
   - source: https://github.com/felwal-edu/dh2400
-tags: [physical-interaction, totems]
+tags: [physical-interaction]
 tools: [arduino, cpp, processing]
 series: [dh2400]
+clusters: [totems]
 images: [toteometer-cover-2.png]
-related: [/projects/dh2400-acorn-nocorn, /art/solartotem]
+related: [/projects/dh2400-acorn-nocorn]
 weight: 1
 ---
 

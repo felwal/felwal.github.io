@@ -27,12 +27,12 @@
                 {{ $startTime = $.start | time.Format $formatInterYear }}
             {{ end }}
 
-            {{ $s = collections.Delimit (slice $startTime $endTime) " – " }}
+            {{ $s = delimit (slice $startTime $endTime) " – " }}
         {{ end }}
 
     <!-- ongoing -->
     {{ else }}
-        {{ $s = collections.Delimit (slice $startTime "Ongoing") " – " }}
+        {{ $s = delimit (slice $startTime "Ongoing") " – " }}
     {{ end }}
 
 <!-- no start date -->

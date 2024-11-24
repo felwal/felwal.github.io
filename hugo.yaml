@@ -5,6 +5,7 @@ taxonomies:
   tag: tags
   tool: tools
   series: series
+  cluster: clusters
 timeout: 300s
 frontmatter:
   date:

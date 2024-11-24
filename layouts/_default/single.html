@@ -58,18 +58,24 @@
 
     <!-- related pages -->
 
+    {{ $relatedPages := slice }}
+
+    {{ with .Params.clusters }}
+        {{ $pages := where site.RegularPages "Params.clusters" "intersect" . }}
+        {{ $pages = where $pages ".RelPermalink" "ne" $.RelPermalink }}
+        {{ $relatedPages = append $pages $relatedPages }}
+    {{ end }}
+
     {{ with .Params.related }}
+        {{ $pages := (apply . "site.GetPage" ".") }}
+        {{ $relatedPages = append $pages $relatedPages }}
+    {{ end }}
+
+    {{ with $relatedPages }}
         <section class="column">
             <h2>Related</h2>
 
-            {{ partial "list/grid_post" (apply . "site.GetPage" ".") }}
-
-            <!--
-            {{ range . }}
-                {{ partial "it/item_link" (dict "link" (site.GetPage .)) }}
-                <br />
-            {{ end }}
-            -->
+            {{ partial "list/grid_post" (uniq .) }}
         </section>
     {{ end }}
 

@@ -10,6 +10,7 @@ tags: [physical-interaction, critical-design, sustainability]
 tools: [arduino, cpp, processing]
 series: [dh2400]
 images: [acorn-nocorn-cover.png]
+clusters: [acorn]
 related: [/projects/dh2400-toteometer]
 ---
 

@@ -3,26 +3,26 @@
 
 <!-- duration -->
 {{ with partial "fn/GetProjectDuration" (dict "start" .started "end" .completed) }}
-    {{ $dates = collections.Append . $dates }}
+    {{ $dates = append . $dates }}
 {{ end }}
 
 <!-- released -->
 {{ with .released }}
     {{ $d := partial "fn/Concat" (slice "Released " (. | time.Format $format)) }}
-    {{ $dates = collections.Append $d $dates }}
+    {{ $dates = append $d $dates }}
 {{ end }}
 
 <!-- published -->
 {{ with .published }}
     {{ $d := partial "fn/Concat" (slice "Published " (. | time.Format $format)) }}
-    {{ $dates = collections.Append $d $dates }}
+    {{ $dates = append $d $dates }}
 {{ end }}
 
 <!-- updated -->
 {{ with .modified }}
     {{ if ne . $.published }}
         {{ $d := partial "fn/Concat" (slice "Updated " (. | time.Format $format)) }}
-        {{ $dates = collections.Append $d $dates }}
+        {{ $dates = append $d $dates }}
     {{ end }}
 {{ end }}
 
@@ -34,7 +34,7 @@
     {{ with $image }}
         {{ with .Exif }}
             {{ $d := partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
-            {{ $dates = collections.Append $d $dates }}
+            {{ $dates = append $d $dates }}
         {{ else }}
             {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
         {{ end }}
@@ -44,5 +44,5 @@
 {{ end }}
 
 <p class="caption">
-    <time>{{ collections.Delimit $dates " · " }}</time>
+    <time>{{ delimit $dates " · " }}</time>
 </p>
