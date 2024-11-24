@@ -66,7 +66,7 @@
 
             <!--
             {{ range . }}
-                {{ partial "it/item_link" (site.GetPage .) }}
+                {{ partial "it/item_link" (dict "link" (site.GetPage .)) }}
                 <br />
             {{ end }}
             -->

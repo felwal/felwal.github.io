@@ -37,6 +37,22 @@ img.item-photo-thumb {
   border-radius: var(--corner-radius-large);
 }
 
+/* post/link */
+
+div.item-text {
+  padding: var(--spacing-tiny);
+  margin: 0;
+}
+
+div.item-text > h3 {
+  margin: 0;
+}
+
+div.item-text > p {
+  margin-top: var(--spacing-diminutive);
+  margin-bottom: 0;
+}
+
 /* post */
 
 .item-post {
@@ -86,8 +102,18 @@ img.item-post-thumb {
 
 /* link */
 
-.item-post:hover a .item-link-thumb,
-.item-post:hover a .item-link-bg {
+.item-link {
+  border-radius: var(--corner-radius-small);
+  transition: var(--transition);
+  max-height: 7rem;
+
+  box-shadow: inset 0 0 0 var(--width-border) var(--color-border);
+  -webkit-box-shadow: inset 0 0 0 var(--width-border) var(--color-border);
+  -moz-box-shadow: inset 0 0 0 var(--width-border) var(--color-border);
+}
+
+.item-link:hover a .item-link-thumb,
+.item-link:hover a .item-link-bg {
   margin-top: calc(0.0375 * 7rem);
   margin-bottom: calc(0.0375 * 7rem);
   margin-left: calc(0.0375 * 7rem);
@@ -113,20 +139,6 @@ img.item-link-thumb {
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
-}
-
-div.item-text {
-  padding: var(--spacing-tiny);
-  gap: var(--spacing-tiny);
-}
-
-div.item-text > h3 {
-  margin: 0;
-}
-
-div.item-text > p {
-  margin-top: var(--spacing-diminutive);
-  margin-bottom: 0;
 }
 
 .item-link-container {

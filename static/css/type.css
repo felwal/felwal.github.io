@@ -11,9 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* paragraph */
 
-p.caption {
+.caption {
   color: var(--color-text-secondary);
   /*font-variant: small-caps;*/
+}
+
+figcaption {
+  color: var(--color-text-secondary);
+  font-style: italic;
 }
 
 p.summary {

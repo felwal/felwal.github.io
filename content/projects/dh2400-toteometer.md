@@ -71,7 +71,7 @@ And here's the base, made of a cardboard box, with wiring and aluminum:
 
 In tangible interaction design, we can differentiate between tokens and constraints. In this design, the base contains three constraints: the three places where totems can be put. The totem parts themselves act both as manipulable loose tokens and as constraints for putting another totem part on top. The aluminum plates signify these constraints through the internal standard used in the project. Ideally I would have liked to make the affordances even better, with something like the stud and anti-stud of Lego bricks, as can be seen in the sketches above.
 
-[](/art/solartotem)
+[Figurine utilising the stud/anti-stud technique](/art/solartotem)
 
 Victor [2021] defines four fundamental grips for hand manipulation. When the user interacts with the totem parts, they will likely use the _precision grip_. Victor contrasts our amazing manual capabilities with the paradigm of screens where we mostly just touch and swipe. When exploring the colour space of RGB and HEX on screens, I've noticed that it usually isn't very intuitive. That's a motivation for the Toteometer: making it tangible and discrete will allow the user to experiment and build embodied understandings.
 

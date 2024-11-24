@@ -6,6 +6,12 @@ svg {
   margin-bottom: -0.15em;
 }
 
+/* image */
+
+figure {
+  margin: 0;
+}
+
 /* video */
 
 /* from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */
