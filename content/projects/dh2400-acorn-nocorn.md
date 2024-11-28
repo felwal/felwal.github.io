@@ -44,33 +44,37 @@ We started with a looong brainstorming session where we got a lot of ideas in th
 
 I made the acorns out of Fimo clay and acrylics:
 
-[^a]: Using the design by Oriol Esteve: https://www.youtube.com/watch?v=tYO3IKW0vZo
-
 | ![](/images/acorns-3.jpg) | ![](/images/acorns.jpg) |
 | - | - |
 
 [](/art/acorns)
 
-And William made the squirrel through origami[^a]:
+And William made the squirrel through origami:
 
-| ![](/images/acorn-nocorn-squirrel.jpg) | ![](/images/acorn-nocorn-squirrel-noose.jpg) |
+| ![Following the tutorial by Oriol Esteve [^origami]](/images/acorn-nocorn-squirrel.jpg) | ![](/images/acorn-nocorn-squirrel-noose.jpg) |
 | - | - |
 
-Here are some images[^inspiration] used as inspiration and reference:
+[^origami]: Tutorial and design by Oriol Esteve: https://www.youtube.com/watch?v=tYO3IKW0vZo
 
-| ![](images/shaunstreeper-squirrel-house.jpg)| ![](images/cwasteson-mushroom-basket.jpg) | ![](images/randihausken-acorn.jpg) |
+Here are some images used as inspiration and reference:
+
+| !["Squirrel house" by shaunstreeper [^house]](images/shaunstreeper-squirrel-house.jpg)| !["Mushroom Basket" by cwasteson [^basket]](images/cwasteson-mushroom-basket.jpg) | !["Acorn" by randihausken [^acorn]](images/randihausken-acorn.jpg) |
 | - | - | - |
 
-[^inspiration]: "[Squirrel house](https://www.flickr.com/photos/141992429@N08/52380699715)" by shaunstreeper, licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/); "[Mushroom Basket](https://www.flickr.com/photos/46202322@N03/6016784701)" by cwasteson, licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/); and "[Acorn](https://www.flickr.com/photos/46406832@N00/2881856339)" by randihausken, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+[^house]: "[Squirrel house](https://www.flickr.com/photos/141992429@N08/52380699715)" by shaunstreeper, licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
+
+[^basket]: "[Mushroom Basket](https://www.flickr.com/photos/46202322@N03/6016784701)" by cwasteson, licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
+
+[^acorn]: "[Acorn](https://www.flickr.com/photos/46406832@N00/2881856339)" by randihausken, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 
 Then we got the UV sensor and servo motor to work with Arduino and Processing, and started on the props. We made the basket out of toilet paper roll with some thread glued on to give it the classic look, and attached the UV sensor in the box underneath to register falling acorns:
 
-| ![](/images/acorn-nocorn-basket.jpg) | ![](/images/acorn-nocorn-wiring.jpg) |
+| ![](/images/acorn-nocorn-basket.jpg) | ![Arduino with connected servo motor and UV sensor](/images/acorn-nocorn-wiring.jpg) |
 | - | - |
 
 We made the house out of a cardboard box, with a hole for acorns (a tilted floor and a funnel made out of two sticks made sure they rolled out consistently), and a trapdoor closed by the servo:
 
-![](/images/acorn-nocorn-back.jpg)
+![The final layout, from the back. The UV sensor is under the basket, hidden within the box. The servo motor keeps the house floor closed and the squirrel hidden.](/images/acorn-nocorn-back.jpg)
 
 For audio effects we used the _Super Mario_ coin sound for feedback on collecting the acorns. We also used the rabbit death sound from _Minecraft_, since there (surprisingly) are no squirrels in that game.
 

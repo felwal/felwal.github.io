@@ -3,7 +3,7 @@ title: About
 hidden: true
 ---
 
-I currently study Interactive Media Technology at KTH Royal Institute of Technology. Topics include interaction design, human-computer interaction, computer graphics, and game design – complemented with a focus on sustainability and social aspects of technology. You can find all my courses at [TODO].
+I currently study Interactive Media Technology at KTH Royal Institute of Technology. Topics include interaction design, human-computer interaction, computer graphics, and game design – complemented with a focus on sustainability and social aspects of technology.
 
 ## Contact
 

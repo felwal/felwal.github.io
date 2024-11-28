@@ -105,5 +105,3 @@ skisser imgs
 ## What's next
 
 I feel like this (seemingly simple) project has taken _way_ too much time. It's not the most exciting thing ever, yet it was instructive to finally release something. My plan for now is to mostly just update it from time to time with support for new watches.
-
-I also have some thoughts about developing for a niche platform like Garmin: Is it worth it? Post in progress.
