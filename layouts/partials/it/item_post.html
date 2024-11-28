@@ -17,7 +17,11 @@
         {{ end }}
 
         <div class="item-text">
-            <h3>{{ .LinkTitle }}</h3>
+            {{ with .LinkTitle }}
+                <h3>{{ . }}</h3>
+            {{ else }}
+                <h3>Unnamed</h3>
+            {{ end }}
 
             {{ with .Params.summary }}
                 <p>{{ . }}</p>

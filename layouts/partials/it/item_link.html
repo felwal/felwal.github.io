@@ -20,7 +20,11 @@
             {{ with .title }}
                 <h3>{{ . }}</h3>
             {{ else }}
-                <h3>{{ .link.LinkTitle }}</h3>
+                {{ with .link.LinkTitle }}
+                    <h3>{{ . }}</h3>
+                {{ else }}
+                    <h3>Unnamed</h3>
+                {{ end }}
             {{ end }}
 
             <!-- override with custom description -->
