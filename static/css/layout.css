@@ -42,7 +42,8 @@ a.link-tab {
   font-size: large;
 }
 
-a.link-tab:hover {
+a.link-tab:hover,
+a.link-tab:active {
   text-decoration: underline;
 }
 

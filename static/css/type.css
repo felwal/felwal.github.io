@@ -33,15 +33,18 @@ a {
   /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
-a:hover {
+a:hover,
+a:active {
   text-decoration: underline;
 }
 
-a.link-tag:hover {
+a.link-tag:hover,
+a.link-tag:active {
   text-decoration: underline;
 }
 
-a.link-external:hover {
+a.link-external:hover,
+a.link-external:active {
   text-decoration: underline;
 }
 
@@ -67,7 +70,8 @@ a.link-heading {
   /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
-a.link-heading:hover h3, h2:hover a.link-heading {
+a.link-heading:hover h3, h2:hover a.link-heading,
+a.link-heading:active h3, h2:active a.link-heading {
   text-decoration: underline;
   text-decoration-thickness: 0.075em !important;
   /*text-decoration-color: var(--color-text-link) !important;*/
