@@ -34,7 +34,7 @@ Our design aims to make salient our very one-way relationship to the rest of nat
 
 The global economy is so complex that any suggested link between it growing and global ecosystems failing is met with skepticism. Our design takes a simple case: acorns (ecology) are directly transformed into points (economy). From this point of view, "green growth" might be seen as _still taking_, but in a nicer (?) way. Chances are you wouldn't even consider it "stealing". That's another thing we thought a lot about during ideation: We have our systems and they have theirs, yet we only consider our own as legitimate. These systems overlap in messy ways, and we often ignore them or consider only ourselves as legitimate actors; we are very system-centric.
 
-This simple case shows the squirrel dying as a direct consequence of the user's actions. It makes the consequences _visible_, in contrast to the information-hiding of mass-production. Fernaeus and Lindegren [2023] argue that we should acknowlegde and celebrate complexity and imperfection, because only then can we start improving on it. Yet our design also makes use of reductionist metrics and information-hiding in order to nudge the user towards our intended behaviour, and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify [Meadows 2008]), and the consequences are made clear only _after_ the fact.
+This simple case shows the squirrel dying as a direct consequence of the user's actions. It makes the consequences _visible_, in contrast to the information-hiding of mass-production. Fernaeus and Lindegren [2023] argue that we should acknowlegde and celebrate complexity and imperfection, because only then can we start improving on it. Yet our design also makes use of reductionist metrics and information-hiding in order to nudge the user towards our intended behaviour, and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
 
 ## Process
 
@@ -89,5 +89,3 @@ And for the squirrels? They are just the unknowing, nonconsenting objects of our
 ## References
 
 Fernaeus, Y., & Lindegren, A. (2023). Celebration of finitude as a post-industrial aesthetics of interaction. In _LIMITS_.
-
-Meadows, D. H. (2008). _Thinking in Systems: A primer_. Chelsea green publishing.
