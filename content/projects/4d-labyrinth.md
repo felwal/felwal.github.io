@@ -7,7 +7,6 @@ started: 2022-07-15
 completed:
 tags: [game-design]
 images: [labyrinth-play.jpg]
-clusters: [dimension]
 ---
 
 Work in progress
