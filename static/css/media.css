@@ -10,6 +10,26 @@ svg {
 
 figure {
   margin: 0;
+  border-radius: var(--corner-radius-small);
+}
+
+figure:has(a), figure:has(img) {
+  /* doesn't work on iframes */
+  width: fit-content;
+}
+
+figure:has(figcaption) {
+  background-color: var(--color-surface);
+  padding-bottom: var(--spacing-diminutive);
+}
+
+figcaption {
+  color: var(--color-text-secondary);
+  font-weight: normal;
+  font-style: italic;
+  text-align: start;
+  margin-left: var(--spacing-diminutive);
+  margin-right: var(--spacing-diminutive);
 }
 
 /* video */

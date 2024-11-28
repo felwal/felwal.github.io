@@ -15,7 +15,7 @@
         </a>
 
         {{ with $.text }}
-            <figcaption>{{ . }}</figcaption>
+            <figcaption>{{ safe.HTML . }}</figcaption>
         {{ end }}
     </figure>
 {{ end }}
