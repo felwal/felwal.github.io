@@ -23,15 +23,6 @@ figure:has(figcaption) {
   padding-bottom: var(--spacing-diminutive);
 }
 
-figcaption {
-  color: var(--color-text-secondary);
-  font-weight: normal;
-  font-style: italic;
-  text-align: start;
-  margin-left: var(--spacing-diminutive);
-  margin-right: var(--spacing-diminutive);
-}
-
 /* video */
 
 /* from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */

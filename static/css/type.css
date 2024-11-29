@@ -7,18 +7,40 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 1.25em;
   margin-bottom: 0.65em;
+  color: var(--color-text-primary);
 }
 
 /* paragraph */
 
-.caption {
-  color: var(--color-text-secondary);
-  /*font-variant: small-caps;*/
+p {
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
 }
 
 p.summary {
   font-weight: normal;
-  font-size: large;
+  font-size: larger;
+}
+
+.caption {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-caption);
+  /*font-variant: small-caps;*/
+}
+
+.decoration {
+  color: var(--color-decoration);
+  font-size: var(--font-size-caption);
+}
+
+figcaption {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-caption);;
+  font-weight: normal;
+  font-style: italic;
+  text-align: start;
+  margin-left: var(--spacing-diminutive);
+  margin-right: var(--spacing-diminutive);
 }
 
 a {
@@ -41,6 +63,14 @@ a.link-tag:active {
 a.link-external:hover,
 a.link-external:active {
   text-decoration: underline;
+}
+
+code {
+  background-color: var(--color-surface);
+  border-radius: var(--corner-radius-small);
+  padding-left: var(--spacing-mini);
+  padding-right: var(--spacing-mini);
+  color: var(--color-text-secondary);
 }
 
 /* heading */
@@ -88,14 +118,14 @@ hr {
 
 hr::after {
   content: '* * *';
-  /*color: var(--text-muted);*/
+  color: var(--color-decoration);
   display: block;
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
 }
 
 li::marker {
-  color: var(--color-text-secondary);
+  color: var(--color-decoration);
 }
 
 ul > li::marker {

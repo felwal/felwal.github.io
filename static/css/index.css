@@ -8,13 +8,16 @@
   --color-surface: rgba(128, 128, 128, 0.15);
   --color-border: rgba(128, 128, 128, 0.15);
   --color-border-image: rgba(0, 0, 0, 0.1);
-  --color-text-primary: black;
-  --color-text-secondary: gray;
+  --color-decoration: gray;
+
+  --color-text-primary: rgba(0, 0, 0, 0.9);
+  --color-text-secondary: rgba(0, 0, 0, 0.6);
   --color-text-link: #027DCB;
 
   --corner-radius-small: 0.25rem;
   --corner-radius-large: 0.5rem;
 
+  --spacing-mini: 0.25rem; /* 2dp */
   --spacing-diminutive: 0.5rem; /* 4dp */
   --spacing-tiny: 1rem; /* 8dp */
 
@@ -23,6 +26,9 @@
   --width-mobile: 36rem;
 
   --transition: 0.2s;
+
+  --font-size-body: 17px;
+  --font-size-caption: 15px;
 }
 
 /* mobile */

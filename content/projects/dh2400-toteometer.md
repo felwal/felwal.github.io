@@ -30,14 +30,14 @@ Totem parts are stacked to form totem poles. There are three spots on the base w
 
 For the prototype I used Processing to display the colours, but the initial idea was to make it into a sort of lamp for ambient light, where the totem combination determined the colour of the light. As such it would have been a playful decoration, lamp, and interaction, all in one.
 
-Initially I planned to make nine totem parts, which would allow mapping to all colours in the quaternary palette (white (`#FFFFFF`) requires three three-high poles):
+Initially I planned to make nine totem parts, which would allow mapping to all colours in the quaternary palette (white `#FFFFFF` requires three three-high poles):
 
 ![](/images/quaternary-colors.png)
 
 Further, I would have liked to make it actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_.
 
-| ![](/images/totem-1.jpg) | ![](/images/totem-2.jpg) | ![](/images/totem-3.jpg) |
-| - | - | - |
+| ![](/images/totem-1.jpg) | ![](/images/totem-2.jpg) |
+| - | - |
 
 Time constrained these ideas, however; I had already spent 30 hours on the ten-hour project.
 
