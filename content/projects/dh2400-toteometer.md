@@ -1,7 +1,7 @@
 ---
 title: Toteometer
 summary: Tangible RGB color mixer, inspired by totems
-modified:
+modified: 2024-12-14
 started: 2024-01-26
 completed: 2024-02-02
 links:
@@ -10,12 +10,12 @@ tags: [physical-interaction]
 tools: [arduino, cpp, processing]
 series: [dh2400]
 clusters: [totems]
-images: [toteometer-cover-2.png]
+images: [toteometer-cover.png]
 related: [/projects/dh2400-acorn-nocorn]
 weight: 1
 ---
 
-Design for the course DH2400 Physical interaction design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way". _This text is an edited version of a hand-in for the course._
+Design for the course DH2400 Physical interaction design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way". This text is a modified version of a hand-in for the course.
 
 ## Concept
 
@@ -23,10 +23,10 @@ This is the Toteometer, a tangible RGB color mixer inspired by totems. Here's a 
 
 {{< youtube 8JREaEHJSmU >}}
 
-Totem parts are stacked to form totem poles. There are three spots on the base where a totem pole may be raised, corresponding to the primary colours red, green, and blue respectively. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen. For example (as seen above), a three-high pole on G gives `#00FF00` (green); one on R and two on G gives `#55AA00` (dark orange); and one on each gives `#555555` (dark grey).
+Totem parts are stacked to form totem poles. There are three spots on the base where a totem pole may be raised, corresponding to the primary colours red, green, and blue respectively. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen. For example (as seen below), a three-high pole on G gives `#00FF00` (green); one on R and two on G gives `#55AA00` (dark orange); and one on each gives `#555555` (dark grey).
 
-| ![](/images/toteometer-rgb.jpg) | ![](/images/toteometer-ggg.jpg) |
-| - | - |
+| ![](/images/toteometer-dark-orange.jpg) | ![](/images/toteometer-green.jpg) | ![](/images/toteometer-dark-grey.jpg) |
+| - | - | - |
 
 For the prototype I used Processing to display the colours, but the initial idea was to make it into a sort of lamp for ambient light, where the totem combination determined the colour of the light. As such it would have been a playful decoration, lamp, and interaction, all in one.
 
@@ -54,7 +54,7 @@ Next I had to figure out how the thing would actually work – at this stage I w
 
 I also did the math to figure out the optimal resistances in order to maximise the output span (to make calibration easier), and came to the conclusion that I needed two types, one twice as resistant as the other (left figure below). I started programming with Arduino and Processing, calculating the values which should correspond to zero, one, two, and three totem-high poles (right figure):
 
-| ![Signal output span as a function of the ratio between the resistances. Maximum span is achieved at 2:1.](/images/toteometer-graph-vout-span.png) | ![Signal strengths caused by all possible totem heights](/images/toteometer-graph-vout.png) |
+| ![Signal output span as a function of the ratio between the resistances. Maximum span is achieved at 2:1.](/images/toteometer-graph-vout-span.png) | ![Signal strengths by all possible totem heights](/images/toteometer-graph-vout.png) |
 | - | - |
 
 I made the totem parts out of Fimo clay and toilet paper rolls, then added wires, resistors, and aluminum (both on top and bottom) as connectors:
@@ -62,7 +62,7 @@ I made the totem parts out of Fimo clay and toilet paper rolls, then added wires
 | ![Totem parts without wiring](/images/toteometer-clay.jpg) | ![Totem parts with wiring](/images/toteometer-wires.jpg) |
 | - | - |
 
-Oh, and those optimal resistances I calculated? After I had assembled these, I realised that they should have the higher resistance – _and_ that these, actually, were of the lowest possible resistance. And so the math was for nothing, and I ended up just hard-coding the values caused by each totem pole hight. Because these took some time to assemble.
+Oh, and those optimal resistances I calculated? After I had assembled these, I realised that they should have the higher resistance – _and_ that these, actually, were of the lowest possible resistance. And so the math was for nothing, and I ended up just hard-coding the values resulting from each totem pole hight. Because these took some time to assemble.
 
 And here's the base, made of a cardboard box, with wiring and aluminum:
 
@@ -70,7 +70,7 @@ And here's the base, made of a cardboard box, with wiring and aluminum:
 
 ## Theory
 
-In tangible interaction design, we can differentiate between tokens and constraints. In this design, the base contains three constraints: the three places where totems can be put. The totem parts themselves act both as manipulable loose tokens and as constraints for putting another totem part on top. The aluminum plates signify these constraints through the internal standard used in the project. Ideally I would have liked to make the affordances even better, with something like the stud and anti-stud of Lego bricks, as can be seen in the sketches above.
+In tangible interaction design, we can differentiate between tokens and constraints. In this design, the base contains three constraints: the three places where totems can be put. The totem parts themselves act both as manipulable loose tokens and as constraints for putting another totem part on top. The aluminum plates signify these constraints through the internal standard used in the project. Ideally I would have liked to make the affordances even better, with something like the stud/anti-stud of Lego bricks, as can be seen in the sketches above.
 
 [Figurine utilising the stud/anti-stud technique](/art/solartotem)
 
@@ -89,10 +89,8 @@ The totem parts turned out to be somewhat difficult to stack due to irregulariti
 
 If I made the totem parts into different figures actually looking like totems, it would bring a possible conflict: Would you stack them into the most attractive totem-combination, or in the combination resulting in the colour you want?
 
-Finally, one might consider the use of totems as a form of appropriation, using only the surface-level looks of the shamanic practice, ignoring the underlying cultures and belief systems. In one way, this might resemble a _cargo cult_ as described by Holmquist [2005]. On the one hand, I think you should be able to be inspired by ideas in different cultures; on the other, the meta-culture of capitalism seems to systematically soak up all other cultures and worldviews as mere commodified trends.
+Finally, one might consider the use of totems as a form of appropriation, using only the surface-level looks of the shamanic practice, ignoring the underlying cultures and belief systems. On the one hand, I think you should be able to be inspired by ideas in different cultures; on the other, the meta-culture of capitalism seems to systematically soak up all others as mere commodified trends. Anyway, I like totems and wanted to make something with them.
 
 ## References
-
-Holmquist, L. E. (2005). Prototyping: Generating ideas or cargo cult designs?. _Interactions_, _12_(2), 48-54.
 
 Victor, B. (2021). A brief rant on the future of interaction design.

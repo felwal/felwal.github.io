@@ -1,12 +1,12 @@
 ---
 title: Acorn, Nocorn
 summary: Critical design involving acorns, basket, and squirrel
-modified:
+modified: 2024-12-14
 started: 2024-02-19
 completed: 2024-03-01
 links:
   - source: https://github.com/felwal-edu/dh2400
-tags: [physical-interaction, critical-design, sustainability]
+tags: [physical-interaction, critical-design]
 tools: [arduino, cpp, processing]
 series: [dh2400]
 images: [acorn-nocorn-cover.png]
@@ -14,7 +14,7 @@ clusters: [acorn]
 related: [/projects/dh2400-toteometer]
 ---
 
-Co-design with William Zhan for the course DH2400 Physical interaction design. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative." _This text is an edited version of a hand-in for the course._
+Co-design with William Zhan for the course DH2400 Physical interaction design. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative." This text is a modified version of a hand-in for the course.
 
 ## Concept and theory
 
@@ -32,7 +32,7 @@ Our design aims to make salient our very one-way relationship to the rest of nat
 
 ![](/images/acorn-nocorn-win.png)
 
-The global economy is so complex that any suggested link between it growing and global ecosystems failing is met with skepticism. Our design takes a simple case: acorns (ecology) are directly transformed into points (economy). From this point of view, "green growth" might be seen as _still taking_, but in a nicer (?) way. Chances are you wouldn't even consider it "stealing". That's another thing we thought a lot about during ideation: We have our systems and they have theirs, yet we only consider our own as legitimate. These systems overlap in messy ways, and we often ignore them or consider only ourselves as legitimate actors; we are very system-centric.
+The global economy is so complex that any suggested link between it growing and global ecosystems failing is often met with skepticism. Our design takes a simple case: acorns (ecology) are directly transformed into points (economy). From this point of view, "green growth" might be seen as _still taking_, but in a nicer (?) way. Chances are you wouldn't even consider it "stealing" -–that's another thing we thought a lot about during ideation: We have our systems and they have theirs, yet we only consider our own as legitimate. These systems overlap in messy ways, and we often ignore them or consider only ourselves as legitimate actors; we are very system-centric.
 
 This simple case shows the squirrel dying as a direct consequence of the user's actions. It makes the consequences _visible_, in contrast to the information-hiding of mass-production. Fernaeus and Lindegren [2023] argue that we should acknowlegde and celebrate complexity and imperfection, because only then can we start improving on it. Yet our design also makes use of reductionist metrics and information-hiding in order to nudge the user towards our intended behaviour, and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
 

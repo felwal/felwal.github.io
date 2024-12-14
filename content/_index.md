@@ -1,5 +1,4 @@
 ---
-published: 2024-04-05
 modified:
 ---
 

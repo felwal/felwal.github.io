@@ -4,7 +4,7 @@ summary: Is AI too complex? Are the benefits worth the costs?
 published:
 modified:
 series: [dm2585]
-tags: [ai, complexity, sustainability]
+tags: [ai, complexity]
 images: []
 ---
 

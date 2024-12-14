@@ -6,7 +6,7 @@ modified:
 started: 2024-01-04
 completed:
 released:
-tags: [game-design, sustainability]
+tags: [game-design]
 clusters: [totems]
 tools: [unity, csharp]
 images: [permatotems.png]

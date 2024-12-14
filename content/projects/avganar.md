@@ -10,7 +10,7 @@ weight: 1
 links:
   - Github: https://github.com/felwal/avganar
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
-tags: [mobility, sustainability]
+tags: [mobility]
 tools: [garmin, monkeyc]
 images: [avganar-banner.png]
 related: [projects/dh2400-toteometer]
