@@ -73,6 +73,10 @@ code {
   color: var(--color-text-secondary);
 }
 
+blockquote {
+  font-style: italic;
+}
+
 /* heading */
 
 h1 {
