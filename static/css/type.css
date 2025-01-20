@@ -19,7 +19,7 @@ p {
 
 p.summary {
   font-weight: normal;
-  font-size: larger;
+  font-size: var(--font-size-summary);
 }
 
 .caption {

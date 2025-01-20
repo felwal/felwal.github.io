@@ -27,8 +27,9 @@
 
   --transition: 0.2s;
 
-  --font-size-body: 17px;
   --font-size-caption: 15px;
+  --font-size-body: 17px;
+  --font-size-summary: 20px;
 }
 
 /* mobile */
