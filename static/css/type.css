@@ -66,11 +66,13 @@ a.link-external:active {
 }
 
 code {
+  font-family: 'Jetbrains Mono', mono;
   background-color: var(--color-surface);
   border-radius: var(--corner-radius-small);
   padding-left: var(--spacing-mini);
   padding-right: var(--spacing-mini);
   color: var(--color-text-secondary);
+  font-size: calc(0.8 * var(--font-size-body));
 }
 
 blockquote {
