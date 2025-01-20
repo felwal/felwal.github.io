@@ -13,7 +13,7 @@ links:
 tags: [mobility]
 tools: [garmin, monkeyc]
 images: [avganar-banner.png]
-related: [projects/dh2400-toteometer]
+related: [projects/toteometer]
 ---
 
 Avgånär is a Garmin Connect IQ widget for viewing public transport nearby stops and departures. The base version works within Stockholm (SL) in Sweden, while a second version covers the entire Sweden.

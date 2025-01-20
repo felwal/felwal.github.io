@@ -68,6 +68,7 @@
 
     {{ with .Params.related }}
         {{ $pages := (apply . "site.GetPage" ".") }}
+        <!-- TODO: warn if not found -->
         {{ $relatedPages = append $pages $relatedPages }}
     {{ end }}
 

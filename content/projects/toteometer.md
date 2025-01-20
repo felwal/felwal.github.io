@@ -11,7 +11,7 @@ tools: [arduino, cpp, processing]
 series: [dh2400]
 clusters: [totems]
 images: [toteometer-cover.png]
-related: [/projects/dh2400-acorn-nocorn]
+related: [/projects/acorn-nocorn]
 weight: 1
 ---
 

@@ -11,7 +11,7 @@ tools: [arduino, cpp, processing]
 series: [dh2400]
 images: [acorn-nocorn-cover.png]
 clusters: [acorn]
-related: [/projects/dh2400-toteometer]
+related: [/projects/toteometer]
 ---
 
 Co-design with William Zhan for the course DH2400 Physical interaction design. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative." This text is a modified version of a hand-in for the course.
