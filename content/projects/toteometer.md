@@ -10,7 +10,7 @@ tags: [physical-interaction]
 tools: [arduino, cpp, processing]
 series: [dh2400]
 clusters: [totems]
-images: [toteometer-cover.png]
+images: [toteometer-cover-2.png]
 related: [/projects/acorn-nocorn]
 weight: 1
 ---
@@ -52,7 +52,7 @@ The idea of using totems originated from another project I'm brainstorming at th
 
 I started out with a brainstorming session and then some background-level ideation over the next couple of days. When I had decided upon an idea, I began sketching the general design:
 
-{{< figrow >}}
+{{< figrow force-row=true >}}
     {{< figure src="/images/toteometer-sketch-1.jpg" >}}
     {{< figure src="/images/toteometer-sketch-2.jpg" >}}
 {{< /figrow >}}
