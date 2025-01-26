@@ -1,6 +1,7 @@
 ---
 title: Lost in Translatopia
 summary: Role-playing language-learning game
+team: [Felix Broberg, Duosi Dai, Carolina Dexwik]
 published:
 modified:
 started: 2024-03-24

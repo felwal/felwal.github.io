@@ -28,30 +28,33 @@
 
         {{ partial "p/caption_dates" .Params }}
 
-        <p>
+        <ul class="bulletless">
             <!-- links -->
             {{ with .Params.links }}
-                Links:
-                {{ range $i, $map := . }}
-                    {{ range $key, $val := $map }}
-                        {{ partial "p/link_external" (dict "link" $val "text" $key) }}
+                <li>
+                    Links:
+                    {{ range $i, $map := . }}
+                        {{ range $key, $val := $map }}
+                            {{ partial "p/link_external" (dict "link" $val "text" $key) }}
+                        {{ end }}
                     {{ end }}
-                {{ end }}
+                </li>
             {{ end }}
 
             <!-- taxonomies -->
-            {{ with .Params.series }}
-                {{ partial "p/link_tag_list" (dict "taxonomy" "series" "list" . ) }}
-            {{ end }}
-
-            {{ with .Params.tags }}
-                {{ partial "p/link_tag_list" (dict "taxonomy" "tags" "list" . ) }}
-            {{ end }}
-
             {{ with .Params.tools }}
-                {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
+                <li>
+                    {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
+                </li>
             {{ end }}
-        </p>
+
+            <!-- team -->
+            {{ with .Params.team }}
+                <li>
+                    Team: {{ collections.Delimit . ", " }}
+                </li>
+            {{ end }}
+        </ul>
 
         {{ .Content }}
     </article>

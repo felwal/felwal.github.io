@@ -1,6 +1,7 @@
 ---
 title: AR Escape Room
 summary: Mobile AR game where the player solves puzzles to escape
+team: [Prijun Koirala, Luca Lancella, William Zhan]
 published:
 modified:
 started: 2023-11-23

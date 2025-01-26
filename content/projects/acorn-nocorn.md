@@ -1,6 +1,7 @@
 ---
 title: Acorn, Nocorn
 summary: Critical design involving acorns, basket, and squirrel
+team: [William Zhan]
 modified: 2024-12-14
 started: 2024-02-19
 completed: 2024-03-01
@@ -14,7 +15,7 @@ clusters: [acorn]
 related: [/projects/toteometer]
 ---
 
-Co-design with William Zhan for the course DH2400 Physical interaction design. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative." This text is a modified version of a hand-in for the course.
+Design for the course DH2400 Physical interaction design. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative." This text is a modified version of a hand-in for the course.
 
 ## Concept and theory
 
