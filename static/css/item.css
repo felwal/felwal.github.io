@@ -104,6 +104,11 @@ img.item-post-thumb {
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
+
+  /* for icon */
+  align-content: center;
+  justify-content: center;
+  display: grid;
 }
 
 /* link */
@@ -152,6 +157,25 @@ img.item-link-thumb {
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
+
+  /* for icon */
+  align-content: center;
+  justify-content: center;
+  display: grid;
+}
+
+.item-link-bg > svg,
+.item-post-bg > svg {
+  color: var(--color-decoration);
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: var(--transition);
+}
+
+.item-link:hover .item-link-bg > svg,
+.item-post:hover .item-post-bg > svg {
+  width: calc(0.925 * 2.5rem);
+  height: calc(0.925 * 2.5rem);
 }
 
 .item-link-container {

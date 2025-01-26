@@ -13,7 +13,11 @@
                 <img class="item-post-thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
-            <div class="item-post-bg"></div>
+            <div class="item-post-bg">
+                {{ with .Params.icon }}
+                    {{ partial (partial "fn/Concat" (slice "ic/" . ".svg")) }}
+                {{ end }}
+            </div>
         {{ end }}
 
         <div class="item-text">

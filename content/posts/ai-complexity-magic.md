@@ -6,6 +6,7 @@ modified:
 series: [dm2585]
 tags: [ai, complexity]
 images: []
+icon: sparkles
 ---
 
 _This is an edited version of an assignment for the course DM2585._

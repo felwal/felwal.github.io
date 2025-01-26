@@ -19,6 +19,12 @@ header {
   margin-bottom: 1.5rem;
 }
 
+#header-logo {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
 #nav-links {
   display: flex;
   justify-content: space-between;

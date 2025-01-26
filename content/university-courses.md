@@ -2,6 +2,7 @@
 title: University courses
 summary: At KTH Royal Institute of Technology
 hidden: true
+icon: graduation-cap
 ---
 
 ## M.S. Interactive Media Technology
