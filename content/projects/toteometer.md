@@ -25,8 +25,11 @@ This is the Toteometer, a tangible RGB color mixer inspired by totems. Here's a 
 
 Totem parts are stacked to form totem poles. There are three spots on the base where a totem pole may be raised, corresponding to the primary colours red, green, and blue respectively. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen. For example (as seen below), a three-high pole on G gives `#00FF00` (green); one on R and two on G gives `#55AA00` (dark orange); and one on each gives `#555555` (dark grey).
 
-| ![](/images/toteometer-dark-orange.jpg) | ![](/images/toteometer-green.jpg) | ![](/images/toteometer-dark-grey.jpg) |
-| - | - | - |
+{{< figrow force-row=true caption="<code>#55AA00</code> dark orange; <code>#00FF00</code> green; <code>#555555</code> dark grey" >}}
+    {{< figure src="/images/toteometer-dark-orange.jpg" >}}
+    {{< figure src="/images/toteometer-green.jpg" >}}
+    {{< figure src="/images/toteometer-dark-grey.jpg" >}}
+{{< /figrow >}}
 
 For the prototype I used Processing to display the colours, but the initial idea was to make it into a sort of lamp for ambient light, where the totem combination determined the colour of the light. As such it would have been a playful decoration, lamp, and interaction, all in one.
 
@@ -36,8 +39,10 @@ Initially I planned to make nine totem parts, which would allow mapping to all c
 
 Further, I would have liked to make it actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_.
 
-| ![](/images/totem-1.jpg) | ![](/images/totem-2.jpg) |
-| - | - |
+{{< figrow >}}
+    {{< figure src="/images/totetotem-1.jpg" >}}
+    {{< figure src="/images/totem-2.jpg" >}}
+{{< /figrow >}}
 
 Time constrained these ideas, however; I had already spent 30 hours on the ten-hour project.
 
@@ -47,20 +52,26 @@ The idea of using totems originated from another project I'm brainstorming at th
 
 I started out with a brainstorming session and then some background-level ideation over the next couple of days. When I had decided upon an idea, I began sketching the general design:
 
-| ![](/images/toteometer-sketch-1.jpg) | ![](/images/toteometer-sketch-2.jpg) |
-| - | - |
+{{< figrow >}}
+    {{< figure src="/images/toteometer-sketch-1.jpg" >}}
+    {{< figure src="/images/toteometer-sketch-2.jpg" >}}
+{{< /figrow >}}
 
 Next I had to figure out how the thing would actually work – at this stage I wasn't even certain if it could work at all. And so I took to re-learning the basic wiring stuff, realised it _could_ work, made a few failed attempts at sketching _how_ it would work, finally got it right, and then tried it out in Tinkercad.
 
 I also did the math to figure out the optimal resistances in order to maximise the output span (to make calibration easier), and came to the conclusion that I needed two types, one twice as resistant as the other (left figure below). I started programming with Arduino and Processing, calculating the values which should correspond to zero, one, two, and three totem-high poles (right figure):
 
-| ![Signal output span as a function of the ratio between the resistances. Maximum span is achieved at 2:1.](/images/toteometer-graph-vout-span.png) | ![Signal strengths by all possible totem heights](/images/toteometer-graph-vout.png) |
-| - | - |
+{{< figrow force-row=true caption="Left: Signal output span as a function of the ratio between the resistances, maximum achieved at 2:1. Right: Signal strengths by all possible totem heights." >}}
+    {{< figure src="/images/toteometer-graph-vout-span.png" >}}
+    {{< figure src="/images/toteometer-graph-vout.png" >}}
+{{< /figrow >}}
 
 I made the totem parts out of Fimo clay and toilet paper rolls, then added wires, resistors, and aluminum (both on top and bottom) as connectors:
 
-| ![Totem parts without wiring](/images/toteometer-clay.jpg) | ![Totem parts with wiring](/images/toteometer-wires.jpg) |
-| - | - |
+{{< figrow caption="Totem parts without and with wiring" >}}
+    {{< figure src="/images/toteometer-clay.jpg" >}}
+    {{< figure src="/images/toteometer-wires.jpg" >}}
+{{< /figrow >}}
 
 Oh, and those optimal resistances I calculated? After I had assembled these, I realised that they should have the higher resistance – _and_ that these, actually, were of the lowest possible resistance. And so the math was for nothing, and I ended up just hard-coding the values resulting from each totem pole hight. Because these took some time to assemble.
 

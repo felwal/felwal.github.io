@@ -1,0 +1,18 @@
+<div>
+    {{ $class := "figrow figrow-dynamic" }}
+    {{ with .Get "force-row" }}
+        {{ if . }}
+            {{ $class = "figrow" }}
+        {{ end }}
+    {{ end }}
+
+    <div class="{{ $class }}">
+        {{ .Inner }}
+    </div>
+
+    {{ with .Get "caption" }}
+        <figcaption>
+            <p class="caption">{{ safe.HTML . }}</p>
+        </figcaption>
+    {{ end }}
+</div>

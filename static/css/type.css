@@ -17,7 +17,7 @@ p {
   color: var(--color-text-primary);
 }
 
-p.summary {
+.summary {
   font-weight: normal;
   font-size: var(--font-size-summary);
 }
@@ -31,16 +31,6 @@ p.summary {
 .decoration {
   color: var(--color-decoration);
   font-size: var(--font-size-caption);
-}
-
-figcaption {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-caption);;
-  font-weight: normal;
-  font-style: italic;
-  text-align: start;
-  margin-left: var(--spacing-diminutive);
-  margin-right: var(--spacing-diminutive);
 }
 
 a {

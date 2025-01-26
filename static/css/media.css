@@ -6,7 +6,44 @@ svg {
   margin-bottom: -0.15em;
 }
 
-/* image */
+/* banner */
+
+img.single-banner {
+  max-width: 100%;
+  max-height: 80vh;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--corner-radius-small);
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-surface) !important;
+  border-radius: var(--corner-radius-small);
+}
+
+.banner-container > a {
+  display: flex;
+}
+
+/* figure */
+
+.figrow {
+  display: grid;
+  gap: var(--spacing-mini);
+  grid-auto-flow: column;
+  align-items: end;
+}
+
+img.single-figure {
+  max-width: 100%;
+  max-height: 80vh;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--corner-radius-small);
+}
 
 figure {
   margin: 0;
@@ -15,12 +52,35 @@ figure {
 
 figure:has(a), figure:has(img) {
   /* doesn't work on iframes */
-  width: fit-content;
+  width: auto;
+  height: 100%;
+  display: block;
+  align-content: end;
 }
 
-figure:has(figcaption) {
+article > figure:has(a), article > figure:has(img) {
+  /* (render hook) for some reason needed to avoid empty space below img */
+  display: grid;
+}
+
+figcaption {
   background-color: var(--color-surface);
-  padding-bottom: var(--spacing-diminutive);
+  padding: var(--spacing-diminutive);
+  padding-top: calc(var(--spacing-diminutive) + var(--corner-radius-small));
+  margin-top: calc(-1 * var(--corner-radius-small));
+  border-radius: var(--corner-radius-small);
+}
+
+figcaption > p {
+  font-weight: normal;
+  font-style: italic;
+  text-align: start;
+  margin: 0;
+}
+
+article > figure > figcaption {
+  /* (render hook) make sure its bg doesnt cover the image */
+  z-index: -1;
 }
 
 /* video */

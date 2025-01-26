@@ -32,7 +32,7 @@ Our design aims to make salient our very one-way relationship to the rest of nat
 
 ![](/images/acorn-nocorn-win.png)
 
-The global economy is so complex that any suggested link between it growing and global ecosystems failing is often met with skepticism. Our design takes a simple case: acorns (ecology) are directly transformed into points (economy). From this point of view, "green growth" might be seen as _still taking_, but in a nicer (?) way. Chances are you wouldn't even consider it "stealing" -–that's another thing we thought a lot about during ideation: We have our systems and they have theirs, yet we only consider our own as legitimate. These systems overlap in messy ways, and we often ignore them or consider only ourselves as legitimate actors; we are very system-centric.
+The global economy is so complex that any suggested link between it growing and global ecosystems failing is often met with skepticism. Our design takes a simple case: acorns (ecology) are directly transformed into points (economy). From this point of view, "green growth" might be seen as _still taking_, but in a nicer (?) way. Chances are you wouldn't even consider it "stealing" – that's another thing we thought a lot about during ideation: We have our systems and they have theirs, yet we only consider our own as legitimate. These systems overlap in messy ways, and we often ignore them or consider only ourselves as legitimate actors; we are very system-centric.
 
 This simple case shows the squirrel dying as a direct consequence of the user's actions. It makes the consequences _visible_, in contrast to the information-hiding of mass-production. Fernaeus and Lindegren [2023] argue that we should acknowlegde and celebrate complexity and imperfection, because only then can we start improving on it. Yet our design also makes use of reductionist metrics and information-hiding in order to nudge the user towards our intended behaviour, and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
 
@@ -44,33 +44,38 @@ We started with a looong brainstorming session where we got a lot of ideas in th
 
 I made the acorns out of Fimo clay and acrylics:
 
-| ![](/images/acorns-3.jpg) | ![](/images/acorns.jpg) |
-| - | - |
+{{< figrow >}}
+    {{< figure src="/images/acorns-3.jpg" >}}
+    {{< figure src="/images/acorns.jpg" >}}
+{{< /figrow >}}
 
 [](/art/acorns)
 
-And William made the squirrel through origami:
+And William made the squirrel through origami[^origami]:
 
-| ![Following the tutorial by Oriol Esteve [^origami]](/images/acorn-nocorn-squirrel.jpg) | ![](/images/acorn-nocorn-squirrel-noose.jpg) |
-| - | - |
+{{< figrow force-row=true >}}
+    {{< figure src="/images/acorn-nocorn-squirrel.jpg" >}}
+    {{< figure src="/images/acorn-nocorn-squirrel-noose.jpg" >}}
+{{< /figrow >}}
 
 [^origami]: Tutorial and design by Oriol Esteve: https://www.youtube.com/watch?v=tYO3IKW0vZo
 
-Here are some images used as inspiration and reference:
+Here are some images used as inspiration and reference[^inspiration]:
 
-| !["Squirrel house" by shaunstreeper [^house]](images/shaunstreeper-squirrel-house.jpg)| !["Mushroom Basket" by cwasteson [^basket]](images/cwasteson-mushroom-basket.jpg) | !["Acorn" by randihausken [^acorn]](images/randihausken-acorn.jpg) |
-| - | - | - |
+{{< figrow force-row=true >}}
+    {{< figure src="/images/shaunstreeper-squirrel-house.jpg" >}}
+    {{< figure src="/images/cwasteson-mushroom-basket.jpg" >}}
+    {{< figure src="/images/randihausken-acorn.jpg" >}}
+{{< /figrow >}}
 
-[^house]: "[Squirrel house](https://www.flickr.com/photos/141992429@N08/52380699715)" by shaunstreeper, licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
-
-[^basket]: "[Mushroom Basket](https://www.flickr.com/photos/46202322@N03/6016784701)" by cwasteson, licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
-
-[^acorn]: "[Acorn](https://www.flickr.com/photos/46406832@N00/2881856339)" by randihausken, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
+[^inspiration]: "[Squirrel house](https://www.flickr.com/photos/141992429@N08/52380699715)" by shaunstreeper, licensed under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/); "[Mushroom Basket](https://www.flickr.com/photos/46202322@N03/6016784701)" by cwasteson, licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/); "[Acorn](https://www.flickr.com/photos/46406832@N00/2881856339)" by randihausken, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 
 Then we got the UV sensor and servo motor to work with Arduino and Processing, and started on the props. We made the basket out of toilet paper roll with some thread glued on to give it the classic look, and attached the UV sensor in the box underneath to register falling acorns:
 
-| ![](/images/acorn-nocorn-basket.jpg) | ![Arduino with connected servo motor and UV sensor](/images/acorn-nocorn-wiring.jpg) |
-| - | - |
+{{< figrow caption="Arduino with connected servo motor and UV sensor" >}}
+    {{< figure src="/images/acorn-nocorn-basket.jpg" >}}
+    {{< figure src="/images/acorn-nocorn-wiring.jpg" >}}
+{{< /figrow >}}
 
 We made the house out of a cardboard box, with a hole for acorns (a tilted floor and a funnel made out of two sticks made sure they rolled out consistently), and a trapdoor closed by the servo:
 

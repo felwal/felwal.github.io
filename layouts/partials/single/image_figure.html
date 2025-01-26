@@ -1,21 +1,26 @@
-{{ with .image }}
+{{ with resources.Get .src }}
     {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
 
     <figure>
         <a href="{{ .RelPermalink }}">
-            <img class="single-figure" loading="lazy" src="{{ $thumb.RelPermalink }}"
+            <img
+                class="single-figure"
+                loading="lazy"
+                src="{{ $thumb.RelPermalink }}"
 
-            {{ with $.text }}
-                alt="{{ . }}"
-            {{ end }}
+                {{ with $.alt }}
+                    alt="{{ . }}"
+                {{ end }}
 
-            {{ with $.title }}
-                title="{{ . }}"
-            {{ end }} />
+                {{ with $.title }}
+                    title="{{ . }}"
+                {{ end }} />
         </a>
 
-        {{ with $.text }}
-            <figcaption>{{ safe.HTML . }}</figcaption>
+        {{ with $.caption }}
+            <figcaption>
+                <p class="caption">{{ safe.HTML . }}</p>
+            </figcaption>
         {{ end }}
     </figure>
 {{ end }}
