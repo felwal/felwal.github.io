@@ -38,11 +38,34 @@ img.single-banner {
 
 /* figure */
 
-.figrow {
-  display: grid;
+div.figrow-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.figrow {
+  display: none;
   gap: var(--spacing-mini);
   grid-auto-flow: column;
   align-items: end;
+}
+
+table.figrow {
+  border-collapse: collapse;
+}
+
+table.figrow td {
+  padding: 0;
+  padding-right: var(--spacing-mini);
+}
+
+table.figrow td:last-child {
+  padding-right: 0;
+}
+
+table.figrow tr {
+  align-items: end;
+  display: flex;
 }
 
 img.single-figure {
@@ -62,13 +85,14 @@ figure:has(a), figure:has(img) {
   /* doesn't work on iframes */
   width: auto;
   height: 100%;
-  display: block;
+  display: grid; /* for some reason needed to avoid empty space below img */
   align-content: end;
 }
 
-article > figure:has(a), article > figure:has(img) {
-  /* (render hook) for some reason needed to avoid empty space below img */
-  display: grid;
+article > figure:has(figcaption) img {
+  /* (render hook) make sure figcaption bg doesnt cover the image */
+  position: relative;
+  z-index: 1;
 }
 
 figcaption {
@@ -84,11 +108,6 @@ figcaption > p {
   font-style: italic;
   text-align: start;
   margin: 0;
-}
-
-article > figure > figcaption {
-  /* (render hook) make sure its bg doesnt cover the image */
-  z-index: -1;
 }
 
 /* video */

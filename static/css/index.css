@@ -38,9 +38,14 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .figrow-dynamic {
+  div.figrow-dynamic {
+    display: grid;
     grid-template-columns: repeat(1, auto);
     grid-auto-flow: row;
+  }
+
+  table.figrow-dynamic {
+    display: none;
   }
 
   img.item-link-thumb, .item-link-bg {
