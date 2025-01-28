@@ -1,7 +1,3 @@
-a:has(img) {
-  width: fit-content;
-}
-
 /* icon */
 
 p > svg, a > svg {

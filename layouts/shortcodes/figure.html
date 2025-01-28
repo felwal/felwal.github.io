@@ -1,1 +1,7 @@
-{{ partial "single/image_figure" (dict "src" (.Get "src") "title" (.Get "title") "caption" (.Get "caption") "alt" (.Get "alt")) }}
+{{ partial "single/image_figure" (dict
+    "src" (.Get "src")
+    "title" (.Get "title")
+    "caption" (.Get "caption")
+    "alt" (.Get "alt")
+    "outline" (.Get "outline")
+) }}

@@ -62,8 +62,8 @@ Next I had to figure out how the thing would actually work – at this stage I w
 I also did the math to figure out the optimal resistances in order to maximise the output span (to make calibration easier), and came to the conclusion that I needed two types, one twice as resistant as the other (left figure below). I started programming with Arduino and Processing, calculating the values which should correspond to zero, one, two, and three totem-high poles (right figure):
 
 {{< figrow force-row=true caption="Left: Signal output span as a function of the ratio between the resistances, maximum achieved at 2:1. Right: Signal strengths by all possible totem heights." >}}
-    {{< figure src="/images/toteometer-graph-vout-span.png" >}}
-    {{< figure src="/images/toteometer-graph-vout.png" >}}
+    {{< figure src="/images/toteometer-graph-vout-span.png" outline=true >}}
+    {{< figure src="/images/toteometer-graph-vout.png" outline=true >}}
 {{< /figrow >}}
 
 I made the totem parts out of Fimo clay and toilet paper rolls, then added wires, resistors, and aluminum (both on top and bottom) as connectors:

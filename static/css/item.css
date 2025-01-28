@@ -18,7 +18,9 @@ img.item-photo-thumb {
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
+}
 
+img.outlined {
   outline: var(--width-border) solid var(--color-border);
   outline-offset: -0.085rem;
 }
@@ -91,9 +93,6 @@ img.item-post-thumb {
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
-
-  outline: var(--width-border) solid var(--color-border);
-  outline-offset: -0.085rem;
 }
 
 .item-post-bg {

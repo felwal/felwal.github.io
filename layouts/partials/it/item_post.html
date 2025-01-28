@@ -10,7 +10,7 @@
                 {{ $spec := partial "fn/Concat" (slice "500x250 webp Center" $rot) }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item-post-thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item-post-thumb outlined" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
             <div class="item-post-bg">
