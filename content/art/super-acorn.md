@@ -1,6 +1,6 @@
 ---
 title: Super acorn
-published: 2025-01-19
+published: 2025-01-26
 started: 2024-12-22
 completed: 2024-12-25
 clusters: [powerup, acorn]
