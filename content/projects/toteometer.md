@@ -5,7 +5,7 @@ modified: 2024-12-14
 started: 2024-01-26
 completed: 2024-02-02
 links:
-  - source: https://github.com/felwal-edu/dh2400
+  - Github: https://github.com/felwal-edu/dh2400
 tags: [physical-interaction]
 tools: [arduino, cpp, processing]
 series: [dh2400]
@@ -15,93 +15,62 @@ related: [/projects/acorn-nocorn]
 weight: 1
 ---
 
-Design for the course DH2400 Physical interaction design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way". This text is a modified version of a hand-in for the course.
+Prototype for the course DH2400 Physical interaction design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 
-## Concept
+Totem parts are stacked to form totem poles. There are three spots where a totem pole may be raised, corresponding to the primary colours red, green, and blue. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen.
 
-This is the Toteometer, a tangible RGB color mixer inspired by totems. Here's a demonstration video:
+The user explores the (usually pretty unintuitive) RGB and HEX colour space in a tangible and discrete way, which allows for experimentation and building embodied understandings.
 
 {{< youtube 8JREaEHJSmU >}}
 
-Totem parts are stacked to form totem poles. There are three spots on the base where a totem pole may be raised, corresponding to the primary colours red, green, and blue respectively. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen. For example (as seen below), a three-high pole on G gives `#00FF00` (green); one on R and two on G gives `#55AA00` (dark orange); and one on each gives `#555555` (dark grey).
-
-{{< figrow force-row=true caption="<code>#55AA00</code> dark orange; <code>#00FF00</code> green; <code>#555555</code> dark grey" >}}
+{{< figrow force-row=true caption="<code>#5A0</code> dark orange; <code>#0F0</code> green; <code>#555</code> dark grey" >}}
     {{< figure src="/images/toteometer-dark-orange.jpg" >}}
     {{< figure src="/images/toteometer-green.jpg" >}}
     {{< figure src="/images/toteometer-dark-grey.jpg" >}}
 {{< /figrow >}}
 
-For the prototype I used Processing to display the colours, but the initial idea was to make it into a sort of lamp for ambient light, where the totem combination determined the colour of the light. As such it would have been a playful decoration, lamp, and interaction, all in one.
+## Vision
 
-Initially I planned to make nine totem parts, which would allow mapping to all colours in the quaternary palette (white `#FFFFFF` requires three three-high poles):
+I would have liked to make the parts actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_. This idea came from another project I'm working on – and exploring this adjacent design space has facilitated additional inspiration and insights.
 
-![](/images/quaternary-colors.png)
-
-Further, I would have liked to make it actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_.
-
-{{< figrow >}}
-    {{< figure src="/images/totetotem-1.jpg" >}}
+{{< figrow force-row=true caption="Kia'palano totems, Vancouver" >}}
+    {{< figure src="/images/totem-1.jpg" >}}
     {{< figure src="/images/totem-2.jpg" >}}
 {{< /figrow >}}
 
-Time constrained these ideas, however; I had already spent 30 hours on the ten-hour project.
+I would also make the affordances better, with something like the stud/anti-stud of Lego bricks, as can be seen in the sketches further down.
 
-The idea of using totems originated from another project I'm brainstorming at the moment. Working with this adjacent design space has given me some new insights and inspiration – the explorations fuel each other, even though they're not directly linked.
+[Modular figurine utilising the stud/anti-stud technique](/art/solartotem)
+
+I used Processing to display the colours on screen, but the initial idea was to make it into a sort of lamp for ambient light. As such it would have been a playful decoration, lamp, and interaction, all in one. Though I only made three totem parts for the prototype, with nine it would be possible to map all colours in the quaternary palette:
+
+![](/images/quaternary-colors.png)
 
 ## Process
 
-I started out with a brainstorming session and then some background-level ideation over the next couple of days. When I had decided upon an idea, I began sketching the general design:
+I started out with a brainstorming session and some background-level ideation over a couple of days. When I had decided upon an idea, I began sketching the general design:
 
 {{< figrow force-row=true >}}
     {{< figure src="/images/toteometer-sketch-1.jpg" >}}
     {{< figure src="/images/toteometer-sketch-2.jpg" >}}
 {{< /figrow >}}
 
-Next I had to figure out how the thing would actually work – at this stage I wasn't even certain if it could work at all. And so I took to re-learning the basic wiring stuff, realised it _could_ work, made a few failed attempts at sketching _how_ it would work, finally got it right, and then tried it out in Tinkercad.
+Next I had to figure out how the thing would actually work – at this stage I wasn't even certain if it could work at all. And so I took to re-learning basic electronics and wiring, realised it _could_ work, made a few failed attempts at sketching _how_ it would work, finally got it right, and then tried it out in Tinkercad.
 
-I also did the math to figure out the optimal resistances in order to maximise the output span (to make calibration easier), and came to the conclusion that I needed two types, one twice as resistant as the other (left figure below). I started programming with Arduino and Processing, calculating the values which should correspond to zero, one, two, and three totem-high poles (right figure):
+I also did the math to figure out the optimal resistances in order to maximise the output span and make calibration easier:
 
-{{< figrow force-row=true caption="Left: Signal output span as a function of the ratio between the resistances, maximum achieved at 2:1. Right: Signal strengths by all possible totem heights." >}}
+{{< figrow force-row=true caption="Left: Signal output span as a function of the ratio between the resistances. Right: Signal strengths by all possible totem heights." >}}
     {{< figure src="/images/toteometer-graph-vout-span.png" outline=true >}}
     {{< figure src="/images/toteometer-graph-vout.png" outline=true >}}
 {{< /figrow >}}
 
-I made the totem parts out of Fimo clay and toilet paper rolls, then added wires, resistors, and aluminum (both on top and bottom) as connectors:
+I made the totem parts out of Fimo clay and toilet paper rolls, then added wires, resistors, and aluminum as connectors:
 
-{{< figrow caption="Totem parts without and with wiring" >}}
+{{< figrow >}}
     {{< figure src="/images/toteometer-clay.jpg" >}}
     {{< figure src="/images/toteometer-wires.jpg" >}}
 {{< /figrow >}}
 
-Oh, and those optimal resistances I calculated? After I had assembled these, I realised that they should have the higher resistance – _and_ that these, actually, were of the lowest possible resistance. And so the math was for nothing, and I ended up just hard-coding the values resulting from each totem pole hight. Because these took some time to assemble.
-
 And here's the base, made of a cardboard box, with wiring and aluminum:
 
 ![](/images/toteometer-box-open.jpg)
-
-## Theory
-
-In tangible interaction design, we can differentiate between tokens and constraints. In this design, the base contains three constraints: the three places where totems can be put. The totem parts themselves act both as manipulable loose tokens and as constraints for putting another totem part on top. The aluminum plates signify these constraints through the internal standard used in the project. Ideally I would have liked to make the affordances even better, with something like the stud/anti-stud of Lego bricks, as can be seen in the sketches above.
-
-[Figurine utilising the stud/anti-stud technique](/art/solartotem)
-
-Victor [2021] defines four fundamental grips for hand manipulation. When the user interacts with the totem parts, they will likely use the _precision grip_. Victor contrasts our amazing manual capabilities with the paradigm of screens where we mostly just touch and swipe. When exploring the colour space of RGB and HEX on screens, I've noticed that it usually isn't very intuitive. That's a motivation for the Toteometer: making it tangible and discrete will allow the user to experiment and build embodied understandings.
-
-## Discussion
-
-During the critique we came up with a lot of ideas for other possible use cases for the mapping, such as:
-
-- controlling the colour used in digital painting programs,
-- mapping the number of people in different areas in a room to different lighting colours,
-- a game where you combine ingredients to make a dish, or
-- a design where you have to distribute your daily carbon quota between different domains (transport, consumption, etc.)
-
-The totem parts turned out to be somewhat difficult to stack due to irregularities, something which made me a bit dissapointed at first. But someone in the crit realised that this _jiggliness_ needn't be a bad thing: maybe it could be a challenge, a balancing game!
-
-If I made the totem parts into different figures actually looking like totems, it would bring a possible conflict: Would you stack them into the most attractive totem-combination, or in the combination resulting in the colour you want?
-
-Finally, one might consider the use of totems as a form of appropriation, using only the surface-level looks of the shamanic practice, ignoring the underlying cultures and belief systems. On the one hand, I think you should be able to be inspired by ideas in different cultures; on the other, the meta-culture of capitalism seems to systematically soak up all others as mere commodified trends. Anyway, I like totems and wanted to make something with them.
-
-## References
-
-Victor, B. (2021). A brief rant on the future of interaction design.
