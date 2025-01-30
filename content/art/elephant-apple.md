@@ -1,5 +1,6 @@
 ---
 title: Elephant apple
+published: 2024-10-22
 completed: 2023-09-16
 weight: 1
 tags: []

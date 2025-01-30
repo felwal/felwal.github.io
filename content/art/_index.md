@@ -3,4 +3,4 @@ title: Art
 weight: 4
 ---
 
-I also enjoy doing Art. Very professional.
+Oh, and sometimes I sculpt and draw as well.

@@ -3,4 +3,4 @@ title: Projects
 weight: 1
 ---
 
-Here are some projects I've been working on.
+I've always got some project going on, whether an app, game, or something more physical.
