@@ -29,7 +29,7 @@ Our design aims to make salient our very one-way relationship to the rest of nat
 
 ![](/images/acorn-nocorn-win.png)
 
-There is little evidence of absolute decoupling between global economic growth and resource extraction[^decouple], yet the narrative of "green growth" dominates. These things are complex, so we take a simple case: acorns (ecology) are directly transformed into points (economy). The squirrel dies as a direct consequence of the user's actions. Yet we also use reductionist metrics and information-hiding to nudge the user towards our intended behaviour and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
+There is little evidence of absolute decoupling between global economic growth and resource extraction,[^decouple] yet the narrative of "green growth" dominates. These things are complex, so we take a simple case: acorns (ecology) are directly transformed into points (economy). The squirrel dies as a direct consequence of the user's actions. Yet we also use reductionist metrics and information-hiding to nudge the user towards our intended behaviour and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
 
 [^decouple]: Parrique, T., Barth, J., Briens, F., Kerschner, C., Kraus-Polk, A., Kuokkanen, A., & Spangenberg, J. H. (2019). Decoupling debunked: Evidence and arguments against green growth as a sole strategy for sustainability. A study edited by the European Environment Bureau EEB, 3.
 
@@ -48,7 +48,7 @@ I made the acorns out of Fimo clay and acrylics:
 
 [](/art/acorns)
 
-And William made the squirrel through origami[^origami]:
+And William made the squirrel through origami:[^origami]
 
 {{< figrow force-row=true >}}
     {{< figure src="/images/acorn-nocorn-squirrel.jpg" >}}
