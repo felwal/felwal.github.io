@@ -60,8 +60,8 @@ table.figrow td:last-child {
 }
 
 table.figrow tr {
+  display: inline-flex; /* flex sometimes causes irregular height for one col */
   align-items: end;
-  display: flex;
 }
 
 img.single-figure {
