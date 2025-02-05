@@ -102,11 +102,8 @@ a.link-heading:active h3, h2:active a.link-heading {
 /* decoration */
 
 ul.bulletless, ol.bulletless {
+  list-style-type: none;
   padding-left: 0;
-}
-
-.bulletless > li::marker {
-  content: none;
 }
 
 a.icon-link {
