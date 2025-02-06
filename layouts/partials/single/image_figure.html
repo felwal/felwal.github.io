@@ -1,26 +1,12 @@
-{{ with resources.Get .src }}
-    {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
+<img
+    class="single-figure{{ if .outline }} outlined{{ end }}"
+    loading="lazy"
+    src="{{ .src }}"
 
-    <td>
-        <figure>
-            <img
-                class="single-figure{{ if $.outline }} outlined{{ end }}"
-                loading="lazy"
-                src="{{ $thumb.RelPermalink }}"
+    {{ with .alt }}
+        alt="{{ . }}"
+    {{ end }}
 
-                {{ with $.alt }}
-                    alt="{{ . }}"
-                {{ end }}
-
-                {{ with $.title }}
-                    title="{{ . }}"
-                {{ end }} />
-
-            {{ with $.caption }}
-                <figcaption>
-                    <p class="caption">{{ safe.HTML . }}</p>
-                </figcaption>
-            {{ end }}
-        </figure>
-    </td>
-{{ end }}
+    {{ with .title }}
+        title="{{ . }}"
+    {{ end }} />
