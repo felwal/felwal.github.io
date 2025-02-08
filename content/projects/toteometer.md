@@ -9,13 +9,12 @@ links:
 tags: [physical-interaction]
 tools: [arduino, cpp, processing]
 series: [dh2400]
-clusters: [totems]
+clusters: [totems, dh2400]
 images: [toteometer-cover-2.png]
-related: [/projects/acorn-nocorn]
 weight: 1
 ---
 
-Prototype for the course DH2400 Physical interaction design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
+Prototype for the course DH2400 Physical Interaction Design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 
 Totem parts are stacked to form totem poles. There are three spots where a totem pole may be raised, corresponding to the primary colours red, green, and blue. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen.
 
@@ -29,7 +28,7 @@ The user explores the (usually pretty unintuitive) RGB and HEX colour space in a
     {{< figure src="/images/toteometer-dark-grey.jpg" >}}
 {{< /figrow >}}
 
-## Vision
+## Further development
 
 I would have liked to make the parts actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_. This idea came from another project I'm working on – and exploring this adjacent design space has facilitated additional inspiration and insights.
 
