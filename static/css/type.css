@@ -3,7 +3,7 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, .footnotes hr {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 1.25em;
   margin-bottom: 0.65em;
@@ -13,13 +13,13 @@ h1, h2, h3, h4, h5, h6, .footnotes hr {
 
 /* paragraph */
 
-p {
+p, li {
   font-size: var(--font-size-body);
   color: var(--color-text-primary);
 }
 
 .summary {
-  font-weight: normal;
+  font-weight: 500;
   font-size: var(--font-size-summary);
 }
 
@@ -131,6 +131,10 @@ hr::after {
   text-align: start;
   font-size: var(--font-size-h2);
   color: var(--color-text-primary);
+}
+
+.footnotes hr {
+  display: none;
 }
 
 li::marker {
