@@ -47,14 +47,20 @@
                     {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
                 </li>
             {{ end }}
-
-            <!-- team -->
-            {{ with .Params.team }}
-                <li>
-                    Team: {{ collections.Delimit . ", " }}
-                </li>
-            {{ end }}
         </ul>
+
+        <!-- blocks -->
+        {{ with .Params.assignment }}
+            <p><strong>Assignment</strong>. {{ transform.Markdownify . }}</p>
+        {{ end }}
+        <p>
+            {{ with .Params.role }}
+                <strong>Role</strong>. {{ transform.Markdownify . }}
+            {{ end }}
+            {{ with .Params.team }}
+                Team: {{ collections.Delimit . ", " }}.
+            {{ end }}
+        </p>
 
         {{ .Content }}
     </article>

@@ -1,6 +1,7 @@
 ---
 title: Toteometer
 summary: Tangible RGB color mixer, inspired by totems
+assignment: Prototype for the course _DH2400 Physical Interaction Design_. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 modified: 2024-12-14
 started: 2024-01-26
 completed: 2024-02-02
@@ -13,8 +14,6 @@ clusters: [totems, dh2400]
 images: [toteometer-cover-2.png]
 weight: 1
 ---
-
-Prototype for the course DH2400 Physical Interaction Design. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 
 Totem parts are stacked to form totem poles. There are three spots where a totem pole may be raised, corresponding to the primary colours red, green, and blue. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen.
 

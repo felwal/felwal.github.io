@@ -2,6 +2,8 @@
 title: Spotify Librarian
 summary: (Critical) design helping users discover new music using AI
 team: [William Rolf, Alexander Widman, William Zhan]
+role: Lo-fi group design plus hi-fi individual extension.
+assignment: For the course _DM2630 User Experience Design and Evaluation_. The challenge was to "serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals".
 published: 2025-02-08
 modified:
 started: 2024-09-18
@@ -12,9 +14,7 @@ images: [librarian-banner.png]
 clusters: [dm2630, critical]
 ---
 
-Group design plus individual extension for the course DM2630 User Experience Design and Evaluation. The challenge was to "serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals".
-
-The Spotify Librarian is a personalised ape who helps you discover new music. It is inspired by Terry Pratchett's Discworld, and relates to the metaphor of "Your Library".
+The Spotify Librarian is a personalised ape who helps you discover new music. It is inspired by Terry Pratchett's Discworld, and expands upon the metaphor of "Your Library".
 
 {{< youtube 35srVpMqtcM >}}
 

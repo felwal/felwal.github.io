@@ -2,6 +2,8 @@
 title: Acorn, Nocorn
 summary: Critical design involving acorns, basket, and squirrel
 team: [William Zhan]
+assignment: For the course _DH2400 Physical Interaction Design_. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative."
+role: I was responsible for coding and acorns, and except for the squirrel we worked on the rest together.
 modified: 2024-12-14
 started: 2024-02-19
 completed: 2024-03-01
@@ -14,9 +16,7 @@ images: [acorn-nocorn-banner-2.png]
 clusters: [acorn, dh2400, critical]
 ---
 
-Critical design for the course DH2400 Physical Interaction Design. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative." I was responsible for coding and acorns, while William handled the squirrel, and the rest we worked on together.
-
-To get the full experience, I recommend watching the video before reading further:
+If you want the full experience, I recommend watching the video before reading further:
 
 {{< gdrive 18_ujBFawAbg2ZIh1xvTFuaBtliJQCK8B >}}
 
