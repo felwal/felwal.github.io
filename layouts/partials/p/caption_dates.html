@@ -1,4 +1,5 @@
 {{ $format := "2006-01-02" }}
+{{ $formatShort := "Jan 2006" }}
 {{ $dates := slice }}
 
 <!-- duration -->
@@ -8,22 +9,8 @@
 
 <!-- released -->
 {{ with .released }}
-    {{ $d := partial "fn/Concat" (slice "Released " (. | time.Format $format)) }}
+    {{ $d := partial "fn/Concat" (slice "Released " (. | time.Format $formatShort)) }}
     {{ $dates = append $d $dates }}
-{{ end }}
-
-<!-- published -->
-{{ with .published }}
-    {{ $d := partial "fn/Concat" (slice "Published " (. | time.Format $format)) }}
-    {{ $dates = append $d $dates }}
-{{ end }}
-
-<!-- modified -->
-{{ with .modified }}
-    {{ if ne . $.published }}
-        {{ $d := partial "fn/Concat" (slice "Modified " (. | time.Format $format)) }}
-        {{ $dates = append $d $dates }}
-    {{ end }}
 {{ end }}
 
 <!-- taken -->
@@ -42,6 +29,20 @@
         {{ else }}
             {{ fmt.Errorf (partial "fn/Concat" (slice "Caption: unable to find " $path)) }}
         {{ end }}
+    {{ end }}
+{{ end }}
+
+<!-- published -->
+{{ with .published }}
+    {{ $d := partial "fn/Concat" (slice "Published " (. | time.Format $format)) }}
+    {{ $dates = append $d $dates }}
+{{ end }}
+
+<!-- modified -->
+{{ with .modified }}
+    {{ if ne . $.published }}
+        {{ $d := partial "fn/Concat" (slice "Modified " (. | time.Format $format)) }}
+        {{ $dates = append $d $dates }}
     {{ end }}
 {{ end }}
 
