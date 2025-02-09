@@ -38,6 +38,8 @@ Upcoming departures, filtered by transport mode:
     {{< figure src="/images/avganar-departures-bus.png" >}}
 {{< /figrow >}}
 
+![](/images/avganar-irl.jpg)
+
 Deviations and error handling:
 
 {{< figrow force-row=true >}}
@@ -76,6 +78,11 @@ A design challenge I encountered was indicating loading status without overridin
 ### Transport mode selection
 
 At one point the API was updated to require requesting one mode at a time. As such I had to (within the migration span of one month) restructure and design an interaction for this:
+
+{{< figrow force-row=true >}}
+    {{< figure src="/images/avganar-sketch-1.jpg" >}}
+    {{< figure src="/images/avganar-sketch-2.jpg" >}}
+{{< /figrow >}}
 
 ![Exploring different ways to implement the mode menu](/images/avganar-figma.png)
 

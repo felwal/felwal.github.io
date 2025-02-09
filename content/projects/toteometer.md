@@ -29,7 +29,7 @@ The user explores the (usually pretty unintuitive) RGB and HEX colour space in a
 
 ## Further development
 
-I would have liked to make the parts actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_. This idea came from another project I'm working on – and exploring this adjacent design space has facilitated additional inspiration and insights.
+I would have liked to make the parts actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_. This idea came from another project I'm working on – and exploring this adjacent design space has facilitated additional inspiration.
 
 {{< figrow force-row=true caption="Kia'palano totems, Vancouver" >}}
     {{< figure src="/images/totem-1.jpg" >}}
@@ -57,7 +57,7 @@ Next I had to figure out how the thing would actually work – at this stage I w
 
 I also did the math to figure out the optimal resistances in order to maximise the output span and make calibration easier:
 
-{{< figrow force-row=true caption="Left: Signal output span as a function of the ratio between the resistances. Right: Signal strengths by all possible totem heights." >}}
+{{< figrow force-row=true caption="**Left**: Signal output span as a function of the ratio between the resistances. **Right**: Signal strengths by all possible totem heights." >}}
     {{< figure src="/images/toteometer-graph-vout-span.png" outline=true >}}
     {{< figure src="/images/toteometer-graph-vout.png" outline=true >}}
 {{< /figrow >}}

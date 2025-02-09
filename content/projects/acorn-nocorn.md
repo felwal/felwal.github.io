@@ -20,17 +20,21 @@ If you want the full experience, I recommend watching the video before reading f
 
 {{< gdrive 18_ujBFawAbg2ZIh1xvTFuaBtliJQCK8B >}}
 
-The design consists of a birdhouse-like house in which it is implied a squirrel lives, with an acorn visible at the entrance; a basket in which the acorns can be put; and a screen displaying the amount of collected acorns. When all three acorns are collected, the floor opens and out falls the squirrel, committing suicide.
+The design consists of a birdhouse-like house where it is implied a squirrel lives, with an acorn visible at the entrance; a basket in which the acorns can be put; and a screen displaying the number of collected acorns. When all three acorns are collected, the floor opens and out falls the squirrel, committing suicide.
+
+[It is based on the popular myth.]
 
 ## Conceptual meaning
 
-Critical design is a method for challenging assumptions and norms, raising awareness of the concequences of our actions, and sparking reflection and discussion.
+Critical design is a method for challenging assumptions and norms, raising awareness, and sparking reflection.
 
-Our design aims to make salient our very one-way relationship to the rest of nature as one of primarily _taking_. Stealing acorns from the squirrel is framed as _good_ – for you, for the economy, for humanity. That's why we display the "You win!" message in the end, contrasting what is usually deemed universally good with the fact that this also means that somebody has to lose.
+Our design aims to make salient our very one-way relationship to the rest of nature as one of primarily _taking_. Stealing acorns from the squirrel is framed as _good_ – that's why we display the "You win!" message in the end, contrasting with the fact that this also means that somebody has to lose.
 
 ![](/images/acorn-nocorn-win.png)
 
-There is little evidence of absolute decoupling between global economic growth and resource extraction,[^decouple] yet the narrative of "green growth" dominates. These things are complex, so we take a simple case: acorns (ecology) are directly transformed into points (economy). The squirrel dies as a direct consequence of the user's actions. Yet we also use reductionist metrics and information-hiding to nudge the user towards our intended behaviour and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
+There is little evidence of absolute decoupling between global economic growth and resource extraction,[^decouple] yet the narrative of "green growth" dominates. These things are complex, so we take a simple case: acorns (ecology) are directly transformed into points (economy). The squirrel dies as a direct consequence of the user's actions.
+
+Yet we also use reductionist metrics and information-hiding to nudge the user towards our intended behaviour and to make the design more impactful: The counter incentivises stealing acorns (you get more of what you quantify), and the consequences are made clear only _after_ the fact.
 
 ## Process
 
@@ -56,7 +60,7 @@ And William made the squirrel through origami:[^origami]
 
 Then we got the UV sensor and servo motor to work with Arduino and Processing, and started on the props. We made the basket out of toilet paper roll with some thread glued on to give it the classic look, and attached the UV sensor in the box underneath to register falling acorns:
 
-{{< figrow caption="Right: Arduino with connected servo motor and UV sensor" >}}
+{{< figrow caption="**Right**: Arduino with connected servo motor and UV sensor" >}}
     {{< figure src="/images/acorn-nocorn-basket.jpg" >}}
     {{< figure src="/images/acorn-nocorn-wiring.jpg" >}}
 {{< /figrow >}}
@@ -64,8 +68,6 @@ Then we got the UV sensor and servo motor to work with Arduino and Processing, a
 We made the house out of a cardboard box, with a hole for acorns (a tilted floor and a funnel made out of two sticks made sure they rolled out consistently), and a trapdoor closed by the servo:
 
 ![The final layout, from the back. The UV sensor is under the basket, hidden within the box. The servo motor keeps the house floor closed and the squirrel hidden.](/images/acorn-nocorn-back.jpg)
-
-For audio effects we used the _Super Mario_ coin sound for feedback on collecting the acorns. We also used the rabbit death sound from _Minecraft_.
 
 ## Notes
 
