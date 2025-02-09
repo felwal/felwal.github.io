@@ -22,7 +22,7 @@
 
     {{ with .Get "caption" }}
         <figcaption>
-            <p class="caption">{{ safe.HTML . }}</p>
+            <p class="caption">{{ transform.Markdownify . }}</p>
         </figcaption>
     {{ end }}
 </div>

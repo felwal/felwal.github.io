@@ -31,12 +31,12 @@
                 {{ end }}
             {{ end }}
 
-            <!-- override with custom description -->
             {{ with .text }}
-                <p>{{ . }}</p>
+                <!-- override with custom description -->
+                <p>{{ safe.HTML . }}</p>
             {{ else }}
                 {{ with .link.Params.summary }}
-                    <p>{{ . }}</p>
+                    <p>{{ safe.HTML . }}</p>
                 {{ end }}
             {{ end }}
 

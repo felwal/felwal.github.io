@@ -22,7 +22,7 @@ The user explores the (usually pretty unintuitive) RGB and HEX colour space in a
 
 {{< youtube 8JREaEHJSmU >}}
 
-{{< figrow force-row=true caption="<code>#5A0</code> dark orange; <code>#0F0</code> green; <code>#555</code> dark grey" >}}
+{{< figrow force-row=true caption="`#5A0` dark orange; `#0F0` green; `#555` dark grey" >}}
     {{< figure src="/images/toteometer-dark-orange.jpg" >}}
     {{< figure src="/images/toteometer-green.jpg" >}}
     {{< figure src="/images/toteometer-dark-grey.jpg" >}}

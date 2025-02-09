@@ -28,7 +28,7 @@
             {{ end }}
 
             {{ with .Params.summary }}
-                <p>{{ . }}</p>
+                <p>{{ transform.Markdownify . }}</p>
             {{ end }}
         </div>
 

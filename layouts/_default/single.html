@@ -9,7 +9,7 @@
         {{ end }}
 
         {{ with .Params.summary }}
-            <p class="summary">{{ . }}</p>
+            <p class="summary">{{ transform.Markdownify . }}</p>
         {{ end }}
 
         <!-- banner(s) -->
