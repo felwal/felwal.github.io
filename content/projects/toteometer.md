@@ -2,7 +2,8 @@
 title: Toteometer
 summary: Tangible RGB color mixer, inspired by totems
 assignment: Prototype for the course _DH2400 Physical Interaction Design_. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
-modified: 2024-12-14
+published: 2024-11-18
+modified: 2025-02-09
 started: 2024-01-26
 completed: 2024-02-02
 links:

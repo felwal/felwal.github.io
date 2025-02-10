@@ -5,7 +5,7 @@ team: [William Rolf, Alexander Widman, William Zhan]
 role: Lo-fi group design plus hi-fi individual extension.
 assignment: For the course _DM2630 User Experience Design and Evaluation_. The challenge was to "serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals".
 published: 2025-02-08
-modified:
+modified: 2025-02-09
 started: 2024-09-18
 completed: 2024-12-20
 tags: [concept, critical-design, ai]

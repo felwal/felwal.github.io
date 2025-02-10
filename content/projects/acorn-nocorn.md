@@ -4,7 +4,8 @@ summary: Critical design involving acorns, basket, and squirrel
 team: [William Zhan]
 assignment: For the course _DH2400 Physical Interaction Design_. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative."
 role: I was responsible for coding and acorns, and except for the squirrel we worked on the rest together.
-modified: 2024-12-14
+published: 2024-11-18
+modified: 2025-02-09
 started: 2024-02-19
 completed: 2024-03-01
 links:
