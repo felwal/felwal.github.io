@@ -8,6 +8,26 @@ body {
   margin-right: auto;
 }
 
+/* single */
+
+.single-info-grid {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-diminutive);
+}
+
+.single-info-block {
+  border-radius: var(--corner-radius-small);
+  padding-top: var(--spacing-diminutive);
+  padding-bottom: var(--spacing-diminutive);
+  padding-left: var(--spacing-tiny);
+  padding-right: var(--spacing-tiny);
+}
+
+.single-info-block > * {
+  margin: 0;
+}
+
 /* header */
 
 nav > span {

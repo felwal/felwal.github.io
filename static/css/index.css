@@ -57,7 +57,9 @@
     display: none;
   }
 
-  #header-menu {
+  .single-info-grid {
+    flex-direction: column;
+  }
 }
 
 /* column full width */

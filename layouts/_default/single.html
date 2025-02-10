@@ -44,23 +44,28 @@
             <!-- taxonomies -->
             {{ with .Params.tools }}
                 <li>
-                    {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" . ) }}
+                    {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" .) }}
                 </li>
             {{ end }}
         </ul>
 
         <!-- blocks -->
-        {{ with .Params.assignment }}
-            <p><strong>Assignment</strong>. {{ transform.Markdownify . }}</p>
+        {{ if or .Params.assignment .Params.team }}
+            <div class="single-info-grid">
+                {{ with .Params.assignment }}
+                    {{ partial "single/info-block" (dict "title" "Assignment" "text" .) }}
+                {{ end }}
+
+                {{ with .Params.role }}
+                    {{ $text := . }}
+                    {{ with $.Params.team }}
+                        {{ $text = partial "fn/Concat" (slice $text " **Team**: " (collections.Delimit . ", ")) }}
+                    {{ end }}
+
+                    {{ partial "single/info-block" (dict "title" "Role" "text" $text) }}
+                {{ end }}
+            </div>
         {{ end }}
-        <p>
-            {{ with .Params.role }}
-                <strong>Role</strong>. {{ transform.Markdownify . }}
-            {{ end }}
-            {{ with .Params.team }}
-                Team: {{ collections.Delimit . ", " }}.
-            {{ end }}
-        </p>
 
         {{ .Content }}
     </article>
