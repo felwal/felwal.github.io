@@ -3,7 +3,7 @@ title: Toteometer
 summary: Tangible RGB color mixer, inspired by totems
 assignment: Prototype for the course _DH2400 Physical Interaction Design_. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 published: 2024-11-18
-modified: 2025-02-09
+modified: 2025-02-10
 started: 2024-01-26
 completed: 2024-02-02
 links:
@@ -28,9 +28,9 @@ The user explores the (usually pretty unintuitive) RGB and HEX colour space in a
     {{< figure src="/images/toteometer-dark-grey.jpg" >}}
 {{< /figrow >}}
 
-## Further development
+## Vision
 
-I would have liked to make the parts actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media such as _Hearthstone_ and _Donkey Kong Country Returns_. This idea came from another project I'm working on – and exploring this adjacent design space has facilitated additional inspiration.
+I would have liked to make the parts actually resemble totems, with the classic faces and wings and horns etc. from the original shamanic practices and popular media. This idea came from another project I'm working on – and exploring this adjacent design space has facilitated additional inspiration.
 
 {{< figrow force-row=true caption="Kia'palano totems, Vancouver" >}}
     {{< figure src="/images/totem-1.jpg" >}}

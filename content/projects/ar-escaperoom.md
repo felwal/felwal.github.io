@@ -3,9 +3,9 @@ title: AR Escape Room
 summary: Mobile AR game where the player solves puzzles to escape
 team: [Prijun Koirala, Luca Lancella, William Zhan]
 assignment: For the course _DT2140 Multimodal Interactions and Interfaces_.
-role: I made the labyrinth and racing puzzles, helped out with the locks, managed puzzle integration and Git coordination, and performed the qualitative analysis.
+role: Labyrinth, racing, and lock puzzles. Git coordination and puzzle integration. Qualitative analysis.
 published: 2025-02-09
-modified:
+modified: 2025-02-10
 started: 2023-11-23
 completed: 2024-01-10
 tags: [xr]

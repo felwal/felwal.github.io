@@ -2,7 +2,7 @@
 title: Avgånär
 summary: Public transport widget for Garmin watches
 published: 2025-01-26
-modified: 2025-02-09
+modified: 2025-02-10
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26
@@ -84,7 +84,7 @@ At one point the API was updated to require requesting one mode at a time. As su
     {{< figure src="/images/avganar-sketch-2.jpg" >}}
 {{< /figrow >}}
 
-![Exploring different ways to implement the mode menu](/images/avganar-figma.png)
+![Exploring different ways to implement mode selection](/images/avganar-figma.png)
 
 {{< figrow force-row=true caption="**Right**: before the menu, you would cycle through modes linearly" >}}
     {{< figure src="/images/avganar-modes.png" >}}

@@ -3,9 +3,9 @@ title: Acorn, Nocorn
 summary: Critical design involving acorns, basket, and squirrel
 team: [William Zhan]
 assignment: For the course _DH2400 Physical Interaction Design_. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative."
-role: I was responsible for coding and acorns, and except for the squirrel we worked on the rest together.
+role: Coding and acorns. Except for the squirrel we worked on the rest together.
 published: 2024-11-18
-modified: 2025-02-09
+modified: 2025-02-10
 started: 2024-02-19
 completed: 2024-03-01
 links:
@@ -22,8 +22,6 @@ If you want the full experience, I recommend watching the video before reading f
 {{< gdrive 18_ujBFawAbg2ZIh1xvTFuaBtliJQCK8B >}}
 
 The design consists of a birdhouse-like house where it is implied a squirrel lives, with an acorn visible at the entrance; a basket in which the acorns can be put; and a screen displaying the number of collected acorns. When all three acorns are collected, the floor opens and out falls the squirrel, committing suicide.
-
-[It is based on the popular myth.]
 
 ## Conceptual meaning
 
