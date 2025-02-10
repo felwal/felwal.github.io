@@ -15,7 +15,7 @@
         {{ else }}
             <div class="item-link-bg">
                 {{ with $.link.Params.icon }}
-                    {{ partial (partial "fn/Concat" (slice "ic/" . ".svg")) }}
+                    {{ partial "icon" . }}
                 {{ end }}
             </div>
         {{ end }}

@@ -1,5 +1,6 @@
 {{ $class := "link-tab" }}
 
+<!-- highlight selected tab -->
 {{ if or (eq page.RelPermalink "/") (eq .link "/") }}
     {{ if eq .link page.RelPermalink }}
         {{ $class = "link-tab link-tab-selected" }}
@@ -8,4 +9,9 @@
     {{ $class = "link-tab link-tab-selected" }}
 {{ end }}
 
-<a href="{{ .link }}" class="{{ $class }}">{{ .text }}</a>
+<a href="{{ .link }}" class="{{ $class }}">
+    {{ with .icon }}
+        {{ partial "icon" . }}
+    {{ end }}
+    {{ .text }}
+</a>

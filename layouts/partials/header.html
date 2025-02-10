@@ -12,7 +12,7 @@
 
             {{ range .Site.Sections }}
                 {{ if .RegularPages }}
-                    {{ partial "header_tab" (dict "link" .RelPermalink "text" .LinkTitle) }}
+                    {{ partial "header_tab" (dict "link" .RelPermalink "text" .LinkTitle "icon" .Params.icon ) }}
                 {{ end }}
             {{ end }}
 
@@ -26,7 +26,7 @@
             {{ end }}
             -->
 
-            {{ partial "header_tab" (dict "link" "/about/" "text" "About") }}
+            {{ partial "header_tab" (dict "link" "/about/" "text" "About" "icon" "user-round") }}
         </nav>
     </div>
 </header>
