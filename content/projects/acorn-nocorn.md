@@ -1,6 +1,6 @@
 ---
 title: Acorn, Nocorn
-summary: Critical design involving acorns, basket, and squirrel
+summary: Design examining the human–nature relationship
 team: [William Zhan]
 assignment: For the course _DH2400 Physical Interaction Design_. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative."
 role: Coding and acorns. Except for the squirrel we worked on the rest together.
@@ -13,6 +13,7 @@ links:
 tags: [physical-interaction, critical-design]
 tools: [arduino, cpp, processing]
 series: [dh2400]
+keytag: Critical
 images: [acorn-nocorn-banner-2.png]
 clusters: [acorn, dh2400, critical]
 ---

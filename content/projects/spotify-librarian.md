@@ -1,6 +1,6 @@
 ---
 title: Spotify Librarian
-summary: (Critical) redesign for AI-based music discovery
+summary: Redesign for AI-based music discovery
 team: [William Rolf, Alexander Widman, William Zhan]
 role: Lo-fi group design plus hi-fi individual extension.
 assignment: For the course _DM2630 User Experience Design and Evaluation_. The challenge was to "serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals".
@@ -10,6 +10,7 @@ started: 2024-09-18
 completed: 2024-12-20
 tags: [concept, critical-design, ai]
 series: [dm2630]
+keytag: UX
 images: [librarian-banner.png]
 clusters: [dm2630, critical]
 ---

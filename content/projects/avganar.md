@@ -12,6 +12,7 @@ links:
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
 tags: [mobility]
 tools: [garmin, monkeyc]
+keytag: Product
 images: [avganar-banner.png]
 related: [projects/toteometer]
 ---

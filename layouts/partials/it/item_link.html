@@ -36,7 +36,12 @@
                 <p>{{ safe.HTML . }}</p>
             {{ else }}
                 {{ with .link.Params.summary }}
-                    <p>{{ safe.HTML . }}</p>
+                    <p>
+                        {{ with $.link.Params.keytag }}
+                            <span class="keytag caption">{{ . }}</span>
+                        {{ end }}
+                        {{ safe.HTML . }}
+                    </p>
                 {{ end }}
             {{ end }}
 

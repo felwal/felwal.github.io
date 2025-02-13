@@ -28,7 +28,12 @@
             {{ end }}
 
             {{ with .Params.summary }}
-                <p>{{ transform.Markdownify . }}</p>
+                <p>
+                    {{ with $.Params.keytag }}
+                        <span class="keytag caption">{{ . }}</span>
+                    {{ end }}
+                    {{ transform.Markdownify . }}
+                </p>
             {{ end }}
         </div>
 
