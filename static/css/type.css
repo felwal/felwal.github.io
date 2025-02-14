@@ -66,6 +66,11 @@ code {
   font-size: calc(0.8 * var(--font-size-body));
 }
 
+figcaption > p > code {
+  background-color: initial;
+  outline: var(--width-border) solid var(--color-border);
+}
+
 blockquote {
   font-style: italic;
 }
