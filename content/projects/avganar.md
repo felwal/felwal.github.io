@@ -19,7 +19,7 @@ related: [projects/toteometer]
 
 Avgånär is a Garmin watch widget for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL) in Sweden, while a second version covers the entire Sweden.
 
-It's the first project I've released officially. After failing to finalise several Android apps, I wanted a smaller project and to focus on MVP principles. I started from a personal problem and employed autobiographical design, along with formative feedback from users.
+It's the first personal project I've released officially. After failing to finalise several Android apps, I wanted a smaller project and to focus on MVP principles. I started from a personal problem and employed autobiographical design, along with formative feedback from users.
 
 ## Overview
 
@@ -79,11 +79,6 @@ A design challenge I encountered was indicating loading status without overridin
 ### Transport mode selection
 
 At one point the API was updated to require requesting one mode at a time. As such I had to (within the migration span of one month) restructure and design an interaction for this:
-
-{{< figrow force-row=true >}}
-    {{< figure src="/images/avganar-sketch-1.jpg" >}}
-    {{< figure src="/images/avganar-sketch-2.jpg" >}}
-{{< /figrow >}}
 
 ![Exploring different ways to implement mode selection](/images/avganar-figma.png)
 

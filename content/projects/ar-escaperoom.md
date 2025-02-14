@@ -3,7 +3,7 @@ title: Escape Room
 summary: Mobile multimodal puzzle-solving
 team: [Prijun Koirala, Luca Lancella, William Zhan]
 assignment: For the course _DT2140 Multimodal Interactions and Interfaces_.
-role: Labyrinth, racing, and lock puzzles. Git coordination and puzzle integration. Qualitative analysis.
+role: Development of labyrinth, racing, and lock puzzles. Puzzle integration and Git coordination. Qualitative analysis.
 published: 2025-02-09
 modified: 2025-02-10
 started: 2023-11-23
@@ -78,8 +78,10 @@ And insights extraction:
 
 ### Findings
 
-Here are our main insights:
+Our main insights include:
 
-- _multitasking modalities was difficult_: e.g. handling both a tangible and touchscreen
+- _multitasking input modalities was difficult_ – e.g. handling both a tangible and touchscreen
+
 - _tangibles had unclear affordances_ – but felt natural, immersive, and engaging once learnt
-- _puzzle order affected learning_ of how to interact with untraditional modalities
+
+- _puzzle order affected learning_ of how to interact with untraditional modalities. Testers tried to interact with AR buttons like tangibles or vice versa, depending on which modality they used previous.

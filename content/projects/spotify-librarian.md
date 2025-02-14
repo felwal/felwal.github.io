@@ -25,9 +25,9 @@ One problem we tried to tackle is users becoming disengaged over time, either du
 
 ### Ape Intelligence
 
-I am a bit critical of the challenge starting with a specific technology (AI) rather than from an actual problem. I have tried to use the tactic of "designing affordances subversively"[^resistance] to blend in some critical ideas, going against the financial interests of using as much AI as possible for everything.
+I am a bit critical of the challenge starting with a specific technology (AI) rather than from an actual problem – because AI has costs.
 
-Because AI has costs. The design tries to challenge the cornucopian paradigm by being ephemeral, making some of the material costs visible, and possibly making the user reconsider if they really need AI-recommendations right now.[^cornucopia] I also think there is something we lose when being served everything we want all the time, automatic and perfectly tailored. The Librarian has a life of their own and doesn't only exist to please the user.
+The design tries to challenge the cornucopian paradigm by being ephemeral, making some of the material costs visible, and possibly making the user reconsider if they really need AI-recommendations right now.[^cornucopia] I also think there is something we lose when being served everything we want all the time, automatic and perfectly tailored. The Librarian has a life of their own and doesn't only exist to please the user.
 
 ### Music bananas
 
@@ -107,7 +107,7 @@ We started out with mapping how users currently discover new music, and then con
 
 ![](/images/librarian-ideation.png)
 
-After settling on and fleshing out an idea, we made a quick low-fi prototype:
+After settling on and fleshing out an idea, we made a quick low-fi prototype in Miro:
 
 {{< figrow force-row=true >}}
     {{< figure src="/images/librarian-process-closed.png" >}}
@@ -115,7 +115,7 @@ After settling on and fleshing out an idea, we made a quick low-fi prototype:
     {{< figure src="/images/librarian-process-playlist.png" >}}
 {{< /figrow >}}
 
-Individual sketch of feeding mechanism:
+I wanted the feeding to be more unique and playful than a simple button. Here's an early exploration:
 
 ![](/images/librarian-sketch.jpg)
 
