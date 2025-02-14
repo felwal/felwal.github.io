@@ -14,7 +14,7 @@ tags: [mobility]
 tools: [garmin, monkeyc]
 keytag: Product
 images: [avganar-banner.png]
-related: [projects/toteometer]
+related: []
 ---
 
 Avgånär is a Garmin watch widget for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL) in Sweden, while a second version covers the entire Sweden.
