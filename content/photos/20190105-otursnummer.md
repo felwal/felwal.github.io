@@ -1,7 +1,8 @@
 ---
 title: Otursnummer
 published: 2019-01-13
-images: [20190105-otursnummer.jpg, 20190105-katastrof.jpg]
+weight: 3
+images: [20190105-otursnummer.jpg]
 clusters: [otursnummer]
 ---
 
