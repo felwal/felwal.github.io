@@ -16,6 +16,7 @@
 
   --corner-radius-small: 0.25rem;
   --corner-radius-large: 0.5rem;
+  --corner-radius-larger: 0.75rem;
 
   --spacing-mini: 0.25rem; /* 2dp */
   --spacing-diminutive: 0.5rem; /* 4dp */
