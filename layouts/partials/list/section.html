@@ -1,4 +1,10 @@
-{{ with .RegularPagesRecursive.Limit 3 }}
+{{ $limit := 3 }}
+
+{{ with .Params.limit }}
+    {{ $limit = . }}
+{{ end }}
+
+{{ with .RegularPagesRecursive.Limit $limit }}
 
     <section>
         <h2><a class="link-heading" href="{{ $.RelPermalink }}">{{ $.LinkTitle }}</a></h3>
