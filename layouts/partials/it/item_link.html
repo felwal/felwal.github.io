@@ -1,6 +1,6 @@
 <article class="item-link">
-    <a href="{{ .link.RelPermalink }}" class="link-heading item-link-container">
-        {{ with .link.Params.images }}
+    <a href="{{ .page.RelPermalink }}" class="link-heading item-link-container">
+        {{ with .page.Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
             {{ $image := resources.Get $path }}
@@ -14,7 +14,7 @@
             {{ end }}
         {{ else }}
             <div class="item-link-bg">
-                {{ with $.link.Params.icon }}
+                {{ with $.page.Params.icon }}
                     {{ partial "icon" . }}
                 {{ end }}
             </div>
@@ -24,7 +24,7 @@
             {{ with .title }}
                 <h3>{{ . }}</h3>
             {{ else }}
-                {{ with .link.LinkTitle }}
+                {{ with .page.LinkTitle }}
                     <h3>{{ . }}</h3>
                 {{ else }}
                     <h3>Unnamed</h3>
@@ -35,9 +35,9 @@
                 <!-- override with custom description -->
                 <p>{{ safe.HTML . }}</p>
             {{ else }}
-                {{ with .link.Params.summary }}
+                {{ with .page.Params.summary }}
                     <p>
-                        {{ with $.link.Params.keytag }}
+                        {{ with $.page.Params.keytag }}
                             <span class="keytag caption">{{ . }}</span>
                         {{ end }}
                         {{ safe.HTML . }}
@@ -46,7 +46,7 @@
             {{ end }}
 
             <!--
-            {{ with .link.Params.date }}
+            {{ with .page.Params.date }}
                 <p class="caption">
                     <time>{{ . | time.Format "Jan 2 2006" }}</time>
                 </p>

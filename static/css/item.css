@@ -8,6 +8,14 @@
   gap: var(--spacing-diminutive);
 }
 
+.grid-list {
+  list-style-type: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--spacing-diminutive);
+}
+
 /* photo */
 
 img.item-photo-thumb {

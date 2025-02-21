@@ -86,6 +86,19 @@
         {{ $relatedPages = append $pages $relatedPages }}
     {{ end }}
 
+    <!-- next -->
+    {{ if eq .Section "projects" }}
+        {{ with .PrevInSection }}
+            <section class="column">
+                <h2>Next</h2>
+
+                {{ partial "it/item_link" (dict "page" .) }}
+            </section>
+
+            {{ $relatedPages = where $relatedPages ".RelPermalink" "ne" .RelPermalink }}
+        {{ end }}
+    {{ end }}
+
     {{ with $relatedPages }}
         <section class="column">
             <h2>Related</h2>
