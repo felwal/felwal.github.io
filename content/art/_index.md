@@ -1,6 +1,6 @@
 ---
 title: Art
-weight: 4
+weight: 3
 icon: brush
 ---
 

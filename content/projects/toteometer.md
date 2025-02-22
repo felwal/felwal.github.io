@@ -3,7 +3,7 @@ title: Toteometer
 summary: RGB color mixer, inspired by totems
 assignment: Prototype for the course _DH2400 Physical Interaction Design_. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 published: 2024-11-18
-modified: 2025-02-10
+modified: 2025-02-22
 started: 2024-01-26
 completed: 2024-02-02
 links:
@@ -70,7 +70,3 @@ I made the totem parts out of Fimo clay and toilet paper rolls, then added wires
     {{< figure src="/images/toteometer-clay.jpg" >}}
     {{< figure src="/images/toteometer-wires.jpg" >}}
 {{< /figrow >}}
-
-And here's the base, made of a cardboard box, with wiring and aluminum:
-
-![](/images/toteometer-box-open.jpg)

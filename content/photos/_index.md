@@ -1,6 +1,6 @@
 ---
 title: Photos
-weight: 3
+weight: 4
 icon: camera
 ---
 

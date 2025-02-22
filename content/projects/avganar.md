@@ -2,11 +2,11 @@
 title: Avgånär
 summary: Public transport widget for Garmin watches
 published: 2025-01-26
-modified: 2025-02-10
+modified: 2025-02-22
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26
-weight: 1
+weight: 2
 links:
   - Github: https://github.com/felwal/avganar
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
@@ -62,21 +62,9 @@ Trafiklab also provides APIs for the entire Sweden, and I decided to make anothe
 
 ## Process
 
-Developing for the Garmin ecosystem is ... not the best. Monkey C is like a combination of the worst parts of Java and Python. Layouts are calculated and drawn programatically. And developing for small round screens and limited memory was a challenge in itself.
+The Garmin ecosystem is very unstandardised, with different watches having different layouts and styles. I settled on making it standard-compatible with one version of the OS, while at the same time keeping a unique flair.
 
-The ecosystem is also very unstandardised, different watches having different layouts and styles. I settled on making it standard-compatible with one version of the OS, at the same time keeping a unique flair.
-
-### Loading ...
-
-A design challenge I encountered was indicating loading status without overriding the previous response with a "loading" message. Early user feedback made it clear that it was necessary to show in some way – but the standard "waiting for GPS" view didn't fit with my coloured panels. So I came up with this progress bar, integrated with the panels, indicating stage (GPS or API):
-
-{{< figrow force-row=true >}}
-    {{< figure src="/images/avganar-swe-stops-loading.png" >}}
-    {{< figure src="/images/avganar-departures-loading.png" >}}
-    {{< figure src="/images/avganar-departures-no-connection.png" >}}
-{{< /figrow >}}
-
-### Transport mode selection
+### Mode selection
 
 At one point the API was updated to require requesting one mode at a time. As such I had to (within the migration span of one month) restructure and design an interaction for this:
 

@@ -5,7 +5,7 @@ team: [William Rolf, Alexander Widman, William Zhan]
 role: Lo-fi group design plus hi-fi individual extension.
 assignment: For the course _DM2630 User Experience Design and Evaluation_. The challenge was to "serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals".
 published: 2025-02-08
-modified: 2025-02-10
+modified: 2025-02-22
 started: 2024-09-18
 completed: 2024-12-20
 tags: [concept, critical-design, ai]
@@ -19,15 +19,9 @@ The Spotify Librarian is a personalised ape who helps you discover new music. It
 
 {{< youtube 35srVpMqtcM >}}
 
-### Problem
-
-One problem we tried to tackle is users becoming disengaged over time, either due to repetitive recommendations or a lack of motivation to explore new music. The design also aims to make the Spotify experience a bit more personal.
-
 ### Ape Intelligence
 
-I am a bit critical of the challenge starting with a specific technology (AI) rather than from an actual problem – because AI has costs.
-
-The design tries to challenge the cornucopian paradigm by being ephemeral, making some of the material costs visible, and possibly making the user reconsider if they really need AI-recommendations right now.[^cornucopia] I also think there is something we lose when being served everything we want all the time, automatic and perfectly tailored. The Librarian has a life of their own and doesn't only exist to please the user.
+AI has costs. The design tries to challenge the cornucopian paradigm by being ephemeral, making some of the material costs visible, and possibly making the user reconsider if they really need AI-recommendations right now.[^cornucopia] I also think there is something we lose when being served everything we want all the time, automatic and perfectly tailored. The Librarian has a life of their own and doesn't only exist to please the user.
 
 ### Music bananas
 
@@ -65,13 +59,13 @@ The more hungry the Librarian is, the less precise their recommendations become.
 
 ### Shadow librarian
 
-If the user instead feeds the Librarian too much, the recommendations instead flip to the _opposite_ of their learned taste. Here I use it to "punish" the user for spending too much electricity, yet it could at the same time help them discover music they never would have otherwise.
+If the user instead feeds the Librarian too much, the recommendations instead flip to the _opposite_ of their learned taste. Here I use it to "punish" the user for spending too much electricity, water, etc. – yet it could at the same time help them discover music they never would have otherwise.
 
 This is a playful take on the _Waluigi effect_: in teaching an AI model "good behavior", it also implicitly learns "bad behaviour" – and thus it becomes possible to draw out this disagreeable shadow version.
 
 ![](/images/librarian-shadow.jpg)
 
-The transformation can be seen as a "monster", a result of modernist over-optimism about technology, right now especially AI.[^monster] Shadow or random recommendations might also be considered a kind of breakdown, putting the user out of auto-pilot mode.[^experience] Usability is only one of many values we can design for, and here I focussed more on creating playful aesthetic experiences.
+Shadow or random recommendations might be considered a kind of breakdown, putting the user out of auto-pilot mode.[^experience] Usability is only one of many values we can design for, and here I focussed more on creating playful aesthetic experiences.
 
 ### Your Librarian found a friend!
 
@@ -80,25 +74,6 @@ Sometimes the Librarian ventures out into cyberspace and finds friends with simi
 {{< figrow force-row=true >}}
     {{< figure src="/images/librarian-friend.png" >}}
     {{< figure src="/images/librarian-friend-v2.png" >}}
-{{< /figrow >}}
-
-### Hold the door!
-
-During the crit we got the feedback that it would be nice to be able to turn the Librarian off, in case the user just wants to listen to their own music. Here I implemented that with the door icon: close it to only get Librarian recommendations within that specific playlist, and open to get in other playlists as well.
-
-{{< figrow force-row=true >}}
-    {{< figure src="/images/librarian-open-cut.png" >}}
-    {{< figure src="/images/librarian-closed-cut.png" >}}
-    {{< figure src="/images/librarian-options-cut.png" >}}
-{{< /figrow >}}
-
-### Navigation
-
-The user can find their Librarian-related playlists in the "Made for You" category. I don't think this is perfect, as I would like them somewhere in the Library tab. However, I think rather that Spotify should move the whole category.
-
-{{< figrow force-row=true >}}
-    {{< figure src="/images/librarian-made-for-you.png" >}}
-    {{< figure src="/images/librarian-made-for-you-v2.png" >}}
 {{< /figrow >}}
 
 ## Process
@@ -115,7 +90,7 @@ After settling on and fleshing out an idea, we made a quick low-fi prototype in 
     {{< figure src="/images/librarian-process-playlist.png" >}}
 {{< /figrow >}}
 
-I wanted the feeding to be more unique and playful than a simple button. Here's an early exploration:
+Individually I started by exploring the feeding mechanism – I wanted it to be more unique and playful than a simple button:
 
 ![](/images/librarian-sketch.jpg)
 

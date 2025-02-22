@@ -1,6 +1,6 @@
 ---
 title: Acorn, Nocorn
-summary: Design examining the human–nature relationship
+summary: Design examining the economy–ecology relationship
 team: [William Zhan]
 assignment: For the course _DH2400 Physical Interaction Design_. The assignment was to "focus on the conceptual meaning" of the design; to be "critical, reflective, speculative and/or provocative."
 role: Coding and acorns. Except for the squirrel we worked on the rest together.

@@ -74,7 +74,7 @@ I also prototyped a 6D variant, but it turned out far too complex for satisfying
 
 <p class="caption">Apr – Dec 2019</p>
 
-Game development has for me been a big help in learning math on an intuitive level. Flappy Bird helped me understand polynomials:
+Game development has for me been a way to learn math on an intuitive level. Flappy Bird helped me understand polynomials:
 
 {{< gdrive 1wd-tvosNyniuMzMrEDJQdoEuNopQh7pF >}}
 
