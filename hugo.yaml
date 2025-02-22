@@ -13,3 +13,7 @@ frontmatter:
     - released
     - started
     - :default
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
