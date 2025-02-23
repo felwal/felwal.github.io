@@ -5,6 +5,11 @@ started: 2023-12-05
 completed: 2023-12-21
 weight: 2
 tags: []
-images: [elephant-mario.jpg, elephant-mario-2.jpg, elephant-mario-3.jpg, elephant-mario-4.jpg]
+images: [elephant-mario.jpg]
 clusters: [mario, elephant]
 ---
+
+{{< figrow >}}
+    {{< figure src="/images/elephant-mario-2.jpg" >}}
+    {{< figure src="/images/elephant-mario-3.jpg" >}}
+{{< /figrow >}}
