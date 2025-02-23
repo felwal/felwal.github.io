@@ -22,6 +22,11 @@ body {
   padding-bottom: var(--spacing-diminutive);
   padding-left: var(--spacing-tiny);
   padding-right: var(--spacing-tiny);
+  /* background-color: var(--color-surface); */
+}
+
+.single-info-block > p {
+  /* color: var(--color-text-primary); */
 }
 
 .single-info-block > * {
