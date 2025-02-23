@@ -10,7 +10,7 @@ started: 2024-09-18
 completed: 2024-12-20
 tags: [concept, critical-design, ai]
 series: [dm2630]
-keytag: UX
+keytag: UX · IxD
 images: [librarian-banner.png]
 clusters: [dm2630, critical]
 ---
@@ -93,6 +93,26 @@ After settling on and fleshing out an idea, we made a quick low-fi prototype in 
 Individually I started by exploring the feeding mechanism – I wanted it to be more unique and playful than a simple button:
 
 ![](/images/librarian-sketch.jpg)
+
+## Related project: Stamped
+
+<p class="caption">Sep – Oct 2023</p>
+
+{{< callout-group >}}
+    {{< callout title="Assignment" text="Concept for the course _DM2601 Media Technology and Interaction Design_. The brief was to design for _interdependence_." >}}
+    {{< callout title="Team" text="Kristina Högberg, Edina Niculescu, Lennard Scheibel, Aikaterini Tsioutsia" >}}
+{{< /callout-group >}}
+
+This course had a focus on the design process and its methods. We designed a mobile app fostering social activities and cultural exchange between new and old Stockholmers:
+
+{{< figrow force-row=true >}}
+    {{< figure src="/images/stamped-home.png" >}}
+    {{< figure src="/images/stamped-events-focused.png" >}}
+    {{< figure src="/images/stamped-view.png" >}}
+    {{< figure src="/images/stamped-edit.png" >}}
+{{< /figrow >}}
+
+We performed interviews, cultural probe, personas, storyboards, affinity diagramming, insights extraction, how might we, brainstorming, brainwriting, parallel design, moodboards, and think-aloud.
 
 ## Notes
 

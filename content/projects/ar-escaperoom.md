@@ -11,7 +11,7 @@ completed: 2024-01-10
 tags: [xr]
 tools: [unity, csharp, vuforia]
 series: [dt2140]
-keytag: AR
+keytag: AR · VR
 images: [escaperoom-gyro-2.png]
 ---
 
@@ -60,28 +60,39 @@ And for the racing puzzle you rotate the book like a wheel, steering a remote-co
 
 ## User evaluation
 
-We performed a couple of think-aloud sessions coupled with interviews to evaluate the interactions and compare the different modalities.
+We performed a couple of think-aloud sessions coupled with interviews to evaluate the interactions and compare the different modalities. I handled the qualitative analysis, which included coding, affinity diagramming, and insights extraction:
 
-### Analysis
+{{< figrow >}}
+    {{< figure src="/images/escaperoom-analysis-coding.png" >}}
+    {{< figure src="/images/escaperoom-analysis-clustering.png" >}}
+    {{< figure src="/images/escaperoom-analysis-insights.png" >}}
+{{< /figrow >}}
 
-I handled the analysis, which included coding:
+Our main findings include:
 
-![](/images/escaperoom-analysis-coding.png)
+- multitasking input modalities was difficult
+- tangibles had unclear affordances but felt natural and immersive once learnt
+- puzzle order affected learning of how to interact with untraditional modalities
 
-Affinity diagramming:
+## Related project: VR Urban Stress Mapping
 
-![](/images/escaperoom-analysis-clustering.png)
+<p class="caption">Dec 2023 – Jan 2024</p>
 
-And insights extraction:
+In this VR study we designed a city and examined the impact of environmental variables on perceived stress – including cold vs warm light:
 
-![](/images/escaperoom-analysis-insights.png)
+![](/images/urban-stress-warm-vs-cold.png)
 
-### Findings
+And three different levels of vegetation with accompanying sounds:
 
-Our main insights include:
+{{< figrow >}}
+    {{< figure src="/images/urban-stress-vegetation-high.png" >}}
+    {{< figure src="/images/urban-stress-vegetation-medium.png" >}}
+    {{< figure src="/images/urban-stress-vegetation-none.png" >}}
+{{< /figrow >}}
 
-- _multitasking input modalities was difficult_ – e.g. handling both a tangible and touchscreen
+Natural elements and sounds had a calming effect, while lighting preferences were mixed.
 
-- _tangibles had unclear affordances_ – but felt natural, immersive, and engaging once learnt
-
-- _puzzle order affected learning_ of how to interact with untraditional modalities. Testers tried to interact with AR buttons like tangibles or vice versa, depending on which modality they used previous.
+{{< callout-group >}}
+    {{< callout title="Assignment" text="Demo and study for the course _DM2350 Human Perception for IT_." >}}
+    {{< callout title="Team" text="Carl Holmqvist, Pranit Popli, William Rolf, Alexander Widman" >}}
+{{< /callout-group >}}

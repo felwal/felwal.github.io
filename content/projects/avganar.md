@@ -12,7 +12,7 @@ links:
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
 tags: [mobility]
 tools: [garmin, monkeyc]
-keytag: Product
+keytag: Product · App
 images: [avganar-banner.png]
 related: []
 ---
@@ -79,3 +79,27 @@ At one point the API was updated to require requesting one mode at a time. As su
 ## What's next
 
 I feel like this (seemingly simple) project has taken _way_ too much time. It's not the most exciting thing ever, yet it was instructive to finally release something. My plan for now is to mostly just maintain it with support for new watches.
+
+## Related projects: Trackfield and Markana
+
+<p class="caption">Aug 2018 – Jan 2022</p>
+
+I learned app design and development by building these Android apps. I never finished them due to a lack of MVP-strategy; lesson learnt the hard way.
+
+Trackfield is for runs:
+
+{{< figrow force-row=true >}}
+    {{< figure src="/images/trackfield-exercises.png" >}}
+    {{< figure src="/images/trackfield-view.png" >}}
+    {{< figure src="/images/trackfield-edit.png" >}}
+    {{< figure src="/images/trackfield-route.png" >}}
+{{< /figrow >}}
+
+And Markana is for Markdown notes:
+
+{{< figrow force-row=true >}}
+    {{< figure src="/images/markana-1.jpg" >}}
+    {{< figure src="/images/markana-2.jpg" >}}
+    {{< figure src="/images/markana-3.jpg" >}}
+    {{< figure src="/images/markana-edit.jpg" >}}
+{{< /figrow >}}
