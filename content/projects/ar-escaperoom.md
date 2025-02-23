@@ -3,11 +3,13 @@ title: Escape Room
 summary: Mobile multimodal puzzle-solving
 team: [Prijun Koirala, Luca Lancella, William Zhan]
 assignment: For the course _DT2140 Multimodal Interactions and Interfaces_.
-role: Development of labyrinth, racing, and lock puzzles. Puzzle integration and Git coordination. Qualitative analysis.
+role: Development of labyrinth, racing, and lock puzzles; puzzle integration and Git coordination; qualitative analysis.
 published: 2025-02-09
 modified: 2025-02-23
 started: 2023-11-23
 completed: 2024-01-10
+links:
+    - demo video: https://www.youtube.com/watch?v=Qgya8fgqN-o
 tags: [xr]
 tools: [unity, csharp, vuforia]
 series: [dt2140]
@@ -16,17 +18,13 @@ images: [escaperoom-gyro-2.png]
 weight: 5
 ---
 
-In order to win the player completes four puzzles, collecting the codes and keys required to open the door and escape.
-
-{{< youtube Qgya8fgqN-o >}}
-
-We used books as tangibles as they can be handled with one hand, be used for image recognition, and most people have some at home.
+In order to win the player completes four puzzles, collecting the codes and keys required to open the door and escape. We used books as tangibles as they can be handled with one hand, be used for image recognition, and most people have some at home.
 
 ### Meta puzzle
 
 The Meta puzzle ties together all the other four puzzles with four locks. In accordance with the "open structure", they can be solved in any order:
 
-{{< figrow >}}
+{{< figrow force-row=true >}}
     {{< figure src="/images/escaperoom-lock-1.png" >}}
     {{< figure src="/images/escaperoom-structure.jpg" outline=true >}}
 {{< /figrow >}}
@@ -44,27 +42,22 @@ The two code locks use AR buttons with screen touch as input, while the two padl
 
 The labyrinth puzzle has the player tilting the book, getting the ball to the goal to receive a key:
 
-{{< figrow force-row=true >}}
-    {{< figure src="/images/escaperoom-gyro.png" >}}
-    {{< figure src="/images/escaperoom-gyro-2.png" >}}
-{{< /figrow >}}
-
-A looping audio track is played while the ball is rolling, with speed and pitch dynamically modified as a function of rolling speed.
+{{< gdrive 1hfhvaB-gZv6BSobYABD7ZV6sCQotY8UW >}}
 
 ### Racing puzzle
 
 And for the racing puzzle you rotate the book like a wheel, steering a remote-controlled car to collect the key. Gas is applied through a traditional UI touch button.
 
-![](/images/escaperoom-racing.png)
+{{< gdrive 1WswlOjJQp9du3tou2WqsYbkYu8PDn-Y0 >}}
 
 ## User evaluation
 
 We performed a couple of think-aloud sessions coupled with interviews to evaluate the interactions and compare the different modalities. I handled the qualitative analysis, which included coding, affinity diagramming, and insights extraction:
 
 {{< figrow >}}
-    {{< figure src="/images/escaperoom-analysis-coding.png" >}}
-    {{< figure src="/images/escaperoom-analysis-clustering.png" >}}
-    {{< figure src="/images/escaperoom-analysis-insights.png" >}}
+    {{< figure src="/images/escaperoom-analysis-coding.png" outline=true >}}
+    {{< figure src="/images/escaperoom-analysis-clustering.png" outline=true >}}
+    {{< figure src="/images/escaperoom-analysis-insights.png" outline=true >}}
 {{< /figrow >}}
 
 Our main findings include:
@@ -89,7 +82,7 @@ And three different levels of vegetation with accompanying sounds:
     {{< figure src="/images/urban-stress-vegetation-none.png" >}}
 {{< /figrow >}}
 
-Natural elements and sounds had a calming effect, while lighting preferences were mixed.
+We found that natural elements and sounds had a calming effect, while lighting preferences were mixed.
 
 {{< callout-group >}}
     {{< callout title="Assignment" text="Demo and study for the course _DM2350 Human Perception for IT_." >}}

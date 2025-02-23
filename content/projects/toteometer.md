@@ -66,7 +66,7 @@ I also did the math to figure out the optimal resistances in order to maximise t
 
 I made the totem parts out of Fimo clay and toilet paper rolls, then added wires, resistors, and aluminum as connectors:
 
-{{< figrow >}}
+{{< figrow force-row=true >}}
     {{< figure src="/images/toteometer-clay.jpg" >}}
     {{< figure src="/images/toteometer-wires.jpg" >}}
 {{< /figrow >}}

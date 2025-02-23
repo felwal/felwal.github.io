@@ -89,17 +89,17 @@ I learned app design and development by building these Android apps. I never fin
 Trackfield is for runs:
 
 {{< figrow force-row=true >}}
-    {{< figure src="/images/trackfield-exercises.png" >}}
-    {{< figure src="/images/trackfield-view.png" >}}
-    {{< figure src="/images/trackfield-edit.png" >}}
-    {{< figure src="/images/trackfield-route.png" >}}
+    {{< figure src="/images/trackfield-exercises.png" outline=true >}}
+    {{< figure src="/images/trackfield-view.png" outline=true >}}
+    {{< figure src="/images/trackfield-edit.png" outline=true >}}
+    {{< figure src="/images/trackfield-route.png" outline=true >}}
 {{< /figrow >}}
 
 And Markana is for Markdown notes:
 
 {{< figrow force-row=true >}}
-    {{< figure src="/images/markana-1.jpg" >}}
-    {{< figure src="/images/markana-2.jpg" >}}
-    {{< figure src="/images/markana-3.jpg" >}}
-    {{< figure src="/images/markana-edit.jpg" >}}
+    {{< figure src="/images/markana-1.jpg" outline=true >}}
+    {{< figure src="/images/markana-2.jpg" outline=true >}}
+    {{< figure src="/images/markana-3.jpg" outline=true >}}
+    {{< figure src="/images/markana-edit.jpg" outline=true >}}
 {{< /figrow >}}

@@ -21,7 +21,7 @@ weight: 6
 
 If you want the full experience, I recommend watching the video before reading further:
 
-{{< gdrive 18_ujBFawAbg2ZIh1xvTFuaBtliJQCK8B >}}
+{{< gdrive 1iT5I3gv86TBoCwpO0Bem1I0X9844Y_dz >}}
 
 The design consists of a birdhouse-like house where it is implied a squirrel lives, with an acorn visible at the entrance; a basket in which the acorns can be put; and a screen displaying the number of collected acorns. When all three acorns are collected, the floor opens and out falls the squirrel, committing suicide.
 

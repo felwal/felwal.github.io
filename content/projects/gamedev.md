@@ -66,22 +66,7 @@ Another experiment is this higher-dimensional variant of the classic board game.
 
 I'm currently evaluating if I want to turn it into a board game or videogame – with better path visualisation and actions for rotating in 4D; wouldn't that be cool?
 
-{{< figrow caption="4D; 6D" >}}
+{{< figrow caption="**Left**: 4D; **right:** 6D" >}}
     {{< figure src="/images/labyrinth-play.jpg" >}}
     {{< figure src="/images/labyrinth-6d.jpg" >}}
-{{< /figrow >}}
-
-## Hands-on math learning
-
-<p class="caption">Apr – Dec 2019</p>
-
-Game development has for me been a way to learn math on an intuitive level. Flappy Bird helped me understand polynomials:
-
-{{< gdrive 1wd-tvosNyniuMzMrEDJQdoEuNopQh7pF >}}
-
-And family trees helped me with trigonometry and fractals:
-
-{{< figrow force-row=true >}}
-    {{< gdrive 15OqirXzmM4Uu6VGM0707ZG2W39z-Tr3O >}}
-    {{< gdrive 1osv341I3qbY-IoJJH0Ti4OyjyeoWaWD8 >}}
 {{< /figrow >}}
