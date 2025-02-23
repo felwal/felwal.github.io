@@ -11,7 +11,7 @@ icon: graduation-cap
 - `DM2801` Digitalisation and Sustainable Societal Transformation
 - `DM2630` User Experience Design and Evaluation
 - `DM2800` Leading Complex Change Processes
-- `DD1380` Java Programmering for Python Programmers
+- `DD1380` Java Programming for Python Programmers
 - `DH2650` Computer Game Design
 - `DH2323` Computer Graphics and Interaction
 - `DM2585` Artificial Intelligence in Society

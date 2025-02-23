@@ -5,7 +5,7 @@ team: [Prijun Koirala, Luca Lancella, William Zhan]
 assignment: For the course _DT2140 Multimodal Interactions and Interfaces_.
 role: Development of labyrinth, racing, and lock puzzles. Puzzle integration and Git coordination. Qualitative analysis.
 published: 2025-02-09
-modified: 2025-02-10
+modified: 2025-02-23
 started: 2023-11-23
 completed: 2024-01-10
 tags: [xr]
@@ -20,9 +20,7 @@ In order to win the player completes four puzzles, collecting the codes and keys
 
 {{< youtube Qgya8fgqN-o >}}
 
-### Tangibles
-
-We used books as tangibles as they can be both handled with one hand and lay flat on a surface; the book cover can be used for image recognition; and most people have some at home. Interacting with the tangibles affects the AR environment.
+We used books as tangibles as they can be handled with one hand, be used for image recognition, and most people have some at home.
 
 ### Meta puzzle
 
@@ -51,11 +49,11 @@ The labyrinth puzzle has the player tilting the book, getting the ball to the go
     {{< figure src="/images/escaperoom-gyro-2.png" >}}
 {{< /figrow >}}
 
-While the ball is rolling, a looping audio track is played as feedback, with its speed and pitch modified dynamically as a function of the rolling speed.
+A looping audio track is played while the ball is rolling, with speed and pitch dynamically modified as a function of rolling speed.
 
 ### Racing puzzle
 
-And for the racing puzzle you rotate the book like a wheel, steering a remote-controlled car to collect the key. Gas is applied through a traditional UI touch button. Touch was chosen as it is ubiquitous and contrasts with the untraditional tangible, to make the combination easier.
+And for the racing puzzle you rotate the book like a wheel, steering a remote-controlled car to collect the key. Gas is applied through a traditional UI touch button.
 
 ![](/images/escaperoom-racing.png)
 

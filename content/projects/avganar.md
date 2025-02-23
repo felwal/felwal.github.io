@@ -2,7 +2,7 @@
 title: Avgånär
 summary: Public transport widget for Garmin watches
 published: 2025-01-26
-modified: 2025-02-22
+modified: 2025-02-23
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26
@@ -62,11 +62,11 @@ Trafiklab also provides APIs for the entire Sweden, and I decided to make anothe
 
 ## Process
 
-The Garmin ecosystem is very unstandardised, with different watches having different layouts and styles. I settled on making it standard-compatible with one version of the OS, while at the same time keeping a unique flair.
+The Garmin ecosystem is very unstandardised, with different watches having different layouts and styles. I settled on making it standard-compatible with one version of the OS, while keeping a unique flair.
 
 ### Mode selection
 
-At one point the API was updated to require requesting one mode at a time. As such I had to (within the migration span of one month) restructure and design an interaction for this:
+At one point the API was updated to require requesting one transport mode at a time. As such I had to restructure and design an interaction for this:
 
 ![Exploring different ways to implement mode selection](/images/avganar-figma.png)
 

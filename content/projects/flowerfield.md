@@ -1,6 +1,8 @@
 ---
 title: Flowerfield
 summary: Web app for collecting and categorising images of plants
+team: [Elliot Darth, Matias Eriksson, Linus Wallin]
+role: I focused more on the backend in this project.
 published:
 modified:
 started: 2022-11-23

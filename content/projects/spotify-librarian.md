@@ -5,7 +5,7 @@ team: [William Rolf, Alexander Widman, William Zhan]
 role: Lo-fi group design plus hi-fi individual extension.
 assignment: For the course _DM2630 User Experience Design and Evaluation_. The challenge was to "serve music discovery behaviors using AI on new or existing surfaces based on both implicit and explicit signals".
 published: 2025-02-08
-modified: 2025-02-22
+modified: 2025-02-23
 started: 2024-09-18
 completed: 2024-12-20
 tags: [concept, critical-design, ai]
@@ -62,7 +62,7 @@ The more hungry the Librarian is, the less precise their recommendations become.
 
 If the user instead feeds the Librarian too much, the recommendations instead flip to the _opposite_ of their learned taste. Here I use it to "punish" the user for spending too much electricity, water, etc. – yet it could at the same time help them discover music they never would have otherwise.
 
-This is a playful take on the _Waluigi effect_: in teaching an AI model "good behavior", it also implicitly learns "bad behaviour" – and thus it becomes possible to draw out this disagreeable shadow version.
+This is a playful take on the _Waluigi effect_: in teaching an AI model "good behavior", it also implicitly learns "bad behaviour".
 
 ![](/images/librarian-shadow.jpg)
 

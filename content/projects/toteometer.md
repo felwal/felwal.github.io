@@ -3,7 +3,7 @@ title: Toteometer
 summary: RGB color mixer, inspired by totems
 assignment: Prototype for the course _DH2400 Physical Interaction Design_. The assignment was to make "a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way".
 published: 2024-11-18
-modified: 2025-02-22
+modified: 2025-02-23
 started: 2024-01-26
 completed: 2024-02-02
 links:
@@ -23,7 +23,7 @@ The user explores the (usually pretty unintuitive) RGB and HEX colour space in a
 
 {{< youtube 8JREaEHJSmU >}}
 
-{{< figrow force-row=true caption="`#5A0` dark orange; `#0F0` green; `#555` dark grey" >}}
+{{< figrow force-row=true caption="`#A50` dark orange; `#0F0` green; `#555` dark grey" >}}
     {{< figure src="/images/toteometer-dark-orange.jpg" >}}
     {{< figure src="/images/toteometer-green.jpg" >}}
     {{< figure src="/images/toteometer-dark-grey.jpg" >}}

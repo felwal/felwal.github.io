@@ -1,7 +1,7 @@
 ---
 title: Game development
 summary: I've always been tinkering with my own games
-published: 2025-02-22
+published: 2025-02-23
 modified:
 tags: [game-design, ai]
 tools: [unity, csharp]
@@ -17,12 +17,12 @@ weight: 4
 
 {{< callout-group >}}
     {{< callout title="Assignment" text="Demo for the course _DH2650 Computer Game Design_." >}}
-    {{< callout title="Team" text="Felix Broberg, Duosi Dai, Carolina Dexwik." >}}
+    {{< callout title="Team" text="Felix Broberg, Duosi Dai, Carolina Dexwik" >}}
 {{< /callout-group >}}
 
 In this role-playing language-learner, the player explores different regions where they speak different languages – and helps humans reconnect with each other.
 
-As help they are accompanied by a small friendly shoggoth called Shogpadre. (The lovecraftian monster that recently became a metaphor for LLMs.) Because sometimes the crazy ideas do make it through!
+As help they are accompanied by a small friendly shoggoth called Shogpadre. (The lovecraftian monster that became a metaphor for LLMs.) Because sometimes the crazy ideas do make it through!
 
 {{< youtube xXCMSbCrndI >}}
 
@@ -62,11 +62,11 @@ Exploring adjacent design spaces really does facilitate additional inspiration.
 
 ## 4D Labyrinth
 
-Another experiment is this higher-dimensional variant of the classic board game. Playing requires hard thinking, and I've found it helps explain higher dimensions and gain intuition. I'm currently evaluating if I want to turn it into a board game or videogame – with better path visualisation and actions for rotating in 4D; wouldn't that be cool?
+Another experiment is this higher-dimensional variant of the classic board game. Playing requires hard thinking, and I've found it helps explain higher dimensions and gain intuition. I also prototyped a 6D variant, but it turned out far too complex for satisfying gameplay.
 
-I also prototyped a 6D variant, but it turned out far too complex for satisfying gameplay.
+I'm currently evaluating if I want to turn it into a board game or videogame – with better path visualisation and actions for rotating in 4D; wouldn't that be cool?
 
-{{< figrow caption="**Left**: 4D. **Right**: 6D" >}}
+{{< figrow caption="4D; 6D" >}}
     {{< figure src="/images/labyrinth-play.jpg" >}}
     {{< figure src="/images/labyrinth-6d.jpg" >}}
 {{< /figrow >}}
@@ -81,6 +81,7 @@ Game development has for me been a way to learn math on an intuitive level. Flap
 
 And family trees helped me with trigonometry and fractals:
 
-{{< gdrive 15OqirXzmM4Uu6VGM0707ZG2W39z-Tr3O >}}
-
-{{< gdrive 1osv341I3qbY-IoJJH0Ti4OyjyeoWaWD8 >}}
+{{< figrow force-row=true >}}
+    {{< gdrive 15OqirXzmM4Uu6VGM0707ZG2W39z-Tr3O >}}
+    {{< gdrive 1osv341I3qbY-IoJJH0Ti4OyjyeoWaWD8 >}}
+{{< /figrow >}}
