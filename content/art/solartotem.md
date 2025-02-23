@@ -5,6 +5,16 @@ started: 2024-05-21
 completed: 2024-09-08
 tags: []
 clusters: [totems]
-related: [/projects/toteometer]
-images: [solartotem.jpg, solartotem-clay.jpg]
+related: [/projects/toteometer, /projects/gamedev]
+images: [solartotem.jpg]
 ---
+
+{{< figrow force-row=true >}}
+    {{< figure src="/images/solartotem-half.jpg" >}}
+    {{< figure src="/images/solartotem-recombined.jpg" >}}
+{{< /figrow >}}
+
+{{< figrow >}}
+    {{< figure src="/images/solartotem-apart.jpg" >}}
+    {{< figure src="/images/solartotem-clay.jpg" >}}
+{{< /figrow >}}
