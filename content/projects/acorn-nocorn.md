@@ -15,7 +15,8 @@ tools: [arduino, cpp, processing]
 series: [dh2400]
 keytag: Critical
 images: [acorn-nocorn-banner-2.png]
-clusters: [dh2400, critical]
+clusters: []
+weight: 6
 ---
 
 If you want the full experience, I recommend watching the video before reading further:

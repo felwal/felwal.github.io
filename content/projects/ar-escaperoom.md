@@ -13,6 +13,7 @@ tools: [unity, csharp, vuforia]
 series: [dt2140]
 keytag: AR · VR
 images: [escaperoom-gyro-2.png]
+weight: 5
 ---
 
 In order to win the player completes four puzzles, collecting the codes and keys required to open the door and escape.

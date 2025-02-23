@@ -12,7 +12,7 @@ tags: [physical-interaction]
 tools: [arduino, cpp, processing]
 series: [dh2400]
 keytag: Tangible
-clusters: [dh2400]
+clusters: []
 images: [toteometer-cover-2.png]
 weight: 1
 ---

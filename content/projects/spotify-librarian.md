@@ -12,7 +12,8 @@ tags: [concept, critical-design, ai]
 series: [dm2630]
 keytag: UX · IxD
 images: [librarian-banner.png]
-clusters: [dm2630, critical]
+clusters: []
+weight: 2
 ---
 
 The Spotify Librarian is a personalised ape who helps you discover new music. It is inspired by Terry Pratchett's Discworld, and expands upon the metaphor of "Your Library".

@@ -6,7 +6,6 @@ modified: 2025-02-22
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26
-weight: 2
 links:
   - Github: https://github.com/felwal/avganar
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
@@ -15,6 +14,7 @@ tools: [garmin, monkeyc]
 keytag: Product · App
 images: [avganar-banner.png]
 related: []
+weight: 3
 ---
 
 Avgånär is a Garmin watch widget for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL) in Sweden, while a second version covers the entire Sweden.
