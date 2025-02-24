@@ -1,7 +1,7 @@
 ---
 title: Wooden minifigure
 summary: Special assignment for woodworking class
-published: 2024-10-23
+published: 2025-02-23
 started: 2014-01-01
 completed: 2014-06-01
 weight: 1
@@ -12,5 +12,6 @@ clusters: [lego]
 {{< figrow >}}
     {{< figure src="/images/wooden-minifig-side.jpg" >}}
     {{< figure src="/images/wooden-minifig-back.jpg" >}}
-    {{< figure src="/images/wooden-minifig-underside.jpg" >}}
 {{< /figrow >}}
+
+![](/images/wooden-minifig-underside.jpg)

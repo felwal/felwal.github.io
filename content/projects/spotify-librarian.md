@@ -10,7 +10,7 @@ started: 2024-09-18
 completed: 2024-12-20
 tags: [concept, critical-design, ai]
 series: [dm2630]
-keytag: UX · IxD
+keytag: UX
 links:
     - demo video: https://www.youtube.com/watch?v=35srVpMqtcM
 images: [librarian-banner.png]

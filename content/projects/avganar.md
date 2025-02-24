@@ -2,7 +2,7 @@
 title: Avgånär
 summary: Public transport widget for Garmin watches
 published: 2025-01-26
-modified: 2025-02-23
+modified: 2025-02-24
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26
@@ -50,7 +50,7 @@ Deviations and error handling:
 
 ### Avgånär Sweden
 
-Trafiklab also provides APIs for the entire Sweden, and I decided to make another version of the app implementing this. The app is open source, so the idea is to be adaptable to other countries' public transport as well.
+I decided to make another version of the app for the entire Sweden. The app is open source, so the idea is to be adaptable to other countries' public transport as well.
 
 ![](/images/avganar-swe-banner.png)
 
@@ -78,11 +78,11 @@ At one point the API was updated to require requesting one transport mode at a t
 
 ## What's next
 
-I feel like this (seemingly simple) project has taken _way_ too much time. It's not the most exciting thing ever, yet it was instructive to finally release something. My plan for now is to mostly just maintain it with support for new watches.
+This seemingly simple project is not the most exciting thing ever – yet it was instructive to finally release something with all that that entails, including legal and support. My plan for now is to mostly just maintain it with support for new watches.
 
 ## Related projects: Trackfield and Markana
 
-<p class="caption">Aug 2018 – Jan 2022</p>
+<p class="caption">Aug 2019 – Jan 2022</p>
 
 I learned app design and development by building these Android apps. I never finished them due to a lack of MVP-strategy; lesson learnt the hard way.
 

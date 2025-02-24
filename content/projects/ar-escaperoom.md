@@ -13,7 +13,7 @@ links:
 tags: [xr]
 tools: [unity, csharp, vuforia]
 series: [dt2140]
-keytag: AR · VR
+keytag: XR
 images: [escaperoom-gyro-2.png]
 weight: 5
 ---
@@ -46,7 +46,7 @@ The labyrinth puzzle has the player tilting the book, getting the ball to the go
 
 ### Racing puzzle
 
-And for the racing puzzle you rotate the book like a wheel, steering a remote-controlled car to collect the key. Gas is applied through a traditional UI touch button.
+And for the racing puzzle you rotate the book like a wheel, steering a remote-controlled car to collect the key. Gas is applied through a traditional GUI touch button.
 
 {{< gdrive 1WswlOjJQp9du3tou2WqsYbkYu8PDn-Y0 >}}
 

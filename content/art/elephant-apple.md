@@ -8,8 +8,7 @@ images: [elephant-apple.jpg]
 clusters: [powerup, elephant]
 ---
 
-{{< figrow >}}
-    {{< figure src="/images/elephant-apple-2.jpg" >}}
-    {{< figure src="/images/elephant-apple-3.jpg" >}}
-    {{< figure src="/images/elephant-apple-4.jpg" >}}
+{{< figrow force-row=true >}}
+    {{< figure src="/images/elephant-apple-front.jpg" >}}
+    {{< figure src="/images/elephant-apple-process.jpg" >}}
 {{< /figrow >}}
