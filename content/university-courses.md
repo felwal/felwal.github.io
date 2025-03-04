@@ -5,7 +5,7 @@ hidden: true
 icon: graduation-cap
 ---
 
-## M.S. Interactive Media Technology
+## M.Sc. Interactive Media Technology
 
 - `DH2632` Human-Computer Interaction, Research Seminars
 - `DM2801` Digitalisation and Sustainable Societal Transformation
@@ -22,7 +22,7 @@ icon: graduation-cap
 - `DM2601` Media Technology and Interaction Design
 - `DM2679` Program Integrating Course in Interactive Media Technology
 
-## B.S. Media Technology
+## B.Sc. Media Technology
 
 - `DM128X` Degree Project in Media Technology, First Cycle
 - `AK2203` Media, Technology and Culture

@@ -16,6 +16,7 @@ series: [dt2140]
 keytag: XR
 images: [escaperoom-gyro-2.png]
 weight: 5
+aliases: [escaperoom]
 ---
 
 In order to win the player completes four puzzles, collecting the codes and keys required to open the door and escape. We used books as tangibles as they can be handled with one hand, be used for image recognition, and most people have some at home.

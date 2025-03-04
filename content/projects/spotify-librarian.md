@@ -16,6 +16,7 @@ links:
 images: [librarian-banner.png]
 clusters: []
 weight: 2
+aliases: [librarian]
 ---
 
 The Spotify Librarian is a personalised ape who helps you discover new music. It is inspired by Terry Pratchett's Discworld, and expands upon the metaphor of "Your Library".

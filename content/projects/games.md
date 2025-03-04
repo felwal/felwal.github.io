@@ -9,6 +9,7 @@ series: [dh2650]
 keytag: Games
 images: [gamedev-banner.png]
 weight: 4
+aliases: [gamedev]
 ---
 
 ## Lost in Translatopia
