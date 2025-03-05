@@ -1,4 +1,4 @@
-/* list */
+/* || LIST */
 
 .grid, .grid-photo {
   list-style-type: none;
@@ -16,7 +16,8 @@
   gap: var(--spacing-diminutive);
 }
 
-/* photo */
+
+/* || PHOTO */
 
 img.item-photo-thumb {
   display: block;
@@ -26,11 +27,6 @@ img.item-photo-thumb {
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
-}
-
-.outlined {
-  outline: var(--width-border) solid var(--color-border);
-  outline-offset: -0.085rem;
 }
 
 .item-photo-container {
@@ -48,7 +44,8 @@ img.item-photo-thumb {
   border-radius: var(--corner-radius-large);
 }
 
-/* post/link */
+
+/* || POST, LINK */
 
 div.item-text {
   padding: var(--spacing-tiny);
@@ -66,7 +63,8 @@ div.item-text > p {
   margin-bottom: 0;
 }
 
-/* post */
+
+/* || POST */
 
 .item-post {
   border-radius: var(--corner-radius-small);
@@ -129,7 +127,8 @@ img.item-post-thumb {
   border-radius: 0.4em;
 }
 
-/* link */
+
+/* || LINK */
 
 .item-link {
   border-radius: var(--corner-radius-small);

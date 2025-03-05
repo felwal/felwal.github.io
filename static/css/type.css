@@ -1,24 +1,3 @@
-body {
-  font-family: Karla, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  line-height: 1.5;
-  font-weight: 420;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  margin-top: 1.25em;
-  margin-bottom: 0.65em;
-  color: var(--color-text-primary);
-  font-weight: bold;
-}
-
-/* paragraph */
-
-p, li {
-  font-size: var(--font-size-body);
-  color: var(--color-text-primary);
-}
-
 .summary {
   font-weight: 500;
   font-size: var(--font-size-summary);
@@ -32,13 +11,6 @@ p, li {
 .decoration {
   color: var(--color-decoration);
   font-size: var(--font-size-caption);
-}
-
-a {
-  color: var(--color-text-link);
-  text-decoration: none;
-  text-decoration-thickness: 0.08em !important;
-  /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
 a:hover,
@@ -56,42 +28,9 @@ a.link-external:active {
   text-decoration: underline;
 }
 
-code {
-  font-family: "Jetbrains Mono", mono;
-  background-color: var(--color-surface);
-  border-radius: var(--corner-radius-small);
-  padding-left: var(--spacing-mini);
-  padding-right: var(--spacing-mini);
-  color: var(--color-text-secondary);
-  font-size: calc(0.8 * var(--font-size-body));
-}
-
 figcaption > p > code {
   background-color: initial;
   outline: var(--width-border) solid var(--color-border);
-}
-
-blockquote {
-  font-style: italic;
-}
-
-sup {
-  vertical-align: top;
-}
-
-/* heading */
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: var(--font-size-h2);
-  width: fit-content;
-}
-
-h3 {
-  font-size: 1.25rem;
 }
 
 a.link-heading {
@@ -108,31 +47,11 @@ a.link-heading:active h3, h2:active a.link-heading {
   /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
-/* decoration */
 
-ul.bulletless, ol.bulletless {
-  list-style-type: none;
-  padding-left: 0;
-}
+/* || DECORATION */
 
 a.icon-link {
   text-decoration: none !important;
-}
-
-hr {
-  border: none;
-  border-width: 0;
-  padding-top: 0;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-hr::after {
-  content: "* * *";
-  color: var(--color-decoration);
-  display: block;
-  text-align: center;
-  font-size: x-large;
 }
 
 .footnotes hr::after {
@@ -146,10 +65,15 @@ hr::after {
   display: none;
 }
 
-li::marker {
-  color: var(--color-decoration);
+
+/* || ICON */
+
+p > svg, a > svg {
+  width: 1em;
+  height: 1em;
+  margin-bottom: -0.15em;
 }
 
-ul > li::marker {
-  font-size: smaller;
+a.link-external > svg {
+  margin-left: 0.2em;
 }
