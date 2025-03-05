@@ -55,8 +55,7 @@ And for the racing puzzle you rotate the book like a wheel, steering a remote-co
 
 We performed a couple of think-aloud sessions coupled with interviews to evaluate the interactions and compare the different modalities. I handled the qualitative analysis, which included coding, affinity diagramming, and insights extraction:
 
-{{< figrow >}}
-    {{< figure src="/images/escaperoom-analysis-coding.png" outline=true >}}
+{{< figrow force-row=true >}}
     {{< figure src="/images/escaperoom-analysis-clustering.png" outline=true >}}
     {{< figure src="/images/escaperoom-analysis-insights.png" outline=true >}}
 {{< /figrow >}}
