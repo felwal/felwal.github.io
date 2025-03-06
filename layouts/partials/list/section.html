@@ -11,11 +11,11 @@
         {{ $.Content }}
 
         {{ if or (eq $.Section "art") (eq $.Section "photos") }}
-            {{ partial "list/grid_photo" . }}
+            {{ partial "list/stack_photo" . }}
         {{ else if eq $.Section "posts" }}
-            {{ partial "list/grid_link" . }}
+            {{ partial "list/stack_list" . }}
         {{ else }}
-            {{ partial "list/grid_post" . }}
+            {{ partial "list/stack_grid" . }}
         {{ end }}
     </section>
 

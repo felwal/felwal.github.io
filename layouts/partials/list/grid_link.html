@@ -1,5 +1,0 @@
-<div class="grid--link">
-    {{ range where . "Params.hidden" "!=" true }}
-        {{ partial "it/item_link" (dict "page" .) }}
-    {{ end }}
-</div>

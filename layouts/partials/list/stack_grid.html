@@ -1,5 +1,5 @@
-<div class="grid--post">
+<div class="stack--list">
     {{ range where . "Params.hidden" "!=" true }}
-        {{ partial "it/item_post" . }}
+        {{ partial "it/item_grid" . }}
     {{ end }}
 </div>

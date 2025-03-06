@@ -5,7 +5,7 @@
         <h2><a class="link link--heading" href="{{ .taxonomyLink }}{{ .term }}">{{ .term }}</a></h3>
 
         {{ $pages := .pages.Pages.Limit 3 }}
-        {{ partial "list/grid_post" $pages }}
+        {{ partial "list/stack_grid" $pages }}
     </section>
 
 {{ end }}

@@ -38,7 +38,7 @@
 
 /* mobile */
 @media screen and (max-width: 36rem) {
-  .grid--post {
+  .stack--list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -52,7 +52,7 @@
     display: none;
   }
 
-  .item--link__thumb, .item--link__bg {
+  .item--list__thumb, .item--list__bg {
     aspect-ratio: 1 / 1 !important;
   }
 

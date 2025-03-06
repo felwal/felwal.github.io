@@ -92,7 +92,7 @@
             <section class="column">
                 <h2>Next</h2>
 
-                {{ partial "it/item_link" (dict "page" .) }}
+                {{ partial "it/item_list" (dict "page" .) }}
             </section>
 
             {{ $relatedPages = where $relatedPages ".RelPermalink" "ne" .RelPermalink }}
@@ -103,7 +103,7 @@
         <section class="column">
             <h2>Related</h2>
 
-            {{ partial "list/grid_post" (uniq .) }}
+            {{ partial "list/stack_grid" (uniq .) }}
         </section>
     {{ end }}
 

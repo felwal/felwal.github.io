@@ -1,5 +1,5 @@
-<article class="item--link">
-    <a href="{{ .page.RelPermalink }}" class="item--link__container">
+<article class="item--list">
+    <a href="{{ .page.RelPermalink }}" class="item--list__container">
         {{ with .page.Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
@@ -10,10 +10,10 @@
                 {{ $spec := partial "fn/Concat" (slice "500x250 webp Center" $rot) }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item--link__thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item--list__thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
-            <div class="item--link__bg">
+            <div class="item--list__bg">
                 {{ with $.page.Params.icon }}
                     {{ partial "icon" . }}
                 {{ end }}

@@ -1,4 +1,4 @@
-<div class="grid--photo">
+<div class="stack--photo">
     {{ range where . "Params.hidden" "!=" true }}
         {{ partial "it/item_photo" . }}
     {{ end }}
