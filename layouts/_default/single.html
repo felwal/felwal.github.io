@@ -51,9 +51,9 @@
 
         <!-- blocks -->
         {{ if or .Params.assignment .Params.team }}
-            <div class="single-info-grid">
+            <div class="callout-row">
                 {{ with .Params.assignment }}
-                    {{ partial "single/info-block" (dict "title" "Assignment" "text" .) }}
+                    {{ partial "single/callout" (dict "title" "Assignment" "text" .) }}
                 {{ end }}
 
                 {{ with .Params.role }}
@@ -62,7 +62,7 @@
                         {{ $text = partial "fn/Concat" (slice $text " Team: " (collections.Delimit . ", ")) }}
                     {{ end }}
 
-                    {{ partial "single/info-block" (dict "title" "Role" "text" $text) }}
+                    {{ partial "single/callout" (dict "title" "Role" "text" $text) }}
                 {{ end }}
             </div>
         {{ end }}

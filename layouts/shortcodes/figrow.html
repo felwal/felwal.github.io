@@ -1,18 +1,18 @@
-<div class="figrow-container">
-    {{ $class := "figrow figrow-dynamic" }}
+<div class="figrow__container">
+    {{ $dynamic := true }}
     {{ with .Get "force-row" }}
         {{ if . }}
-            {{ $class = "figrow" }}
+            {{ $dynamic = false }}
         {{ end }}
     {{ end }}
 
     <!-- div for column (mobile) -->
-    <div class="{{ $class }}">
+    <div class="figrow__div{{ if $dynamic }} figrow__div--dynamic{{ end }}">
         {{ .Inner }}
     </div>
 
     <!-- table for row -->
-    <table class="{{ $class }}">
+    <table class="figrow__table{{ if $dynamic }} figrow__table--dynamic{{ end }}">
         <tbody>
             <tr>
                 {{ .Inner }}

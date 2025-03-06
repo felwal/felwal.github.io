@@ -1,5 +1,5 @@
 <article>
-    <a href="{{ .RelPermalink }}" class="link-heading item-photo-container">
+    <a href="{{ .RelPermalink }}" class="link link--heading item--photo__container">
         {{ with .Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
@@ -10,7 +10,7 @@
                 {{ $spec := partial "fn/Concat" (slice "500x500 webp Center" $rot) }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item-photo-thumb outlined" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item--photo__thumb outlined" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ end }}
     </a>

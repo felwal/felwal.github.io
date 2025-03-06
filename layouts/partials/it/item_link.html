@@ -1,5 +1,5 @@
-<article class="item-link">
-    <a href="{{ .page.RelPermalink }}" class="link-heading item-link-container">
+<article class="item--link">
+    <a href="{{ .page.RelPermalink }}" class="item--link__container">
         {{ with .page.Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
@@ -10,26 +10,28 @@
                 {{ $spec := partial "fn/Concat" (slice "500x250 webp Center" $rot) }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item-link-thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item--link__thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
-            <div class="item-link-bg">
+            <div class="item--link__bg">
                 {{ with $.page.Params.icon }}
                     {{ partial "icon" . }}
                 {{ end }}
             </div>
         {{ end }}
 
-        <div class="item-text">
-            {{ with .title }}
-                <h3>{{ . }}</h3>
-            {{ else }}
-                {{ with .page.LinkTitle }}
-                    <h3>{{ . }}</h3>
+        <div class="item__text">
+            <h3 class="link link--heading">
+                {{ with .title }}
+                    {{ . }}
                 {{ else }}
-                    <h3>Unnamed</h3>
+                    {{ with .page.LinkTitle }}
+                        {{ . }}
+                    {{ else }}
+                        Unnamed
+                    {{ end }}
                 {{ end }}
-            {{ end }}
+            </h3>
 
             {{ with .text }}
                 <!-- override with custom description -->
@@ -37,8 +39,8 @@
             {{ else }}
                 {{ with .page.Params.summary }}
                     <p>
-                        {{ with $.page.Params.keytag }}
-                            <span class="keytag caption">{{ . }}</span>
+                        {{ with $.page.Params.item__keytag }}
+                            <span class="item__keytag caption">{{ . }}</span>
                         {{ end }}
                         {{ safe.HTML . }}
                     </p>

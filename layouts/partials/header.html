@@ -1,13 +1,13 @@
 <header>
-    <div id="nav-links" class="column">
-        <div id="header-logo">
+    <div class="header__content column">
+        <div class="header__logo">
             {{ partial "ic/favicon.svg" }}
-            <a id="header-title" class="link-tab" href="/">
+            <a class="header__title nav-tab" href="/">
                 Felix Wallin
             </a>
         </div>
 
-        <nav id="header-tabs">
+        <nav class="header__nav">
             {{ partial "header_tab" (dict "link" "/" "text" "Home") }}
 
             {{ range .Site.Sections }}
@@ -15,16 +15,6 @@
                     {{ partial "header_tab" (dict "link" .RelPermalink "text" .LinkTitle "icon" .Params.icon ) }}
                 {{ end }}
             {{ end }}
-
-            <!--
-            {{ range $taxonomy, $terms := .Site.Taxonomies }}
-                {{ with $taxonomy }}
-                    {{ if $terms }}
-                        <a href="/{{ . }}" class="link-tab">{{ strings.FirstUpper . }}</a>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-            -->
 
             {{ partial "header_tab" (dict "link" "/about/" "text" "About" "icon" "user-round") }}
         </nav>

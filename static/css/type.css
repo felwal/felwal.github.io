@@ -13,46 +13,34 @@
   font-size: var(--font-size-caption);
 }
 
-a:hover,
-a:active {
-  text-decoration: underline;
-}
-
-a.link-tag:hover,
-a.link-tag:active {
-  text-decoration: underline;
-}
-
-a.link-external:hover,
-a.link-external:active {
-  text-decoration: underline;
-}
-
 figcaption > p > code {
   background-color: initial;
   outline: var(--width-border) solid var(--color-border);
 }
 
-a.link-heading {
-  text-decoration: none;
+
+/* || LINK */
+
+.link {
+  color: var(--color-text-link);
+  text-decoration-thickness: 0.08em;
+}
+
+.link:hover, .link:active {
+  text-decoration-line: underline;
+}
+
+.link--heading {
   color: var(--color-text-primary);
-  text-decoration-thickness: 0.08em !important;
-  /*text-decoration-color: var(--color-text-link) !important;*/
 }
 
-a.link-heading:hover h3, h2:hover a.link-heading,
-a.link-heading:active h3, h2:active a.link-heading {
-  text-decoration: underline;
-  text-decoration-thickness: 0.075em !important;
-  /*text-decoration-color: var(--color-text-link) !important;*/
+.item--post:hover .link--heading,
+.item--link:hover .link--heading {
+  text-decoration-line: underline;
 }
 
 
-/* || DECORATION */
-
-a.icon-link {
-  text-decoration: none !important;
-}
+/* || FOOTNOTES */
 
 .footnotes hr::after {
   content: "Notes";
@@ -74,6 +62,6 @@ p > svg, a > svg {
   margin-bottom: -0.15em;
 }
 
-a.link-external > svg {
+.link--external > svg {
   margin-left: 0.2em;
 }

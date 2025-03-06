@@ -1,12 +1,12 @@
-/* || INFO BLOCK */
+/* || CALLOUT */
 
-.single-info-grid {
+.callout-row {
   display: flex;
   flex-direction: row;
   gap: var(--spacing-diminutive);
 }
 
-.single-info-block {
+.callout {
   border-radius: var(--corner-radius-small);
   padding-top: var(--spacing-diminutive);
   padding-bottom: var(--spacing-diminutive);
@@ -15,18 +15,18 @@
   /* background-color: var(--color-surface); */
 }
 
-.single-info-block > p {
+.callout > p {
   /* color: var(--color-text-primary); */
 }
 
-.single-info-block > * {
+.callout > * {
   margin: 0;
 }
 
 
 /* || BANNER */
 
-img.single-banner {
+.banner {
   max-width: 100%;
   max-height: 80vh;
   height: auto;
@@ -34,7 +34,7 @@ img.single-banner {
   border-radius: var(--corner-radius-small);
 }
 
-.banner-container {
+.banner__container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -42,44 +42,44 @@ img.single-banner {
   border-radius: var(--corner-radius-small);
 }
 
-.banner-container > a {
+.banner__container > a {
   display: flex;
 }
 
 
 /* || FIGURE */
 
-.figrow-container {
+.figrow__container {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-div.figrow {
+.figrow__div {
   display: none;
   gap: var(--spacing-mini);
   grid-auto-flow: column;
   align-items: end;
 }
 
-table.figrow {
+.figrow__table {
   border-collapse: collapse;
 }
 
-table.figrow td {
+.figrow__table td {
   padding: 0;
   padding-right: var(--spacing-mini);
 }
 
-table.figrow td:last-child {
+.figrow__table td:last-child {
   padding-right: 0;
 }
 
-table.figrow tr {
+.figrow__table tr {
   display: inline-flex; /* flex sometimes causes irregular height for one col */
   align-items: end;
 }
 
-img.single-figure {
+.figure__img {
   max-width: 100%;
   max-height: 80vh;
   object-fit: cover;
@@ -111,15 +111,15 @@ figcaption > p {
 /* || VIDEO */
 
 /* from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */
-div.video-div {
+.video__container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
 
-/* also from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */
-iframe.video-frame {
+/* from https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html */
+.video__frame {
   position: absolute;
   top: 0;
   left: 0;

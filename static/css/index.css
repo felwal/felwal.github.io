@@ -38,41 +38,41 @@
 
 /* mobile */
 @media screen and (max-width: 36rem) {
-  .grid {
+  .grid--post {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  div.figrow-dynamic {
+  .figrow__div--dynamic {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-auto-flow: row;
   }
 
-  table.figrow-dynamic {
+  .figrow__table--dynamic {
     display: none;
   }
 
-  img.item-link-thumb, .item-link-bg {
+  .item--link__thumb, .item--link__bg {
     aspect-ratio: 1 / 1 !important;
   }
 
-  #header-tabs {
+  .header__nav {
     flex-direction: column;
     display: none;
   }
 
-  .single-info-grid {
+  .callout-row {
     flex-direction: column;
   }
 }
 
 /* column full width */
 @media screen and (max-width: calc(46rem + 2 * 1rem)) {
-  img.single-banner {
+  .banner {
     border-radius: 0 !important;
   }
 
-  .banner-container {
+  .banner__container {
     width: calc(100% + 2 * var(--spacing-tiny));
     margin-left: calc(-1 * var(--spacing-tiny));
     margin-right: calc(-1 * var(--spacing-tiny));

@@ -7,7 +7,7 @@
 {{ with .RegularPagesRecursive.Limit $limit }}
 
     <section>
-        <h2><a class="link-heading" href="{{ $.RelPermalink }}">{{ $.LinkTitle }}</a></h3>
+        <h2><a class="link link--heading" href="{{ $.RelPermalink }}">{{ $.LinkTitle }}</a></h3>
         {{ $.Content }}
 
         {{ if or (eq $.Section "art") (eq $.Section "photos") }}

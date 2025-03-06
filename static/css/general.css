@@ -35,10 +35,9 @@ p, li {
 }
 
 a {
-  color: var(--color-text-link);
-  text-decoration: none;
-  text-decoration-thickness: 0.08em !important;
-  /*text-decoration-color: var(--color-text-link) !important;*/
+  color: var(--color-text-primary);
+  text-decoration-line: none;
+  text-decoration-thickness: 0.08em;
 }
 
 code {

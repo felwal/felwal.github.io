@@ -3,7 +3,7 @@
   outline-offset: -0.085rem;
 }
 
-ul.bulletless, ol.bulletless {
+.bulletless {
   list-style-type: none;
   padding-left: 0;
 }
