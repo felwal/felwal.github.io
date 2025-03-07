@@ -15,6 +15,12 @@
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+@media screen and (max-width: 36rem) {
+  .stack--list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 
 /* || ITEM */
 
@@ -171,4 +177,10 @@
 .item--list__container {
   display: flex;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 36rem) {
+  .item--list__thumb, .item--list__bg {
+    aspect-ratio: 1 / 1 !important;
+  }
 }

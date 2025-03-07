@@ -41,6 +41,13 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 36rem) {
+  .header__nav {
+    flex-direction: column;
+    display: none;
+  }
+}
+
 
 /* || FOOTER */
 

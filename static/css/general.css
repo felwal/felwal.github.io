@@ -21,6 +21,11 @@ footer {
 
 /* || TEXT */
 
+p, li {
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 1.25em;
@@ -29,9 +34,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-p, li {
-  font-size: var(--font-size-body);
-  color: var(--color-text-primary);
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  width: fit-content;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 a {
@@ -58,18 +71,8 @@ sup {
   vertical-align: top;
 }
 
-h1 {
-  font-size: 2rem;
-}
 
-h2 {
-  font-size: var(--font-size-h2);
-  width: fit-content;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
+/* || DECORATION */
 
 hr {
   border: none;

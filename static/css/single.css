@@ -23,6 +23,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 36rem) {
+  .callout-row {
+    flex-direction: column;
+  }
+}
+
 
 /* || BANNER */
 
@@ -44,6 +50,20 @@
 
 .banner__container > a {
   display: flex;
+}
+
+/* column full width */
+@media screen and (max-width: 48rem) {
+  .banner {
+    border-radius: 0 !important;
+  }
+
+  .banner__container {
+    width: calc(100% + 2 * var(--spacing-tiny));
+    margin-left: calc(-1 * var(--spacing-tiny));
+    margin-right: calc(-1 * var(--spacing-tiny));
+    border-radius: 0;
+  }
 }
 
 
@@ -78,6 +98,19 @@
   display: inline-flex; /* flex sometimes causes irregular height for one col */
   align-items: end;
 }
+
+@media screen and (max-width: 36rem) {
+  .figrow__div--dynamic {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-flow: row;
+  }
+
+  .figrow__table--dynamic {
+    display: none;
+  }
+}
+
 
 .figure__img {
   max-width: 100%;
