@@ -181,6 +181,6 @@
 
 @media screen and (max-width: 36rem) {
   .item--list__thumb, .item--list__bg {
-    aspect-ratio: 1 / 1 !important;
+    aspect-ratio: 1 / 1;
   }
 }

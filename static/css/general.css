@@ -113,8 +113,3 @@ figcaption {
   margin-top: calc(-1 * var(--corner-radius-small));
   border-radius: var(--corner-radius-small);
 }
-
-iframe {
-  /* class doesn't work on yt */
-  border-radius: var(--corner-radius-small) !important;
-}
