@@ -1,5 +1,5 @@
 ---
-title: Farval till valpen
+title: Farväl till valpen
 published: 2018-10-10
 images: [20181007-farval-till-valpen.jpg]
 ---

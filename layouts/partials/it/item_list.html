@@ -39,7 +39,7 @@
             {{ else }}
                 {{ with .page.Params.summary }}
                     <p>
-                        {{ with $.page.Params.item__keytag }}
+                        {{ with $.page.Params.keytag }}
                             <span class="item__keytag caption">{{ . }}</span>
                         {{ end }}
                         {{ safe.HTML . }}
