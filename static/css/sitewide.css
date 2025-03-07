@@ -37,10 +37,6 @@
   font-size: large;
 }
 
-.nav-tab:hover, .nav-tab:active {
-  text-decoration-line: underline;
-}
-
 .nav-tab--selected {
   font-weight: bold;
 }

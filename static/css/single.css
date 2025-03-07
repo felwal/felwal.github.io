@@ -65,16 +65,16 @@
   border-collapse: collapse;
 }
 
-.figrow__table td {
+.figrow__table > tbody > tr > td {
   padding: 0;
   padding-right: var(--spacing-mini);
 }
 
-.figrow__table td:last-child {
+.figrow__table > tbody > tr > td:last-child {
   padding-right: 0;
 }
 
-.figrow__table tr {
+.figrow__table > tbody > tr {
   display: inline-flex; /* flex sometimes causes irregular height for one col */
   align-items: end;
 }

@@ -1,4 +1,4 @@
-<div class="stack--list">
+<div class="stack stack--list">
     {{ range where . "Params.hidden" "!=" true }}
         {{ partial "it/item_grid" . }}
     {{ end }}

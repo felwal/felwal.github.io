@@ -34,8 +34,7 @@ figcaption > p > code {
   color: var(--color-text-primary);
 }
 
-.item--grid:hover .link--heading,
-.item--list:hover .link--heading {
+.item:hover .link--heading {
   text-decoration-line: underline;
 }
 

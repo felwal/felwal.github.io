@@ -1,12 +1,12 @@
-{{ $class := "nav-tab" }}
+{{ $class := "link nav-tab" }}
 
 <!-- highlight selected tab -->
 {{ if or (eq page.RelPermalink "/") (eq .link "/") }}
     {{ if eq .link page.RelPermalink }}
-        {{ $class = "nav-tab nav-tab--selected" }}
+        {{ $class = "link nav-tab nav-tab--selected" }}
     {{ end }}
 {{ else if strings.Contains page.RelPermalink .link }}
-    {{ $class = "nav-tab nav-tab--selected" }}
+    {{ $class = "link nav-tab nav-tab--selected" }}
 {{ end }}
 
 <a href="{{ .link }}" class="{{ $class }}">

@@ -1,9 +1,9 @@
 @import "general.css";
 @import "utilities.css";
+@import "type.css";
 @import "sitewide.css";
 @import "item.css";
 @import "single.css";
-@import "type.css";
 
 :root {
   --color-surface: rgba(128, 128, 128, 0.15);
