@@ -1,5 +1,5 @@
 body {
-  margin: var(--spacing-tiny);
+  margin: var(--spacing-small);
   font-family: Karla, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.5;
   font-weight: 420;
@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-h3);
 }
 
 a {
@@ -55,10 +55,10 @@ a {
 
 code {
   font-family: "Jetbrains Mono", mono;
-  background-color: var(--color-surface);
+  background-color: var(--color-fill);
   border-radius: var(--corner-radius-small);
-  padding-left: var(--spacing-mini);
-  padding-right: var(--spacing-mini);
+  padding-left: var(--spacing-diminutive);
+  padding-right: var(--spacing-diminutive);
   color: var(--color-text-secondary);
   font-size: calc(0.8 * var(--font-size-body));
 }
@@ -107,9 +107,9 @@ figure {
 }
 
 figcaption {
-  background-color: var(--color-surface);
-  padding: var(--spacing-diminutive);
-  padding-top: calc(var(--spacing-diminutive) + var(--corner-radius-small));
+  background-color: var(--color-fill);
+  padding: var(--spacing-tiny);
+  padding-top: calc(var(--spacing-tiny) + var(--corner-radius-small));
   margin-top: calc(-1 * var(--corner-radius-small));
   border-radius: var(--corner-radius-small);
 }

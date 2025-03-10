@@ -3,16 +3,16 @@
 .callout-row {
   display: flex;
   flex-direction: row;
-  gap: var(--spacing-diminutive);
+  gap: var(--spacing-tiny);
 }
 
 .callout {
   border-radius: var(--corner-radius-small);
-  padding-top: var(--spacing-diminutive);
-  padding-bottom: var(--spacing-diminutive);
-  padding-left: var(--spacing-tiny);
-  padding-right: var(--spacing-tiny);
-  /* background-color: var(--color-surface); */
+  padding-top: var(--spacing-tiny);
+  padding-bottom: var(--spacing-tiny);
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  /* background-color: var(--color-fill); */
 }
 
 .callout > p {
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--color-surface);
+  background-color: var(--color-fill);
   border-radius: var(--corner-radius-small);
 }
 
@@ -59,9 +59,9 @@
   }
 
   .banner__container {
-    width: calc(100% + 2 * var(--spacing-tiny));
-    margin-left: calc(-1 * var(--spacing-tiny));
-    margin-right: calc(-1 * var(--spacing-tiny));
+    width: calc(100% + 2 * var(--spacing-small));
+    margin-left: calc(-1 * var(--spacing-small));
+    margin-right: calc(-1 * var(--spacing-small));
     border-radius: 0;
   }
 }
@@ -76,7 +76,7 @@
 
 .figrow__div {
   display: none;
-  gap: var(--spacing-mini);
+  gap: var(--spacing-diminutive);
   grid-auto-flow: column;
   align-items: end;
 }
@@ -87,7 +87,7 @@
 
 .figrow__table > tbody > tr > td {
   padding: 0;
-  padding-right: var(--spacing-mini);
+  padding-right: var(--spacing-diminutive);
 }
 
 .figrow__table > tbody > tr > td:last-child {
@@ -160,5 +160,5 @@ figcaption > p {
   height: 100%;
   border: 0;
   border-radius: var(--corner-radius-small);
-  background-color: var(--color-surface);
+  background-color: var(--color-fill);
 }
