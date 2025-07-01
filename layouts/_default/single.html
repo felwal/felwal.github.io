@@ -9,7 +9,7 @@
         {{ end }}
 
         {{ with .Params.summary }}
-            <p class="summary">{{ transform.Markdownify . }}</p>
+            <p class="summary">{{ markdownify . }}</p>
         {{ end }}
 
         <!-- banner(s) -->
@@ -22,7 +22,7 @@
                 <p />
 
             {{ else }}
-                {{ fmt.Errorf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
+                {{ errorf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
             {{ end }}
         {{ end }}
 

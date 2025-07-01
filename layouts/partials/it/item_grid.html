@@ -32,7 +32,7 @@
                     {{ with $.Params.keytag }}
                         <span class="item__keytag caption">{{ . }}</span>
                     {{ end }}
-                    {{ transform.Markdownify . }}
+                    {{ markdownify . }}
                 </p>
             {{ end }}
         </div>

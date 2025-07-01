@@ -24,10 +24,10 @@
                 {{ $d := partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
                 {{ $dates = append $d $dates }}
             {{ else }}
-                {{ fmt.Warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
+                {{ warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
             {{ end }}
         {{ else }}
-            {{ fmt.Errorf (partial "fn/Concat" (slice "Caption: unable to find " $path)) }}
+            {{ errorf (partial "fn/Concat" (slice "Caption: unable to find " $path)) }}
         {{ end }}
     {{ end }}
 {{ end }}
