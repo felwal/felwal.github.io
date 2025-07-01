@@ -2,12 +2,12 @@
     <a href="{{ .page.RelPermalink }}" class="item__container item--list__container">
         {{ with .page.Params.images }}
             {{ $filename := index . 0 }}
-            {{ $path := partial "fn/Concat" (slice "images/" $filename) }}
+            {{ $path := add "images/" $filename }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
                 {{ $rot := partial "fn/GetExifRotation" .Exif }}
-                {{ $spec := partial "fn/Concat" (slice "500x250 webp Center" $rot) }}
+                {{ $spec := add "500x250 webp Center" $rot }}
                 {{ $thumb := .Fill $spec }}
 
                 <img class="item__thumb item--list__thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />

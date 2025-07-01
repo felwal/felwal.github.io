@@ -14,7 +14,7 @@
 
         <!-- banner(s) -->
         {{ range .Params.images }}
-            {{ $path := partial "fn/Concat" (slice "images/" .) }}
+            {{ $path := add "images/" . }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
@@ -22,7 +22,7 @@
                 <p />
 
             {{ else }}
-                {{ errorf (partial "fn/Concat" (slice "Single: unable to find " $path)) }}
+                {{ errorf (add "Single: unable to find " $path) }}
             {{ end }}
         {{ end }}
 
@@ -59,7 +59,7 @@
                 {{ with .Params.role }}
                     {{ $text := . }}
                     {{ with $.Params.team }}
-                        {{ $text = partial "fn/Concat" (slice $text " Team: " (collections.Delimit . ", ")) }}
+                        {{ $text = add $text " Team: " (collections.Delimit . ", ") }}
                     {{ end }}
 
                     {{ partial "single/callout" (dict "title" "Role" "text" $text) }}

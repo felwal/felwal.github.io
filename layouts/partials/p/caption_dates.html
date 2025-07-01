@@ -9,37 +9,37 @@
 
 <!-- released -->
 {{ with .released }}
-    {{ $d := partial "fn/Concat" (slice "Released " (. | time.Format $formatShort)) }}
+    {{ $d := add "Released " (. | time.Format $formatShort) }}
     {{ $dates = append $d $dates }}
 {{ end }}
 
 <!-- taken -->
 {{ if eq page.Section "photos" }}
     {{ with index .images 0 }}
-        {{ $path := partial "fn/Concat" (slice "images/" .) }}
+        {{ $path := add "images/" . }}
         {{ $image := resources.Get $path }}
 
         {{ with $image }}
             {{ with .Exif }}
-                {{ $d := partial "fn/Concat" (slice "Taken " (.Date | time.Format $format)) }}
+                {{ $d := add "Taken " (.Date | time.Format $format) }}
                 {{ $dates = append $d $dates }}
             {{ else }}
-                {{ warnf (partial "fn/Concat" (slice "Single: no exif for " $path)) }}
+                {{ warnf (add "Single: no exif for " $path) }}
             {{ end }}
         {{ else }}
-            {{ errorf (partial "fn/Concat" (slice "Caption: unable to find " $path)) }}
+            {{ errorf (add "Caption: unable to find " $path) }}
         {{ end }}
     {{ end }}
 {{ end }}
 
 <!-- modified -->
 {{ with .modified }}
-    {{ $d := partial "fn/Concat" (slice "Modified " (. | time.Format $format)) }}
+    {{ $d := add "Modified " (. | time.Format $format) }}
     {{ $dates = append $d $dates }}
 {{ else }}
     <!-- published (only show if not modified) -->
     {{ with .published }}
-        {{ $d := partial "fn/Concat" (slice "Published " (. | time.Format $format)) }}
+        {{ $d := add "Published " (. | time.Format $format) }}
         {{ $dates = append $d $dates }}
     {{ end }}
 {{ end }}

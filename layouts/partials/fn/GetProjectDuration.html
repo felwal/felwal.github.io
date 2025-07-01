@@ -40,7 +40,7 @@
     {{ with .end }}
         {{ $endTime := . | time.Format $formatInterYear }}
         {{ $s = $endTime }}
-        {{ warnf (partial "fn/Concat" (slice "Project end without start")) }}
+        {{ warnf "Project end without start" }}
     {{ end }}
 {{ end }}
 
