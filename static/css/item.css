@@ -36,7 +36,7 @@
   object-fit: cover;
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
-  background-color: var(--color-fill);
+  background-color: var(--color-surface);
 }
 
 .item__bg  {
@@ -45,7 +45,7 @@
   object-fit: cover;
   transition: var(--transition);
   border-radius: var(--corner-radius-small);
-  background-color: var(--color-fill);
+  background-color: var(--color-surface);
 
   /* for icon */
   align-content: center;
@@ -82,7 +82,7 @@
 
 .item__keytag {
   font-weight: bold;
-  background-color: var(--color-fill);
+  background-color: var(--color-surface);
   padding-left: var(--spacing-diminutive);
   padding-right: var(--spacing-diminutive);
   padding-top: 0.1em;

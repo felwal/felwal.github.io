@@ -1,110 +1,112 @@
 {{ define "main" }}
 
-    <article class="column">
-        <!-- title -->
-        {{ with .Title }}
-            <h1>{{ . }}</h1>
-        {{ else }}
-            <h1>Unnamed</h1>
-        {{ end }}
-
-        {{ with .Params.summary }}
-            <p class="summary">{{ markdownify . }}</p>
-        {{ end }}
-
-        <!-- banner(s) -->
-        {{ range .Params.images }}
-            {{ $path := add "images/" . }}
-            {{ $image := resources.Get $path }}
-
-            {{ with $image }}
-                {{ partial "single/image_banner" (dict "image" .) }}
-                <p />
-
-            {{ else }}
-                {{ errorf (add "Single: unable to find " $path) }}
-            {{ end }}
-        {{ end }}
-
-        {{ partial "p/caption_dates" .Params }}
-
-        <ul class="bulletless">
-            <!-- links -->
-            {{ with .Params.links }}
-                <li>
-                    Links:
-                    {{ range $i, $map := . }}
-                        {{ range $key, $val := $map }}
-                            {{ partial "p/link_external" (dict "link" $val "text" $key) }}
-                        {{ end }}
-                    {{ end }}
-                </li>
-            {{ end }}
-
-            <!-- taxonomies -->
-            {{ with .Params.tools }}
-                <li>
-                    {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" .) }}
-                </li>
-            {{ end }}
-        </ul>
-
-        <!-- blocks -->
-        {{ if or .Params.assignment .Params.team }}
-            <div class="callout-row">
-                {{ with .Params.assignment }}
-                    {{ partial "single/callout" (dict "title" "Assignment" "text" .) }}
+    <main>
+        <article class="column-flow">
+            <div class="hero column-flow">
+                <!-- title -->
+                {{ with .Title }}
+                    <h1>{{ . }}</h1>
+                {{ else }}
+                    <h1>Unnamed</h1>
                 {{ end }}
 
-                {{ with .Params.role }}
-                    {{ $text := . }}
-                    {{ with $.Params.team }}
-                        {{ $text = add $text " Team: " (collections.Delimit . ", ") }}
-                    {{ end }}
+                {{ with .Params.summary }}
+                    <p class="summary">{{ markdownify . }}</p>
+                {{ end }}
 
-                    {{ partial "single/callout" (dict "title" "Role" "text" $text) }}
+                <!-- banner(s) -->
+                {{ range .Params.images }}
+                    {{ $path := add "images/" . }}
+                    {{ $image := resources.Get $path }}
+
+                    {{ with $image }}
+                        {{ partial "single/image_banner" (dict "image" .) }}
+                    {{ else }}
+                        {{ errorf (add "Single: unable to find " $path) }}
+                    {{ end }}
                 {{ end }}
             </div>
+
+            {{ partial "p/caption_dates" .Params }}
+
+            <ul class="bulletless">
+                <!-- links -->
+                {{ with .Params.links }}
+                    <li>
+                        Links:
+                        {{ range $i, $map := . }}
+                            {{ range $key, $val := $map }}
+                                {{ partial "p/link_external" (dict "link" $val "text" $key) }}
+                            {{ end }}
+                        {{ end }}
+                    </li>
+                {{ end }}
+
+                <!-- taxonomies -->
+                {{ with .Params.tools }}
+                    <li>
+                        {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" .) }}
+                    </li>
+                {{ end }}
+            </ul>
+
+            <!-- blocks -->
+            {{ if or .Params.assignment .Params.team }}
+                <div class="callout-row">
+                    {{ with .Params.assignment }}
+                        {{ partial "single/callout" (dict "title" "Assignment" "text" .) }}
+                    {{ end }}
+
+                    {{ with .Params.role }}
+                        {{ $text := . }}
+                        {{ with $.Params.team }}
+                            {{ $text = add $text " Team: " (collections.Delimit . ", ") }}
+                        {{ end }}
+
+                        {{ partial "single/callout" (dict "title" "Role" "text" $text) }}
+                    {{ end }}
+                </div>
+            {{ end }}
+
+            {{ .Content }}
+        </article>
+
+        <!-- related pages -->
+
+        {{ $relatedPages := slice }}
+
+        {{ with .Params.clusters }}
+            {{ $pages := where site.RegularPages "Params.clusters" "intersect" . }}
+            {{ $pages = where $pages ".RelPermalink" "ne" $.RelPermalink }}
+            {{ $relatedPages = append $pages $relatedPages }}
         {{ end }}
 
-        {{ .Content }}
-    </article>
+        {{ with .Params.related }}
+            {{ $pages := (apply . "site.GetPage" ".") }}
+            <!-- TODO: warn if not found -->
+            {{ $relatedPages = append $pages $relatedPages }}
+        {{ end }}
 
-    <!-- related pages -->
+        <!-- next -->
+        {{ if eq .Section "projects" }}
+            {{ with .PrevInSection }}
+                <section class="column">
+                    <h2>Next</h2>
 
-    {{ $relatedPages := slice }}
+                    {{ partial "it/item_list" (dict "page" .) }}
+                </section>
 
-    {{ with .Params.clusters }}
-        {{ $pages := where site.RegularPages "Params.clusters" "intersect" . }}
-        {{ $pages = where $pages ".RelPermalink" "ne" $.RelPermalink }}
-        {{ $relatedPages = append $pages $relatedPages }}
-    {{ end }}
+                {{ $relatedPages = where $relatedPages ".RelPermalink" "ne" .RelPermalink }}
+            {{ end }}
+        {{ end }}
 
-    {{ with .Params.related }}
-        {{ $pages := (apply . "site.GetPage" ".") }}
-        <!-- TODO: warn if not found -->
-        {{ $relatedPages = append $pages $relatedPages }}
-    {{ end }}
-
-    <!-- next -->
-    {{ if eq .Section "projects" }}
-        {{ with .PrevInSection }}
+        {{ with $relatedPages }}
             <section class="column">
-                <h2>Next</h2>
+                <h2>Related</h2>
 
-                {{ partial "it/item_list" (dict "page" .) }}
+                {{ partial "list/stack_grid" (uniq .) }}
             </section>
-
-            {{ $relatedPages = where $relatedPages ".RelPermalink" "ne" .RelPermalink }}
         {{ end }}
-    {{ end }}
-
-    {{ with $relatedPages }}
-        <section class="column">
-            <h2>Related</h2>
-
-            {{ partial "list/stack_grid" (uniq .) }}
-        </section>
-    {{ end }}
+    </main>
 
 {{ end }}

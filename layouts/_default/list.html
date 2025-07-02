@@ -1,13 +1,19 @@
 {{ define "main" }}
 
-    <main class="column">
-        <section>
-            <!-- sometimes title is provided in md instead -->
-            {{ with .Title }}
-                <h1>{{ . }}</h1>
-            {{ end }}
+    <main>
+        <article class="column-flow">
+            <div class="hero column-flow">
+                <!-- sometimes title is provided in md instead -->
+                {{ with .Title }}
+                    <h1>{{ . }}</h1>
+                {{ end }}
 
-            {{ .Content }}
+                {{ with .Params.summary }}
+                    <p class="summary">{{ markdownify . }}</p>
+                {{ end }}
+
+                {{ .Content }}
+            </div>
 
             <!-- items -->
             {{ with where .RegularPages "Params.hidden" "!=" true }}
@@ -24,7 +30,7 @@
             {{ range .Sections }}
                 {{ partial "list/section" . }}
             {{ end }}
-        </section>
+        </article>
     </main>
 
 {{ end }}

@@ -1,5 +1,5 @@
-.column {
-  max-width: var(--width-column);
+.column, .column-flow > :not(.hero) {
+  max-width: min(var(--width-column), calc(100vw - 2 * var(--spacing-edge)));
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,6 +45,26 @@
   .header__nav {
     flex-direction: column;
     display: none;
+  }
+}
+
+
+/* || HERO */
+
+.hero {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+  margin-bottom: var(--spacing-section);
+  background-color: var(--color-surface);
+}
+
+.hero > :last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 36rem) {
+  .hero {
+    padding-top: var(--spacing-p);
   }
 }
 

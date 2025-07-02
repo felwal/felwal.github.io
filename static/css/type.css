@@ -1,6 +1,6 @@
 .summary {
-  font-weight: 500;
-  font-size: var(--font-size-summary);
+  /*font-weight: 500;
+  font-size: var(--font-size-summary);*/
 }
 
 .caption {
@@ -14,8 +14,8 @@
 }
 
 figcaption > p > code {
-  background-color: initial;
-  outline: var(--width-border) solid var(--color-border);
+  background-color: var(--color-border);
+  /*outline: var(--width-border) solid var(--color-border);*/
 }
 
 

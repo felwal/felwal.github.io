@@ -8,11 +8,12 @@
 :root {
   /* color */
 
-  --color-fill: rgba(128, 128, 128, 0.15);
+  --color-surface: #F5F3F0;
+  --color-surface-dk: #F1EEEA;
   --color-border: rgba(128, 128, 128, 0.15);
   --color-border-image: rgba(0, 0, 0, 0.1);
   --color-decoration: gray;
-  --color-primary: #B9E273;
+  --color-primary: #629B00;
 
   --color-text-primary: rgba(0, 0, 0, 0.9);
   --color-text-secondary: rgba(0, 0, 0, 0.6);
@@ -27,6 +28,11 @@
   --spacing-diminutive: 0.25rem; /* 2dp */
   --spacing-tiny: 0.5rem; /* 4dp */
   --spacing-small: 1rem; /* 8dp */
+  --spacing-medium: 2rem; /* 8dp */
+
+  --spacing-p: var(--spacing-small);
+  --spacing-section: var(--spacing-medium);
+  --spacing-edge: var(--spacing-small);
 
   --width-border: 0.1rem;
   --width-column: 46rem; /* 48 including edge padding */
