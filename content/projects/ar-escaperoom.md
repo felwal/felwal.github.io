@@ -25,14 +25,14 @@ In order to win the player completes four puzzles, collecting the codes and keys
 
 The Meta puzzle ties together all the other four puzzles with four locks. In accordance with the "open structure", they can be solved in any order:
 
-{{< figrow force-row=true >}}
+{{< figrow force-row=true wide=true >}}
     {{< figure src="/images/escaperoom-lock-1.png" >}}
     {{< figure src="/images/escaperoom-structure.jpg" outline=true >}}
 {{< /figrow >}}
 
 The two code locks use AR buttons with screen touch as input, while the two padlocks require keys attached to tangibles:
 
-{{< figrow force-row=true >}}
+{{< figrow force-row=true wide=true >}}
     {{< figure src="/images/escaperoom-lock-pin-1.png" >}}
     {{< figure src="/images/escaperoom-lock-pin-2.png" >}}
     {{< figure src="/images/escaperoom-lock-key-1.png" >}}
@@ -55,7 +55,7 @@ And for the racing puzzle you rotate the book like a wheel, steering a remote-co
 
 We performed a couple of think-aloud sessions coupled with interviews to evaluate the interactions and compare the different modalities. I handled the qualitative analysis, which included coding, affinity diagramming, and insights extraction:
 
-{{< figrow force-row=true >}}
+{{< figrow force-row=true wide=true >}}
     {{< figure src="/images/escaperoom-analysis-clustering.png" outline=true >}}
     {{< figure src="/images/escaperoom-analysis-insights.png" outline=true >}}
 {{< /figrow >}}

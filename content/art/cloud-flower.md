@@ -9,7 +9,7 @@ images: [cloud-flower.jpg]
 clusters: [powerup]
 ---
 
-{{< figrow >}}
+{{< figrow wide=true >}}
     {{< figure src="/images/cloud-flower-2.jpg" >}}
     {{< figure src="/images/cloud-flower-3.jpg" >}}
 {{< /figrow >}}

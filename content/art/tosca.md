@@ -6,7 +6,7 @@ images: [tosca.jpg]
 clusters: [katt]
 ---
 
-{{< figrow >}}
+{{< figrow wide=true >}}
     {{< figure src="/images/tosca-2.jpg" >}}
     {{< figure src="/images/tosca-3.jpg" >}}
 {{< /figrow >}}

@@ -1,7 +1,12 @@
-.column, .column-flow > :not(.hero) {
-  max-width: min(var(--width-column), calc(100vw - 2 * var(--spacing-edge)));
+.column {
+  max-width: min(var(--width-column-wide), calc(100vw - 2 * var(--spacing-edge)));
   margin-left: auto;
   margin-right: auto;
+}
+
+.column-flow > :not(.wide) {
+  max-width: min(var(--width-column-narrow), calc(100vw - 2 * var(--spacing-edge)));
+  margin-left: 0;
 }
 
 
@@ -58,7 +63,7 @@
   background-color: var(--color-surface);
 }
 
-.hero > :last-child {
+.hero__content > :last-child {
   margin-bottom: 0;
 }
 

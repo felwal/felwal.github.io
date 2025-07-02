@@ -35,7 +35,8 @@
   --spacing-edge: var(--spacing-small);
 
   --width-border: 0.1rem;
-  --width-column: 46rem; /* 48 including edge padding */
+  --width-column-narrow: 46rem;
+  --width-column-wide: 58rem;
   --width-mobile: 36rem;
 
   /* type */

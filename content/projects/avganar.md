@@ -89,7 +89,7 @@ I learned app design and development by building these Android apps. I never fin
 
 Trackfield is for runs:
 
-{{< figrow force-row=true >}}
+{{< figrow force-row=true wide=true >}}
     {{< figure src="/images/trackfield-exercises.png" outline=true >}}
     {{< figure src="/images/trackfield-view.png" outline=true >}}
     {{< figure src="/images/trackfield-edit.png" outline=true >}}
@@ -98,7 +98,7 @@ Trackfield is for runs:
 
 And Markana is for Markdown notes:
 
-{{< figrow force-row=true >}}
+{{< figrow force-row=true wide=true >}}
     {{< figure src="/images/markana-1.jpg" outline=true >}}
     {{< figure src="/images/markana-2.jpg" outline=true >}}
     {{< figure src="/images/markana-3.jpg" outline=true >}}

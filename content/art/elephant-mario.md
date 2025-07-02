@@ -9,7 +9,7 @@ images: [elephant-mario.jpg]
 clusters: [mario, elephant]
 ---
 
-{{< figrow >}}
+{{< figrow wide=true >}}
     {{< figure src="/images/elephant-mario-2.jpg" >}}
     {{< figure src="/images/elephant-mario-3.jpg" >}}
 {{< /figrow >}}

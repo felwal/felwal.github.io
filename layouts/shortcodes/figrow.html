@@ -1,4 +1,4 @@
-<div class="figrow__container">
+<div class="figrow__container{{ if .Get "wide" }} wide{{ end }}">
     {{ $dynamic := true }}
     {{ with .Get "force-row" }}
         {{ if . }}

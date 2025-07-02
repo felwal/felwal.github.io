@@ -9,7 +9,7 @@ clusters: [acorn]
 related: [/projects/acorn-nocorn]
 ---
 
-{{< figrow >}}
+{{< figrow wide=true >}}
     {{< figure src="/images/acorns-2.jpg" >}}
     {{< figure src="/images/acorns-3.jpg" >}}
 {{< /figrow >}}

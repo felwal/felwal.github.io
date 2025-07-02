@@ -1,35 +1,39 @@
 {{ define "main" }}
 
     <main>
-        <article class="column-flow">
-            <div class="hero column-flow">
-                <!-- sometimes title is provided in md instead -->
-                {{ with .Title }}
-                    <h1>{{ . }}</h1>
-                {{ end }}
+        <article>
+            <div class="hero">
+                <div class="hero__content column column-flow">
+                    <!-- sometimes title is provided in md instead -->
+                    {{ with .Title }}
+                        <h1>{{ . }}</h1>
+                    {{ end }}
 
-                {{ with .Params.summary }}
-                    <p class="summary">{{ markdownify . }}</p>
-                {{ end }}
+                    {{ with .Params.summary }}
+                        <p class="summary">{{ markdownify . }}</p>
+                    {{ end }}
 
-                {{ .Content }}
+                    {{ .Content }}
+                </div>
             </div>
 
-            <!-- items -->
-            {{ with where .RegularPages "Params.hidden" "!=" true }}
-                {{ if or (eq $.Section "art") (eq $.Section "photos") }}
-                    {{ partial "list/stack_photo" . }}
-                {{ else if eq $.Section "posts" }}
-                    {{ partial "list/stack_list" . }}
-                {{ else }}
-                    {{ partial "list/stack_grid" . }}
+            <div class="column">
+                <!-- items -->
+                {{ with where .RegularPages "Params.hidden" "!=" true }}
+                    {{ if or (eq $.Section "art") (eq $.Section "photos") }}
+                        {{ partial "list/stack_photo" . }}
+                    {{ else if eq $.Section "posts" }}
+                        {{ partial "list/stack_list" . }}
+                    {{ else }}
+                        {{ partial "list/stack_grid" . }}
+                    {{ end }}
                 {{ end }}
-            {{ end }}
 
-            <!-- sections -->
-            {{ range .Sections }}
-                {{ partial "list/section" . }}
-            {{ end }}
+                <!-- sections -->
+                {{ range .Sections }}
+                    {{ partial "list/section" . }}
+                {{ end }}
+            </div>
         </article>
     </main>
 
