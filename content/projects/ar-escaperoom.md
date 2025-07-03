@@ -1,5 +1,5 @@
 ---
-title: Escape Room
+title: AR Escape Room
 summary: Mobile multimodal puzzle-solving
 team: [Prijun Koirala, Luca Lancella, William Zhan]
 assignment: For the course _DT2140 Multimodal Interactions and Interfaces_.

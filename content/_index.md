@@ -4,4 +4,4 @@ modified:
 
 # Hej hopp, I'm Felix Wallin
 
-I study media technology and interaction design, with a focus on sustainability and an (unreasonable?) passion for all things ideation.
+I'm an interaction designer and media technologist, passionate about the intersection of play and sustainable transformation.

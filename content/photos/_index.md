@@ -5,5 +5,3 @@ icon: camera
 limit: 4
 aliases: [photography]
 ---
-
-I also enjoy nature- and macro photography.
