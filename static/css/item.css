@@ -78,9 +78,16 @@
   margin: 0;
 }
 
-.item__text > h3 {
+.item__heading {
   margin: 0;
   word-wrap: break-word;
+  color: var(--color-text-primary);
+  transition: var(--transition);
+}
+
+.item:hover .item__heading {
+  text-decoration-line: none;
+  color: var(--color-primary);
 }
 
 .item__text > p {

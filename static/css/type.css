@@ -22,21 +22,35 @@ figcaption > p > code {
 /* || LINK */
 
 .link {
-  color: var(--color-text-link);
   text-decoration-thickness: 0.08em;
+  transition: var(--transition);
 }
 
 .link:hover, .link:active {
   text-decoration-line: underline;
 }
 
-.link--heading {
-  color: var(--color-text-primary);
+.link--text {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.13em;
 }
 
-.item:hover .link--heading {
-  text-decoration-line: none;
+.link--text:hover, .link--text:active {
   color: var(--color-primary);
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.18em;
+}
+
+.link--heading {}
+
+.link--heading:hover, .link--heading:active {
+  color: var(--color-primary);
+  text-decoration-line: none;
 }
 
 

@@ -1,5 +1,5 @@
 <article class="item item--photo outlined">
-    <a href="{{ .RelPermalink }}" class="link link--heading item__container item--photo__container">
+    <a href="{{ .RelPermalink }}" class="item__container item--photo__container">
         {{ with .Params.images }}
             {{ $filename := index . 0 }}
             {{ $path := add "images/" $filename }}
