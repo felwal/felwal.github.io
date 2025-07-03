@@ -20,7 +20,7 @@
             <div class="column">
                 <!-- items -->
                 {{ with where .RegularPages "Params.hidden" "!=" true }}
-                    {{ if or (eq $.Section "art") (eq $.Section "photos") }}
+                    {{ if or (eq $.Section "craft") (eq $.Section "photos") }}
                         {{ partial "list/stack_photo" . }}
                     {{ else if eq $.Section "posts" }}
                         {{ partial "list/stack_list" . }}

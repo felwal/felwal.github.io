@@ -50,7 +50,7 @@ I made the acorns out of Fimo clay and acrylics:
     {{< figure src="/images/acorns.jpg" >}}
 {{< /figrow >}}
 
-[](/art/acorns)
+[](/craft/acorns)
 
 And William made the squirrel through origami:[^origami]
 
