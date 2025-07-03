@@ -1,15 +1,12 @@
 <header>
     <div class="header__content column">
-        <div class="header__logo">
-            {{ partial "ic/favicon.svg" }}
-            <a class="header__title link nav-tab" href="/">
-                Felix Wallin
-            </a>
-        </div>
+        <a href="/">
+            <div class="header__logo{{ if ne page.RelPermalink "/" }} header__logo--restart{{ end }}">
+                {{ partial "ic/favicon.svg" }}
+            </div>
+        </a>
 
         <nav class="header__nav">
-            {{ partial "header_tab" (dict "link" "/" "text" "Home") }}
-
             {{ range .Site.Sections }}
                 {{ if .RegularPages }}
                     {{ partial "header_tab" (dict "link" .RelPermalink "text" .LinkTitle "icon" .Params.icon ) }}
