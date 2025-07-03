@@ -39,11 +39,12 @@
 
   /* type */
 
-  --font-size-h2: 1.6rem;
-  --font-size-h3: 1.25rem;
+  --font-size-h1: 2.4rem;
+  --font-size-h2: 1.7rem;
+  --font-size-h3: 1.3rem;
   --font-size-summary: 20px;
-  --font-size-body: 17px;
-  --font-size-caption: 15px;
+  --font-size-body: 18px;
+  --font-size-caption: 16px;
 
   /* anim */
 

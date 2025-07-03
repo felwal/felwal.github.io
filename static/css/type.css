@@ -6,6 +6,7 @@
 .caption {
   color: var(--color-text-secondary);
   font-size: var(--font-size-caption);
+  font-weight: 500;
 }
 
 .decoration {
