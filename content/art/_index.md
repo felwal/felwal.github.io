@@ -2,6 +2,7 @@
 title: Art
 weight: 3
 icon: brush
+limit: 4
 aliases: [craft]
 ---
 
