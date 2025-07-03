@@ -1,3 +1,7 @@
+article :last-child {
+  margin-bottom: 0;
+}
+
 /* || CALLOUT */
 
 .callout-row {

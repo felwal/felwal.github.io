@@ -100,5 +100,12 @@
 /* || FOOTER */
 
 .footer__content {
-  text-align: center;
+  padding-left: var(--spacing-small);
+  padding-right: var(--spacing-small);
+  padding-top: var(--spacing-tiny);
+  padding-bottom: var(--spacing-edge);
+  width: fit-content;
+  border-top-left-radius: var(--corner-radius-large);
+  border-top-right-radius: var(--corner-radius-large);
+  background-color: var(--color-surface);
 }
