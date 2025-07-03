@@ -1,5 +1,7 @@
 .outlined {
-  outline: var(--width-border) solid var(--color-border);
+  outline-style: solid;
+  outline-width: var(--width-border);
+  outline-color: var(--color-border);
   outline-offset: -0.085rem;
 }
 

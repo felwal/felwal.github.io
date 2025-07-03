@@ -21,9 +21,8 @@
 
   /* dimen */
 
-  --corner-radius-small: 0.25rem;
-  --corner-radius-large: 0.5rem;
-  --corner-radius-larger: 0.75rem;
+  --corner-radius-small: 0.5rem;
+  --corner-radius-large: 0.75rem;
 
   --spacing-diminutive: 0.25rem; /* 2dp */
   --spacing-tiny: 0.5rem; /* 4dp */
@@ -49,5 +48,5 @@
 
   /* anim */
 
-  --transition: 0.2s;
+  --transition: 0.1s ease-out;
 }
