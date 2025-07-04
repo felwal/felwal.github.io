@@ -1,5 +1,6 @@
 ---
 modified:
+icon: house
 ---
 
 # Hej hopp, I'm Felix Wallin
