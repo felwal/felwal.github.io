@@ -72,7 +72,8 @@
   transition: var(--transition);
 }
 
-.item:hover .item__bg > svg {
+.item:hover .item__bg > svg,
+.item:active .item__bg > svg {
   width: calc(0.925 * 2.5rem);
   height: calc(0.925 * 2.5rem);
 }
@@ -89,7 +90,8 @@
   transition: var(--transition);
 }
 
-.item:hover .item__heading {
+.item:hover .item__heading,
+.item:active .item__heading {
   text-decoration-line: none;
   color: var(--color-primary);
 }

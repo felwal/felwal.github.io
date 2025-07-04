@@ -27,14 +27,16 @@
   color: var(--color-primary-lt);
 }
 
-.header__logo:hover {
+.header__logo:hover,
+.header__logo:active {
   width: 2.06rem;
   height: 2.06rem;
   margin: calc(-1 * var(--spacing-tiny) - 0.25 * 0.06rem);
   background-color: var(--color-surface-dk);
 }
 
-.header__logo--restart:hover {
+.header__logo--restart:hover,
+.header__logo--restart:active {
   color: transparent;
 }
 
@@ -60,11 +62,14 @@
   transition: var(--transition);
 }
 
-.nav-tab:hover {
+.nav-tab:hover,
+.nav-tab:active {
   color: var(--color-primary);
 }
 
-.nav-tab--selected, .nav-tab:hover {
+.nav-tab--selected,
+.nav-tab:hover,
+.nav-tab:active {
   font-weight: bold;
   background-color: var(--color-surface-dk);
 }
