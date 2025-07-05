@@ -1,0 +1,28 @@
+<div class="figrow__container figrow--device__container{{ if .Get "wide" }} wide{{ end }}">
+    {{ $dynamic := true }}
+    {{ with .Get "force-row" }}
+        {{ if . }}
+            {{ $dynamic = false }}
+        {{ end }}
+    {{ end }}
+
+    <!-- div for column (mobile) -->
+    <div class="figrow__div figrow--device__div{{ if $dynamic }} figrow__div--dynamic{{ end }}">
+        {{ .Inner }}
+    </div>
+
+    <!-- table for row -->
+    <table class="figrow__table figrow--device__table{{ if $dynamic }} figrow__table--dynamic{{ end }}">
+        <tbody>
+            <tr>
+                {{ .Inner }}
+            </tr>
+        </tbody>
+    </table>
+
+    {{ with .Get "caption" }}
+        <figcaption>
+            <p class="caption">{{ markdownify . }}</p>
+        </figcaption>
+    {{ end }}
+</div>

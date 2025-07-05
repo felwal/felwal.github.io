@@ -15,6 +15,7 @@ tools: [arduino, cpp, processing]
 series: [dh2400]
 keytag: Critical
 images: [acorn-nocorn-banner-2.png]
+color: yellow
 clusters: []
 weight: 6
 ---

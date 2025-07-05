@@ -29,7 +29,7 @@
 /* || ITEM */
 
 .item {
-  border-radius: var(--corner-radius-large);
+  border-radius: var(--corner-radius-medium);
   transition: var(--transition);
 }
 
@@ -47,7 +47,7 @@
   display: block;
   object-fit: cover;
   transition: var(--transition);
-  border-radius: var(--corner-radius-large);
+  border-radius: var(--corner-radius-medium);
   background-color: var(--color-surface);
 }
 
@@ -56,7 +56,7 @@
   aspect-ratio: 1 / .5;
   object-fit: cover;
   transition: var(--transition);
-  border-radius: var(--corner-radius-large);
+  border-radius: var(--corner-radius-medium);
   background-color: var(--color-surface);
 
   /* for icon */
@@ -166,8 +166,8 @@
 
 .item--list:hover,
 .item--list:active {
-  border-top-left-radius: var(--corner-radius-large);
-  border-bottom-left-radius: var(--corner-radius-large);
+  border-top-left-radius: var(--corner-radius-medium);
+  border-bottom-left-radius: var(--corner-radius-medium);
 }
 
 .item--list:hover > a > .item--list__thumb,

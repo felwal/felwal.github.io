@@ -8,6 +8,7 @@ tools: [unity, csharp]
 series: [dh2650]
 keytag: Games
 images: [gamedev-banner.png]
+color: blue
 weight: 4
 aliases: [gamedev]
 ---

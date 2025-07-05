@@ -13,6 +13,7 @@ tags: [mobility]
 tools: [garmin, monkeyc]
 keytag: Product · App
 images: [avganar-banner.png]
+color: blue
 related: []
 weight: 3
 aliases: [apps, appdev]
@@ -26,40 +27,39 @@ It's the first personal project I've released officially. After failing to final
 
 You can view nearby stops and add them as favorites:
 
-{{< figrow force-row=true >}}
-    {{< figure src="/images/avganar-glance.png" >}}
-    {{< figure src="/images/avganar-stops-nearby.png" >}}
-    {{< figure src="/images/avganar-stops-favorites.png" >}}
-{{< /figrow >}}
+{{< devicerow force-row=true >}}
+    {{< device src="/images/avganar-glance.png" form="watch" >}}
+    {{< device src="/images/avganar-stops-nearby.png" form="watch" >}}
+    {{< device src="/images/avganar-stops-favorites.png" form="watch" >}}
+{{< /devicerow >}}
 
 Upcoming departures, filtered by transport mode:
 
-{{< figrow force-row=true >}}
-    {{< figure src="/images/avganar-modes.png" >}}
-    {{< figure src="/images/avganar-departures-train.png" >}}
-    {{< figure src="/images/avganar-departures-bus.png" >}}
-{{< /figrow >}}
+{{< devicerow force-row=true >}}
+    {{< device src="/images/avganar-modes.png" form="watch" >}}
+    {{< device src="/images/avganar-departures-train.png" form="watch" >}}
+    {{< device src="/images/avganar-departures-bus.png" form="watch" >}}
+{{< /devicerow >}}
 
 ![](/images/avganar-irl.jpg)
 
 Deviations and error handling:
 
-{{< figrow force-row=true >}}
-    {{< figure src="/images/avganar-deviations.png" >}}
-    {{< figure src="/images/avganar-error.png" >}}
-{{< /figrow >}}
+{{< devicerow force-row=true >}}
+    {{< device src="/images/avganar-deviations.png" form="watch" >}}
+    {{< device src="/images/avganar-error.png" form="watch" >}}
+{{< /devicerow >}}
 
 ### Avgånär Sweden
 
 I decided to make another version of the app for the entire Sweden. The app is open source, so the idea is to be adaptable to other countries' public transport as well.
 
-![](/images/avganar-swe-banner.png)
-
-{{< figrow force-row=true >}}
-    {{< figure src="/images/avganar-swe-glance.png" >}}
-    {{< figure src="/images/avganar-swe-modes.png" >}}
-    {{< figure src="/images/avganar-swe-departures-train.png" >}}
-{{< /figrow >}}
+{{< devicerow wide=true force-row=false >}}
+    {{< device src="/images/avganar-swe-glance.png" form="watch" color="green" >}}
+    {{< device src="/images/avganar-swe-stops-nearby.png" form="watch" color="green" >}}
+    {{< device src="/images/avganar-swe-modes.png" form="watch" color="green" >}}
+    {{< device src="/images/avganar-swe-departures-train.png" form="watch" color="green" >}}
+{{< /devicerow >}}
 
 ## Process
 
@@ -71,11 +71,11 @@ At one point the API was updated to require requesting one transport mode at a t
 
 ![Exploring different ways to implement mode selection](/images/avganar-figma.png)
 
-{{< figrow force-row=true caption="**Right**: before the menu, you would cycle through modes linearly" >}}
-    {{< figure src="/images/avganar-modes.png" >}}
-    {{< figure src="/images/avganar-swe-modes.png" >}}
-    {{< figure src="/images/avganar-process-departures-train.png" >}}
-{{< /figrow >}}
+{{< devicerow force-row=true caption="**Right**: before the menu, you would cycle through modes linearly" >}}
+    {{< device src="/images/avganar-modes.png" form="watch" >}}
+    {{< device src="/images/avganar-swe-modes.png" form="watch" color="green" >}}
+    {{< device src="/images/avganar-process-departures-train.png" form="watch" >}}
+{{< /devicerow >}}
 
 ## What's next
 
@@ -89,18 +89,18 @@ I learned app design and development by building these Android apps. I never fin
 
 Trackfield is for runs:
 
-{{< figrow force-row=true wide=true >}}
-    {{< figure src="/images/trackfield-exercises.png" outline=true >}}
-    {{< figure src="/images/trackfield-view.png" outline=true >}}
-    {{< figure src="/images/trackfield-edit.png" outline=true >}}
-    {{< figure src="/images/trackfield-route.png" outline=true >}}
-{{< /figrow >}}
+{{< devicerow force-row=true wide=true >}}
+    {{< device src="/images/trackfield-exercises.png" color="green" >}}
+    {{< device src="/images/trackfield-view.png" color="green" >}}
+    {{< device src="/images/trackfield-edit.png" color="green" >}}
+    {{< device src="/images/trackfield-route.png" color="green" >}}
+{{< /devicerow >}}
 
 And Markana is for Markdown notes:
 
-{{< figrow force-row=true wide=true >}}
-    {{< figure src="/images/markana-1.jpg" outline=true >}}
-    {{< figure src="/images/markana-2.jpg" outline=true >}}
-    {{< figure src="/images/markana-3.jpg" outline=true >}}
-    {{< figure src="/images/markana-edit.jpg" outline=true >}}
-{{< /figrow >}}
+{{< devicerow force-row=true wide=true >}}
+    {{< device src="/images/markana-1.jpg" color="pink" >}}
+    {{< device src="/images/markana-2.jpg" color="pink" >}}
+    {{< device src="/images/markana-3.jpg" color="pink" >}}
+    {{< device src="/images/markana-edit.jpg" color="pink" >}}
+{{< /devicerow >}}

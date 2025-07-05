@@ -1,0 +1,36 @@
+{{ with resources.Get (.Get "src") }}
+    {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
+
+    <td>
+        {{ $color := "" }}
+        {{ with $.Get "color" }}
+            {{ $color = . }}
+        {{ else with page.Params.color }}
+            {{ $color = . }}
+        {{ end }}
+
+        {{ $form := "phone" }}
+        {{ with $.Get "form" }}
+            {{ $form = . }}
+        {{ end }}
+
+        <div class="device">
+            <div class="device__side{{ with $color }} device--{{ . }}{{ end }} device--{{ $form }}" >
+                <div class="device__bezel outlined">
+                    <figure>
+                        {{ partial "single/image_figure" (dict
+                            "src" $thumb.RelPermalink
+                            "title" ($.Get "title")
+                            "alt" ($.Get "alt")
+                            "outline" ($.Get "outline")
+                        ) }}
+                    </figure>
+                </div>
+            </div>
+
+            {{ if eq $form "watch" }}
+                <div class="device__band{{ with $color }} device--{{ . }}{{ end }}"></div>
+            {{ end }}
+        </div>
+    </td>
+{{ end }}

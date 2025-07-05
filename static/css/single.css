@@ -77,11 +77,34 @@ article :last-child {
   margin-bottom: 1em;
 }
 
+.figrow--device__container {
+  width: fit-content;
+  padding: var(--spacing-medium);
+  padding-left: max(calc((100vw - var(--width-column-wide)) / 2), var(--spacing-edge));
+  margin-left: min(calc(-1 * (100vw - var(--width-column-wide)) / 2), calc(-1 * var(--spacing-edge))) !important;
+  margin-right: calc(-1 * var(--spacing-medium));
+  border-top-right-radius: var(--corner-radius-large);
+  border-bottom-right-radius: var(--corner-radius-large);
+  background-color: var(--color-surface);
+}
+
+.figrow--device__container.wide {
+  width: auto;
+  padding-right: max(calc((100vw - var(--width-column-wide)) / 2), var(--spacing-edge));
+  margin-right: min(calc(-1 * (100vw - var(--width-column-wide)) / 2), calc(-1 * var(--spacing-edge))) !important;
+  border-radius: 0;
+}
+
 .figrow__div {
   display: none;
+  width: fit-content;
   gap: var(--spacing-diminutive);
   grid-auto-flow: column;
   align-items: end;
+}
+
+.figrow--device__div {
+  gap: var(--spacing-small);
 }
 
 .figrow__table {
@@ -91,6 +114,10 @@ article :last-child {
 .figrow__table > tbody > tr > td {
   padding: 0;
   padding-right: var(--spacing-diminutive);
+}
+
+.figrow--device__table > tbody > tr > td {
+  padding-right: var(--spacing-small);
 }
 
 .figrow__table > tbody > tr > td:last-child {
@@ -109,8 +136,19 @@ article :last-child {
     grid-auto-flow: row;
   }
 
+
+  .figrow--device__table > tbody > tr > td {
+    padding-right: var(--spacing-tiny);
+  }
+
   .figrow__table--dynamic {
     display: none;
+  }
+
+  .figrow--device__container {
+    width: auto;
+    padding-right: var(--spacing-edge);
+    border-radius: 0;
   }
 }
 
@@ -120,6 +158,21 @@ article :last-child {
   max-height: 90vh;
   object-fit: cover;
   border-radius: var(--corner-radius-small);
+}
+
+.device__bezel > figure > .figure__img {
+  border-radius: var(--corner-radius-medium);
+  /*outline-style: solid;
+  outline-width: var(--width-border);
+  outline-color: var(--color-border);*/
+}
+
+.device--phone > .device__bezel > figure > .figure__img {
+  border-radius: var(--corner-radius-screen) / calc(var(--corner-radius-screen) * var(--aspect-ratio-phone));
+}
+
+.device--watch > .device__bezel > figure > .figure__img {
+  border-radius: 50%;
 }
 
 figure:has(a), figure:has(img) {
@@ -141,6 +194,93 @@ figcaption > p {
   font-style: italic;
   text-align: start;
   margin: 0;
+}
+
+
+/* || DEVICE */
+
+.device  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--height-device-band);
+  padding-bottom: var(--height-device-band);
+}
+
+.device__band {
+  position: absolute;
+  width: var(--width-device-band);
+  height: 100%;
+  border-radius: calc((100% + 2 * var(--height-device-band)) / 5) / calc(var(--width-device-band) / 5);
+}
+
+.device__side {
+  width: fit-content;
+  height: fit-content;
+  padding-right: var(--width-device-side);
+  border-radius: var(--corner-radius-large);
+  background-color: gray;
+  z-index: 1;
+}
+
+.device--phone {
+  border-radius: calc(var(--corner-radius-bezel) / (1 + var(--width-device-side-factor))) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-phone));
+}
+
+.device--watch {
+  border-radius: calc(50% / (1 + var(--width-device-side-factor))) / 50%;
+}
+
+.device--green {
+  background-color: var(--color-green-dk);
+}
+
+.device--blue {
+  background-color: var(--color-blue-dk);
+}
+
+.device--pink {
+  background-color: var(--color-pink-dk);
+}
+
+.device--yellow {
+  background-color: var(--color-yellow-dk);
+}
+
+
+.device__bezel {
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+}
+
+.device--phone > .device__bezel {
+  padding: var(--width-device-bezel);
+  padding-top: var(--width-device-bezel-large);
+  padding-bottom: var(--width-device-bezel-large);
+  border-radius: var(--corner-radius-bezel) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-phone));
+}
+
+.device--watch > .device__bezel {
+  padding: var(--width-device-bezel);
+  border-radius: 50%
+}
+
+.device--green > .device__bezel {
+  background-color: var(--color-green);
+}
+
+.device--blue > .device__bezel {
+  background-color: var(--color-blue);
+}
+
+.device--pink > .device__bezel {
+  background-color: var(--color-pink);
+}
+
+.device--yellow > .device__bezel {
+  background-color: var(--color-yellow);
 }
 
 

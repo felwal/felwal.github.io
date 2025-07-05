@@ -15,6 +15,7 @@ tools: [unity, csharp, vuforia]
 series: [dt2140]
 keytag: XR
 images: [escaperoom-gyro-2.png]
+color: blue
 weight: 5
 aliases: [escaperoom]
 ---

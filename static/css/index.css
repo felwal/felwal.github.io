@@ -19,10 +19,23 @@
   --color-text-primary: rgba(0, 0, 0, 0.9);
   --color-text-secondary: rgba(0, 0, 0, 0.6);
 
+  --color-green: #8DDF00;
+  --color-green-dk: var(--color-primary);
+  --color-blue: #7DA9FF;
+  --color-blue-dk: #0045CD;
+  --color-pink: #F49FFF;
+  --color-pink-dk: #8C0B9C;
+  --color-yellow: #FDD60D;
+  --color-yellow-dk: #917700;
+
   /* dimen */
 
   --corner-radius-small: 0.5rem;
-  --corner-radius-large: 0.75rem;
+  --corner-radius-medium: 0.75rem;
+  --corner-radius-large: 1.25rem;
+
+  --corner-radius-screen: 5%;
+  --corner-radius-bezel: calc(var(--corner-radius-screen) + var(--width-device-side));
 
   --spacing-diminutive: 0.25rem; /* 2dp */
   --spacing-tiny: 0.5rem; /* 4dp */
@@ -37,6 +50,16 @@
   --width-column-narrow: 46rem;
   --width-column-wide: 58rem;
   --width-mobile: 36rem;
+
+  --width-device-side-factor: 0.04;
+  --width-device-side: calc(100% * var(--width-device-side-factor));
+  --width-device-bezel: calc(var(--width-device-side) * (1 + var(--width-device-side-factor)));
+  --width-device-bezel-large: calc(2 * var(--width-device-bezel));
+  --width-device-band: 50%;
+  --height-device-band: 8%;
+
+  --aspect-ratio-phone: 0.45; /* 9/20 */
+  --aspect-ratio-pc: 1.6; /* 8/5 */
 
   /* type */
 

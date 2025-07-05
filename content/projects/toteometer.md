@@ -14,6 +14,7 @@ series: [dh2400]
 keytag: Tangible
 clusters: []
 images: [toteometer-cover-2.png]
+color: green
 weight: 1
 ---
 
@@ -40,7 +41,7 @@ I would have liked to make the parts actually resemble totems, with the classic 
 
 I would also make the affordances better, with something like the stud/anti-stud of Lego bricks, as can be seen in the sketches further down.
 
-[Modular figurine utilising the stud/anti-stud technique](/craft/solartotem)
+[Modular figurine utilising the studs and anti-studs](/craft/solartotem)
 
 I used Processing to display the colours on screen, but the initial idea was to make it into a sort of lamp for ambient light. As such it would have been a playful decoration, lamp, and interaction, all in one. Though I only made three totem parts for the prototype, with nine it would be possible to map all colours in the quaternary palette:
 
