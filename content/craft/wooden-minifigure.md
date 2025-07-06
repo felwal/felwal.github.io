@@ -9,7 +9,7 @@ images: [wooden-minifig.jpg]
 clusters: [lego]
 ---
 
-{{< figrow >}}
+{{< figrow force-row=true >}}
     {{< figure src="/images/wooden-minifig-side.jpg" >}}
     {{< figure src="/images/wooden-minifig-back.jpg" >}}
 {{< /figrow >}}

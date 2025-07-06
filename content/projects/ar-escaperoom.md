@@ -22,18 +22,17 @@ aliases: [escaperoom]
 
 In order to win the player completes four puzzles, collecting the codes and keys required to open the door and escape. We used books as tangibles as they can be handled with one hand, be used for image recognition, and most people have some at home.
 
+{{< devicerow columns-mobile="2" wide=false >}}
+    {{< device src="/images/escaperoom-lock.png" >}}
+    {{< device src="/images/escaperoom-gyro.png" >}}
+    {{< device src="/images/escaperoom-racing.png" >}}
+{{< /devicerow >}}
+
 ### Meta puzzle
 
-The Meta puzzle ties together all the other four puzzles with four locks. In accordance with the "open structure", they can be solved in any order:
+The Meta puzzle ties together all the other four puzzles with four locks. In accordance with the "open structure", they can be solved in any order. The two code locks use AR buttons with screen touch as input, while the two padlocks require keys attached to tangibles:
 
-{{< figrow force-row=true wide=true >}}
-    {{< figure src="/images/escaperoom-lock-1.png" >}}
-    {{< figure src="/images/escaperoom-structure.jpg" outline=true >}}
-{{< /figrow >}}
-
-The two code locks use AR buttons with screen touch as input, while the two padlocks require keys attached to tangibles:
-
-{{< figrow force-row=true wide=true >}}
+{{< figrow columns-mobile="2" wide=true >}}
     {{< figure src="/images/escaperoom-lock-pin-1.png" >}}
     {{< figure src="/images/escaperoom-lock-pin-2.png" >}}
     {{< figure src="/images/escaperoom-lock-key-1.png" >}}

@@ -5,9 +5,9 @@ icon: user-round
 summary: I'm an interaction designer and media technologist passionate about ideation, play, and deep sustainable transformation.
 ---
 
-I currently study M.Sc. Interactive Media Technology at KTH Royal Institute of Technology. Topics include interaction design, UX, XR, game design, and computer graphics – which I have complemented with a focus on environmental and social aspects of technology.
+I'm currently studying M.Sc. Interactive Media Technology at KTH Royal Institute of Technology. Topics include interaction design, UX, XR, game design, and graphics – which I have complemented with a focus on environmental and social aspects of technology.
 
-I believe the creative process is just as valuable as the outcome, and that collaboration holds more meaning than competition. I love coming up with wild ideas and challenging assumptions, and I strive to design interactions that aren't just usable but _intrinsically joyful_.
+I believe the creative process is just as valuable as the outcome, and that collaboration holds more meaning than competition. I love coming up with wild ideas and challenging assumptions, and I strive to design interactions that aren't just usable but intrinsically joyful.
 
 ## Contact and profiles
 
@@ -18,4 +18,4 @@ I believe the creative process is just as valuable as the outcome, and that coll
 
 ## About this site
 
-This website is designed and developed by me, built with [Hugo](https://gohugo.io/). You can view the source at [Github](https://github.com/felwal/felwal.github.io/).
+This website is designed and developed by me, built with [Hugo](https://gohugo.io/). You can view the source on [Github](https://github.com/felwal/felwal.github.io/).
