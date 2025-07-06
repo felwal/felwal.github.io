@@ -38,7 +38,7 @@ The explicit signal used is feeding the Librarian with music bananas representin
 
 Feeding the Librarian affects their recommendations and look. Their taste is ephemeral: after a while their eaten music resets, and the style updates. The idea is to offer a more selective sandbox for music exploration. Librarian-recommended songs appear with the banana icon – in contrast to the (almost ideological) magic sparks:
 
-{{< devicerow force-row=true >}}
+{{< devicerow columns-mobile="2" >}}
     {{< device src="/images/librarian-open.png" >}}
     {{< device src="/images/librarian-open-v2.png" >}}
     {{< device src="/images/librarian-playlist.png" >}}
@@ -100,7 +100,7 @@ Individually I started by exploring the feeding mechanism – I wanted it to be 
 
 While the above project was very limited in scope, this course had a focus on the entire design process and its methods. We designed a mobile app fostering social activities and cultural exchange between new and old Stockholmers:
 
-{{< devicerow force-row=true wide=true >}}
+{{< devicerow columns-mobile="2" wide=true >}}
     {{< device src="/images/stamped-home.png" color="blue" >}}
     {{< device src="/images/stamped-events-focused.png" color="blue" >}}
     {{< device src="/images/stamped-view.png" color="blue" >}}

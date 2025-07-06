@@ -27,7 +27,7 @@ It's the first personal project I've released officially. After failing to final
 
 You can view nearby stops and add them as favorites:
 
-{{< devicerow force-row=true >}}
+{{< devicerow columns-mobile="2" >}}
     {{< device src="/images/avganar-glance.png" form="watch" >}}
     {{< device src="/images/avganar-stops-nearby.png" form="watch" >}}
     {{< device src="/images/avganar-stops-favorites.png" form="watch" >}}
@@ -35,7 +35,7 @@ You can view nearby stops and add them as favorites:
 
 Upcoming departures, filtered by transport mode:
 
-{{< devicerow force-row=true >}}
+{{< devicerow columns-mobile="2" >}}
     {{< device src="/images/avganar-modes.png" form="watch" >}}
     {{< device src="/images/avganar-departures-train.png" form="watch" >}}
     {{< device src="/images/avganar-departures-bus.png" form="watch" >}}
@@ -54,7 +54,7 @@ Deviations and error handling:
 
 I decided to make another version of the app for the entire Sweden. The app is open source, so the idea is to be adaptable to other countries' public transport as well.
 
-{{< devicerow wide=true force-row=false >}}
+{{< devicerow wide=true columns-mobile="2" >}}
     {{< device src="/images/avganar-swe-glance.png" form="watch" color="green" >}}
     {{< device src="/images/avganar-swe-stops-nearby.png" form="watch" color="green" >}}
     {{< device src="/images/avganar-swe-modes.png" form="watch" color="green" >}}
@@ -89,7 +89,7 @@ I learned app design and development by building these Android apps. I never fin
 
 Trackfield is for runs:
 
-{{< devicerow force-row=true wide=true >}}
+{{< devicerow columns-mobile="2" wide=true >}}
     {{< device src="/images/trackfield-exercises.png" color="green" >}}
     {{< device src="/images/trackfield-view.png" color="green" >}}
     {{< device src="/images/trackfield-edit.png" color="green" >}}
