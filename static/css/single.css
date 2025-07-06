@@ -104,7 +104,7 @@ article :last-child {
 }
 
 .figrow--device__div {
-  gap: var(--spacing-small);
+  gap: var(--spacing-tiny);
 }
 
 .figrow__table {
@@ -129,13 +129,20 @@ article :last-child {
   align-items: end;
 }
 
+@media screen and (max-width: 48rem) {
+  .figrow--device__container {
+    width: auto;
+    padding-right: var(--spacing-edge);
+    border-radius: 0;
+  }
+}
+
 @media screen and (max-width: 36rem) {
   .figrow__div--dynamic {
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-auto-flow: row;
   }
-
 
   .figrow--device__table > tbody > tr > td {
     padding-right: var(--spacing-tiny);
@@ -146,9 +153,8 @@ article :last-child {
   }
 
   .figrow--device__container {
-    width: auto;
-    padding-right: var(--spacing-edge);
-    border-radius: 0;
+    /*padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);*/
   }
 }
 
@@ -161,18 +167,20 @@ article :last-child {
 }
 
 .device__bezel > figure > .figure__img {
-  border-radius: var(--corner-radius-medium);
+  border-radius: var(--corner-radius-screen) / calc(var(--corner-radius-screen) * var(--aspect-ratio-device));
   /*outline-style: solid;
   outline-width: var(--width-border);
   outline-color: var(--color-border);*/
 }
 
-.device--phone > .device__bezel > figure > .figure__img {
-  border-radius: var(--corner-radius-screen) / calc(var(--corner-radius-screen) * var(--aspect-ratio-phone));
-}
-
-.device--watch > .device__bezel > figure > .figure__img {
+.device--watch > .device__side > .device__bezel > figure > .figure__img {
   border-radius: 50%;
+
+  /* hide imperfect pixelated edges */
+  outline-style: solid;
+  outline-width: var(--width-border);
+  outline-color: var(--color-device-bezel);
+  outline-offset: -0.055rem;
 }
 
 figure:has(a), figure:has(img) {
@@ -196,6 +204,18 @@ figcaption > p {
   margin: 0;
 }
 
+.figrow--device__container > figcaption {
+  margin-top: 0;
+  padding: var(--spacing-small);
+  padding-left: 0;
+  padding-right: 0;
+  background-color: unset;
+}
+
+.figrow--device__container:has(figcaption) {
+  padding-bottom: 0;
+}
+
 
 /* || DEVICE */
 
@@ -204,8 +224,41 @@ figcaption > p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.device--phone {
+  --aspect-ratio-device: var(--aspect-ratio-phone);
+}
+
+.device--phone-old {
+  --aspect-ratio-device: var(--aspect-ratio-phone-old);
+}
+
+.device--watch {
+  --aspect-ratio-device: 1;
+
   padding-top: var(--height-device-band);
   padding-bottom: var(--height-device-band);
+}
+
+.device--green {
+  --color-device-bezel: var(--color-green);
+  --color-device-side: var(--color-green-dk);
+}
+
+.device--blue {
+  --color-device-bezel: var(--color-blue);
+  --color-device-side: var(--color-blue-dk);
+}
+
+.device--pink {
+  --color-device-bezel: var(--color-pink);
+  --color-device-side: var(--color-pink-dk);
+}
+
+.device--yellow {
+  --color-device-bezel: var(--color-yellow);
+  --color-device-side: var(--color-yellow-dk);
 }
 
 .device__band {
@@ -213,74 +266,40 @@ figcaption > p {
   width: var(--width-device-band);
   height: 100%;
   border-radius: calc((100% + 2 * var(--height-device-band)) / 5) / calc(var(--width-device-band) / 5);
+  background-color: var(--color-device-side);
 }
 
 .device__side {
   width: fit-content;
   height: fit-content;
   padding-right: var(--width-device-side);
-  border-radius: var(--corner-radius-large);
-  background-color: gray;
+  border-radius: calc(var(--corner-radius-bezel) / (1 + var(--width-device-side-factor))) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-device));
+  background-color: var(--color-device-side);
   z-index: 1;
 }
 
-.device--phone {
-  border-radius: calc(var(--corner-radius-bezel) / (1 + var(--width-device-side-factor))) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-phone));
-}
-
-.device--watch {
+.device--watch > .device__side {
   border-radius: calc(50% / (1 + var(--width-device-side-factor))) / 50%;
 }
-
-.device--green {
-  background-color: var(--color-green-dk);
-}
-
-.device--blue {
-  background-color: var(--color-blue-dk);
-}
-
-.device--pink {
-  background-color: var(--color-pink-dk);
-}
-
-.device--yellow {
-  background-color: var(--color-yellow-dk);
-}
-
 
 .device__bezel {
   width: fit-content;
   height: fit-content;
-  background-color: black;
-}
-
-.device--phone > .device__bezel {
   padding: var(--width-device-bezel);
   padding-top: var(--width-device-bezel-large);
   padding-bottom: var(--width-device-bezel-large);
-  border-radius: var(--corner-radius-bezel) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-phone));
+  border-radius: var(--corner-radius-bezel) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-device));
+  background-color: var(--color-device-bezel);
 }
 
-.device--watch > .device__bezel {
+.device--phone-old > .device__side > .device__bezel {
+  padding-top: calc(2 * var(--width-device-bezel-large));
+  padding-bottom: calc(2 * var(--width-device-bezel-large));
+}
+
+.device--watch > .device__side > .device__bezel {
   padding: var(--width-device-bezel);
   border-radius: 50%
-}
-
-.device--green > .device__bezel {
-  background-color: var(--color-green);
-}
-
-.device--blue > .device__bezel {
-  background-color: var(--color-blue);
-}
-
-.device--pink > .device__bezel {
-  background-color: var(--color-pink);
-}
-
-.device--yellow > .device__bezel {
-  background-color: var(--color-yellow);
 }
 
 

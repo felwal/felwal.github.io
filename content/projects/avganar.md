@@ -98,9 +98,9 @@ Trackfield is for runs:
 
 And Markana is for Markdown notes:
 
-{{< devicerow force-row=true wide=true >}}
-    {{< device src="/images/markana-1.jpg" color="pink" >}}
-    {{< device src="/images/markana-2.jpg" color="pink" >}}
-    {{< device src="/images/markana-3.jpg" color="pink" >}}
-    {{< device src="/images/markana-edit.jpg" color="pink" >}}
+{{< devicerow columns-mobile="2" wide=true >}}
+    {{< device src="/images/markana-1.jpg" color="pink" form="phone-old" >}}
+    {{< device src="/images/markana-2.jpg" color="pink" form="phone-old" >}}
+    {{< device src="/images/markana-3.jpg" color="pink" form="phone-old" >}}
+    {{< device src="/images/markana-edit.jpg" color="pink" form="phone-old" >}}
 {{< /devicerow >}}

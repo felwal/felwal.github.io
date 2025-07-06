@@ -14,9 +14,9 @@
             {{ $form = . }}
         {{ end }}
 
-        <div class="device">
-            <div class="device__side{{ with $color }} device--{{ . }}{{ end }} device--{{ $form }}" >
-                <div class="device__bezel outlined">
+        <div class="device{{ with $color }} device--{{ . }}{{ end }} device--{{ $form }}">
+            <div class="device__side" >
+                <div class="device__bezel">
                     <figure>
                         {{ partial "single/image_figure" (dict
                             "src" $thumb.RelPermalink
@@ -29,7 +29,7 @@
             </div>
 
             {{ if eq $form "watch" }}
-                <div class="device__band{{ with $color }} device--{{ . }}{{ end }}"></div>
+                <div class="device__band"></div>
             {{ end }}
         </div>
     </td>

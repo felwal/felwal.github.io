@@ -20,13 +20,16 @@
   --color-text-secondary: rgba(0, 0, 0, 0.6);
 
   --color-green: #8DDF00;
-  --color-green-dk: var(--color-primary);
+  --color-green-dk: green;
   --color-blue: #7DA9FF;
   --color-blue-dk: #0045CD;
   --color-pink: #F49FFF;
   --color-pink-dk: #8C0B9C;
   --color-yellow: #FDD60D;
   --color-yellow-dk: #917700;
+
+  --color-device-bezel: black;
+  --color-device-side: gray;
 
   /* dimen */
 
@@ -58,7 +61,9 @@
   --width-device-band: 50%;
   --height-device-band: 8%;
 
+  --aspect-ratio-device: var(--aspect-ratio-phone);
   --aspect-ratio-phone: 0.45; /* 9/20 */
+  --aspect-ratio-phone-old: 0.56; /* 9/16 */
   --aspect-ratio-pc: 1.6; /* 8/5 */
 
   /* type */
