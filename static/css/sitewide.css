@@ -109,6 +109,7 @@
 /* || FOOTER */
 
 .footer__content {
+  font-weight: 500;
   padding-left: var(--spacing-small);
   padding-right: var(--spacing-small);
   padding-top: var(--spacing-tiny);
