@@ -173,6 +173,10 @@ article > :last-child > :last-child {
   outline-color: var(--color-border);*/
 }
 
+.device--pc > .device__side > .device__bezel > figure > .figure__img {
+  border-radius: calc(var(--corner-radius-screen) * var(--phone-to-hori)) / calc(var(--corner-radius-screen) * var(--aspect-ratio-device) * var(--phone-to-hori));
+}
+
 .device--watch > .device__side > .device__bezel > figure > .figure__img {
   border-radius: 50%;
 
@@ -234,6 +238,11 @@ figcaption > p {
   --aspect-ratio-device: var(--aspect-ratio-phone-old);
 }
 
+.device--pc {
+  --aspect-ratio-device: var(--aspect-ratio-pc);
+  --phone-to-hori: calc(var(--aspect-ratio-phone) / var(--aspect-ratio-device));
+}
+
 .device--watch {
   --aspect-ratio-device: 1;
 
@@ -278,6 +287,11 @@ figcaption > p {
   z-index: 1;
 }
 
+.device--pc > .device__side {
+  padding-right: calc(var(--width-device-side) * var(--phone-to-hori));
+  border-radius: calc(var(--corner-radius-bezel) * var(--phone-to-hori)) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-phone));
+}
+
 .device--watch > .device__side {
   border-radius: calc(50% / (1 + var(--width-device-side-factor))) / 50%;
 }
@@ -295,6 +309,13 @@ figcaption > p {
 .device--phone-old > .device__side > .device__bezel {
   padding-top: calc(2 * var(--width-device-bezel-large));
   padding-bottom: calc(2 * var(--width-device-bezel-large));
+}
+
+.device--pc > .device__side > .device__bezel {
+  padding: calc(var(--width-device-bezel) * var(--phone-to-hori));
+  padding-top: calc(var(--width-device-bezel-large) * var(--phone-to-hori));
+  padding-bottom: calc(var(--width-device-bezel-large) * var(--phone-to-hori));
+  border-radius: calc(var(--corner-radius-bezel) * var(--phone-to-hori)) / calc(var(--corner-radius-bezel) * var(--aspect-ratio-phone));
 }
 
 .device--watch > .device__side > .device__bezel {
