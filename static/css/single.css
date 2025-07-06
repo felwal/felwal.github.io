@@ -195,7 +195,7 @@ figure:has(a), figure:has(img) {
   align-content: end;
 }
 
-article > figure:has(figcaption) img {
+figure:has(figcaption) > img {
   /* (render hook) make sure figcaption bg doesnt cover the image */
   position: relative;
   z-index: 1;
