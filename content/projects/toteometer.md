@@ -15,7 +15,7 @@ keytag: Tangible
 clusters: []
 images: [toteometer-cover-2.png]
 color: green
-weight: 1
+weight: 2
 ---
 
 Totem parts are stacked to form totem poles. There are three spots where a totem pole may be raised, corresponding to the primary colours red, green, and blue. Depending on how many totem parts are stacked in each pole, a resulting colour is displayed on the computer screen.

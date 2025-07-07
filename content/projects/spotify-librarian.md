@@ -16,7 +16,7 @@ links:
 images: [librarian-banner.png]
 color: yellow
 clusters: []
-weight: 2
+weight: 3
 aliases: [librarian]
 ---
 

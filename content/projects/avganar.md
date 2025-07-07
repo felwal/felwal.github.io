@@ -16,7 +16,7 @@ images: [avganar-hero.png]
 deviceHero: true
 color: blue
 related: []
-weight: 3
+weight: 1
 aliases: [apps, appdev]
 ---
 
