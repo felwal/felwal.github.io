@@ -148,13 +148,14 @@
   border-radius: var(--corner-radius-small);
 }
 
-.item--grid__thumb {
+.item--grid__thumb, .item--grid__bg {
   width: 100%;
-  aspect-ratio: 1 / .5;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.item--grid__bg {
-  width: 100%;
+.item--grid__thumb {
+  aspect-ratio: 1 / .5;
 }
 
 
@@ -181,13 +182,12 @@
   height: calc(7rem - 2 * var(--spacing-tiny));
 }
 
-.item--list__thumb {
+.item--list__thumb, .item--list__bg {
   height: 7rem;
-  aspect-ratio: 1 / .5;
 }
 
-.item--list__bg {
-  height: 7rem;
+.item--list__thumb {
+  aspect-ratio: 1 / .5;
 }
 
 .item--list__container {
