@@ -21,11 +21,13 @@
         {{ end }}
 
         <div class="item__text">
-            {{ with .LinkTitle }}
-                <h3 class="item__heading">{{ . }}</h3>
-            {{ else }}
-                <h3>Unnamed</h3>
-            {{ end }}
+            <h3 class="item__heading">
+                {{ with .LinkTitle }}
+                    {{ . }}
+                {{ else }}
+                    Unnamed
+                {{ end }}
+            </h3>
 
             {{ with .Params.summary }}
                 <p>
