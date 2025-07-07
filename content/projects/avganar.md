@@ -12,7 +12,8 @@ links:
 tags: [mobility]
 tools: [garmin, monkeyc]
 keytag: Product · App
-images: [avganar-banner.png]
+images: [avganar-hero.png]
+deviceHero: true
 color: blue
 related: []
 weight: 3

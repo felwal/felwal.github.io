@@ -95,6 +95,10 @@
   background-color: var(--color-surface);
 }
 
+.hero:has(.banner__container) {
+  padding-bottom: 0;
+}
+
 .hero__content > :last-child {
   margin-bottom: 0;
 }

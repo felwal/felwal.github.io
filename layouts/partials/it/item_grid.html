@@ -7,10 +7,10 @@
 
             {{ with $image }}
                 {{ $rot := partial "fn/GetExifRotation" .Exif }}
-                {{ $spec := add "500x250 webp Center" $rot }}
+                {{ $spec := add "800x400 webp Center" $rot }}
                 {{ $thumb := .Fill $spec }}
 
-                <img class="item__thumb item--grid__thumb outlined" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item__thumb item--grid__thumb{{ if not $.Params.deviceHero}} outlined{{ end }}" loading="lazy" src="{{ $thumb.RelPermalink }}" />
             {{ end }}
         {{ else }}
             <div class="item__bg item--grid__bg">

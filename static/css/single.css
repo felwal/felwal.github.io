@@ -41,14 +41,15 @@ article > :last-child > :last-child {
   max-height: 90vh;
   height: auto;
   object-fit: cover;
-  border-radius: var(--corner-radius-small);
+  border-top-left-radius: var(--corner-radius-small);
+  border-top-right-radius: var(--corner-radius-small);
 }
 
 .banner__container {
   display: flex;
   justify-content: center;
   margin-top: var(--spacing-p);
-  background-color: var(--color-surface-dk);
+  /*background-color: var(--color-surface-dk);*/
   border-radius: var(--corner-radius-small);
 }
 
@@ -62,7 +63,7 @@ article > :last-child > :last-child {
     border-radius: 0;
   }
 
-  .banner__container {
+  .banner__container:not(.banner__container--device) {
     margin-left: calc(-1 * var(--spacing-edge));
     margin-right: calc(-1 * var(--spacing-edge));
     border-radius: 0;

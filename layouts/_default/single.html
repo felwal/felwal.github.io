@@ -21,7 +21,7 @@
                         {{ $image := resources.Get $path }}
 
                         {{ with $image }}
-                            {{ partial "single/image_banner" (dict "image" .) }}
+                            {{ partial "single/image_banner" (dict "image" . "deviceHero" $.Params.deviceHero ) }}
                         {{ else }}
                             {{ errorf (add "Single: unable to find " $path) }}
                         {{ end }}
