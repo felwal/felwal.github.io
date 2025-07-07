@@ -35,9 +35,11 @@
   background-color: var(--color-surface-dk);
 }
 
-.header__logo--restart:hover,
-.header__logo--restart:active {
-  color: transparent;
+@media screen and (min-width: 36rem) {
+  .header__logo--restart:hover,
+  .header__logo--restart:active {
+    color: transparent;
+  }
 }
 
 .header__nav {
