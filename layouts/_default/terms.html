@@ -1,19 +1,33 @@
 {{ define "main" }}
 
-    <main class="column">
+    <main>
         <article>
-            <h1>{{ .Title }}</h1>
-            {{ .Content }}
-        </article>
+            <div class="hero">
+                <div class="hero__content column column-flow">
+                    <!-- sometimes title is provided in md instead -->
+                    {{ with .Title }}
+                        <h1>{{ . }}</h1>
+                    {{ end }}
 
-        {{ range $taxonomy, $terms := .Site.Taxonomies }}
-            <!-- only show from the current taxonomy (eg tags) [TODO: some better way] -->
-            {{ if strings.Contains $.RelPermalink $taxonomy }}
-                {{ range $term, $weightedPages := $terms }}
-                    {{ partial "list/section_term" (dict "taxonomyLink" $.RelPermalink "term" $term "pages" $weightedPages) }}
+                    {{ with .Params.summary }}
+                        <p class="summary">{{ markdownify . }}</p>
+                    {{ end }}
+
+                    {{ .Content }}
+                </div>
+            </div>
+
+            <div class="column">
+                {{ range $taxonomy, $terms := .Site.Taxonomies }}
+                    <!-- only show from the current taxonomy (eg tags) [TODO: some better way] -->
+                    {{ if strings.Contains $.RelPermalink $taxonomy }}
+                        {{ range $term, $weightedPages := $terms }}
+                            {{ partial "list/section_term" (dict "taxonomyLink" $.RelPermalink "term" $term "pages" $weightedPages) }}
+                        {{ end }}
+                     {{ end }}
                 {{ end }}
-             {{ end }}
-        {{ end }}
+            </div>
+        </article>
     </main>
 
 {{ end }}

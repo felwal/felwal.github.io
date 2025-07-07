@@ -1,8 +1,8 @@
 {{ if .pages.Pages }}
 
-    <section>
-        <!-- TODO: use info (title, content) from content/tags somehow -->
+    <section class="column-flow">
         <h2><a class="link link--heading" href="{{ .taxonomyLink }}{{ .term }}">{{ .term }}</a></h3>
+        {{ $.Content }}
 
         {{ $pages := .pages.Pages.Limit 3 }}
         {{ partial "list/stack_grid" $pages }}
