@@ -43,7 +43,7 @@
   --spacing-diminutive: 0.25rem; /* 2dp */
   --spacing-tiny: 0.5rem; /* 4dp */
   --spacing-small: 1rem; /* 8dp */
-  --spacing-medium: 2rem; /* 8dp */
+  --spacing-medium: 2rem; /* 16dp */
 
   --spacing-p: var(--spacing-small);
   --spacing-section: var(--spacing-medium);
@@ -71,9 +71,9 @@
   --font-size-h1: 2.4rem;
   --font-size-h2: 1.7rem;
   --font-size-h3: 1.3rem;
-  --font-size-summary: 20px;
-  --font-size-body: 18px;
-  --font-size-caption: 16px;
+  --font-size-summary: 1.25rem;
+  --font-size-body: 1.125rem;
+  --font-size-caption: 1rem;
 
   /* anim */
 
