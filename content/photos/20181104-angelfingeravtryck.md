@@ -3,6 +3,7 @@ title: Ängelfingeravtryck
 summary: Lucka 2
 published: 2018-12-02
 series: [julkalender-2018]
+clusters: [kaktus]
 images: [20181104-angelfingeravtryck.jpg, 20181104-angelfingeravtryck-2.jpg]
 ---
 
