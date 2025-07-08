@@ -1,10 +1,10 @@
 {{ with resources.Get (.Get "src") }}
-    {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
+    {{ $resized := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
 
     <td>
         <figure>
             {{ partial "single/image_figure" (dict
-                "src" $thumb.RelPermalink
+                "src" $resized.RelPermalink
                 "title" ($.Get "title")
                 "alt" ($.Get "alt")
                 "outline" ($.Get "outline")

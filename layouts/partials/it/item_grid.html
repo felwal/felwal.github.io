@@ -1,16 +1,22 @@
 <article class="item item--grid outlined">
     <a href="{{ .RelPermalink }}" class="item__container item--grid__container">
-        {{ with .Params.images }}
-            {{ $filename := index . 0 }}
-            {{ $path := add "images/" $filename }}
+        {{ $thumb := "" }}
+        {{ with .Params.thumb }}
+            {{ $thumb = . }}
+        {{ else with (index .Params.images 0) }}
+            {{ $thumb = . }}
+        {{ end }}
+
+        {{ with $thumb }}
+            {{ $path := add "images/" $thumb }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
                 {{ $rot := partial "fn/GetExifRotation" .Exif }}
                 {{ $spec := add "800x400 webp Center" $rot }}
-                {{ $thumb := .Fill $spec }}
+                {{ $resized := .Fill $spec }}
 
-                <img class="item__thumb item--grid__thumb{{ if not $.Params.deviceHero}} outlined{{ end }}" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item__thumb item--grid__thumb{{ if not $.Params.deviceHero}} outlined{{ end }}" loading="lazy" src="{{ $resized.RelPermalink }}" />
             {{ end }}
         {{ else }}
             <div class="item__bg item--grid__bg">

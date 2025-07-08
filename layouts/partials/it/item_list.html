@@ -1,20 +1,26 @@
 <article class="item item--list outlined">
     <a href="{{ .page.RelPermalink }}" class="item__container item--list__container">
-        {{ with .page.Params.images }}
-            {{ $filename := index . 0 }}
-            {{ $path := add "images/" $filename }}
+        {{ $thumb := "" }}
+        {{ with .page.Params.thumb }}
+            {{ $thumb = . }}
+        {{ else with (index .page.Params.images 0) }}
+            {{ $thumb = . }}
+        {{ end }}
+
+        {{ with $thumb }}
+            {{ $path := add "images/" $thumb }}
             {{ $image := resources.Get $path }}
 
             {{ with $image }}
                 {{ $rot := partial "fn/GetExifRotation" .Exif }}
                 {{ $spec := add "800x400 webp Center" $rot }}
-                {{ $thumb := .Fill $spec }}
+                {{ $resized := .Fill $spec }}
 
-                <img class="item__thumb item--list__thumb" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item__thumb item--list__thumb" loading="lazy" src="{{ $resized.RelPermalink }}" />
             {{ end }}
         {{ else }}
             <div class="item__bg item--list__bg">
-                {{ with $.page.Params.icon }}
+                {{ with .page.Params.icon }}
                     {{ partial "icon" . }}
                 {{ end }}
             </div>
@@ -46,14 +52,6 @@
                     </p>
                 {{ end }}
             {{ end }}
-
-            <!--
-            {{ with .page.Params.date }}
-                <p class="caption">
-                    <time>{{ . | time.Format "Jan 2 2006" }}</time>
-                </p>
-            {{ end }}
-            -->
         </div>
     </a>
 </article>

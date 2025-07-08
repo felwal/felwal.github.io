@@ -8,9 +8,9 @@
             {{ with $image }}
                 {{ $rot := partial "fn/GetExifRotation" .Exif }}
                 {{ $spec := add "500x500 webp Center" $rot }}
-                {{ $thumb := .Fill $spec }}
+                {{ $resized := .Fill $spec }}
 
-                <img class="item__thumb item--photo__thumb outlined" loading="lazy" src="{{ $thumb.RelPermalink }}" />
+                <img class="item__thumb item--photo__thumb outlined" loading="lazy" src="{{ $resized.RelPermalink }}" />
             {{ end }}
         {{ end }}
     </a>

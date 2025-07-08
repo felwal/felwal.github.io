@@ -1,11 +1,11 @@
-{{ $thumb := .image }}
+{{ $resized := .image }}
 
 {{ if gt (math.Max .image.Width .image.Height) .length }}
     {{ $scaling := partial "fn/GetSideScaling" (dict "width" .image.Width "height" .image.Height "length" (string .length)) }}
     {{ $rot := partial "fn/GetExifRotation" .image.Exif }}
     {{ $spec := add $scaling " webp" $rot }}
 
-    {{ $thumb = .image.Resize $spec }}
+    {{ $resized = .image.Resize $spec }}
 {{ end }}
 
-{{ return $thumb }}
+{{ return $resized }}
