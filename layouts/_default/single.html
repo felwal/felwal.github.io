@@ -15,13 +15,13 @@
                         <p class="summary">{{ markdownify . }}</p>
                     {{ end }}
 
-                    <!-- banner(s) -->
+                    <!-- hero(s) -->
                     {{ range .Params.images }}
                         {{ $path := add "images/" . }}
                         {{ $image := resources.Get $path }}
 
                         {{ with $image }}
-                            {{ partial "single/image_banner" (dict "image" . "deviceHero" $.Params.deviceHero ) }}
+                            {{ partial "single/image_hero" (dict "image" . "deviceHero" $.Params.deviceHero ) }}
                         {{ else }}
                             {{ errorf (add "Single: unable to find " $path) }}
                         {{ end }}

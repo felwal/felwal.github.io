@@ -1,8 +1,8 @@
 {{ with .image }}
     {{ $thumb := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
 
-    <div class="banner__container{{ if $.deviceHero}} banner__container--device{{ end }} wide">
-        <img class="banner" loading="lazy" src="{{ $thumb.RelPermalink }}"
+    <div class="hero__img-container{{ if $.deviceHero}} hero__img-container--device{{ end }} wide">
+        <img class="hero__img" loading="lazy" src="{{ $thumb.RelPermalink }}"
 
         {{ with $.text }}
             alt="{{ . }}"
