@@ -13,7 +13,9 @@ series: [dm2630]
 keytag: UX
 links:
     - demo video: https://www.youtube.com/watch?v=35srVpMqtcM
-images: [librarian-banner.png]
+images: [librarian-hero.png]
+thumb: librarian-thumb.png
+deviceHero: true
 color: yellow
 clusters: []
 weight: 3

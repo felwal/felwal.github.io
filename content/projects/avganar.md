@@ -13,6 +13,7 @@ tags: [mobility]
 tools: [garmin, monkeyc]
 keytag: Product · App
 images: [avganar-hero.png]
+thumb: avganar-thumb.png
 deviceHero: true
 color: blue
 related: []

@@ -10,6 +10,7 @@ links:
 tools: [hugo, html, css]
 keytag: Website
 images: [ellawallin-hero.png]
+thumb: ellawallin-thumb.png
 deviceHero: true
 color: pink
 related: []
@@ -23,7 +24,7 @@ aliases: [ellawallin]
     {{< device src="/images/ellawallin-home.png" form="pc" >}}
 {{< /devicerow >}}
 
-{{< devicerow wide=true >}}
+{{< devicerow force-row=true wide=true >}}
     {{< device src="/images/ellawallin-project.png" form="pc" >}}
     {{< device src="/images/ellawallin-project-2.png" form="pc" >}}
 {{< /devicerow >}}
