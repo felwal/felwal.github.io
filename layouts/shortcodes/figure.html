@@ -2,7 +2,7 @@
     {{ $resized := partial "fn/ResizeSmart" (dict "image" . "length" 1500) }}
 
     <td>
-        <figure>
+        <figure class="{{ if $.Get "wide" }} wide{{ end }}">
             {{ partial "single/image_figure" (dict
                 "src" $resized.RelPermalink
                 "title" ($.Get "title")
