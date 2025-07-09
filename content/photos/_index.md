@@ -1,6 +1,6 @@
 ---
 title: Photos
-weight: 4
+weight: 3
 icon: camera
 limit: 4
 aliases: [photography]

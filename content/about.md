@@ -7,7 +7,9 @@ summary: I'm an interaction designer and media technologist passionate about ide
 
 I'm currently studying M.Sc. Interactive Media Technology at KTH Royal Institute of Technology. Topics include interaction design, UX, XR, game design, and graphics – which I have complemented with a focus on environmental and social aspects of technology.
 
-I believe the creative process is just as valuable as the outcome, and that collaboration holds more meaning than competition. I love coming up with wild ideas and challenging assumptions, and I strive to design interactions that aren't just usable but intrinsically joyful.
+I believe the creative process is just as valuable as the outcome. I love coming up with wild ideas and challenging assumptions, and I strive to design interactions that aren't just usable but intrinsically joyful.
+
+Besides the kind of work you see here, I also enjoy running, writing, reading, and collecting fantastical interactions: what could be more joyous than [snail phones](https://onepiece.fandom.com/wiki/Den_Den_Mushi)?
 
 ## Contact and profiles
 
@@ -18,4 +20,4 @@ I believe the creative process is just as valuable as the outcome, and that coll
 
 ## About this site
 
-This website is designed and developed by me, built with [Hugo](https://gohugo.io/). You can view the source on [Github](https://github.com/felwal/felwal.github.io/).
+This website is designed and [developed](https://github.com/felwal/felwal.github.io/) by me, built with Hugo.
