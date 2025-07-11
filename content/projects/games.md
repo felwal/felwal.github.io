@@ -17,11 +17,6 @@ aliases: [gamedev]
 
 <p class="caption">Mar – May 2024</p>
 
-{{< callout-group >}}
-    {{< callout title="Assignment" text="Demo for the course _DH2650 Computer Game Design_." >}}
-    {{< callout title="Team" text="Felix Broberg, Duosi Dai, Carolina Dexwik" >}}
-{{< /callout-group >}}
-
 In this role-playing language-learner, the player explores different regions where they speak different languages – and helps humans reconnect with each other.
 
 As help they are accompanied by a small friendly shoggoth called Shogpadre. (The Lovecraftian monster that became a metaphor for LLMs.) Because sometimes the crazy ideas do make it through!
@@ -41,6 +36,8 @@ I was responsible for much of the coding, especially the dialogue and quest syst
 {{< /figrow >}}
 
 (And the shoggoth of course.)
+
+{{< callout title="Team" text="Felix Broberg, Duosi Dai, Carolina Dexwik" >}}
 
 ## Permatotems
 

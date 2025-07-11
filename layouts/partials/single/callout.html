@@ -1,4 +1,6 @@
 <div class="callout">
-    <p class="caption callout__title">{{ .title }}</p>
-    <p class="caption callout__body">{{ markdownify .text }}</p>
+    <p class="caption callout__body">
+        <span class="callout__title">{{ .title }}:</span>
+        {{ markdownify .text }}
+    </p>
 </div>

@@ -7,6 +7,7 @@ article > :last-child > :last-child {
 .callout-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: var(--spacing-tiny);
   margin-top: var(--spacing-p);
   margin-bottom: var(--spacing-p);
@@ -14,6 +15,7 @@ article > :last-child > :last-child {
 }
 
 .callout {
+  width: fit-content;
   margin-top: var(--spacing-p);
   margin-bottom: var(--spacing-p);
   padding-top: var(--spacing-tiny);
@@ -36,18 +38,6 @@ article > :last-child > :last-child {
 
 .callout__body {
   margin: 0;
-}
-
-.callout > p {
-  /* color: var(--color-text-primary); */
-}
-
-@media screen and (max-width: 36rem) {
-  .callout-row {
-    /*flex-direction: column;*/
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 

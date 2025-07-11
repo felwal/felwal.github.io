@@ -96,7 +96,7 @@ Individually I started by exploring the feeding mechanism – I wanted it to be 
 <p class="caption">Sep – Oct 2023</p>
 
 {{< callout-group >}}
-    {{< callout title="Assignment" text="Concept for the course _DM2601 Media Technology and Interaction Design_. The brief was to design for _interdependence_." >}}
+    {{< callout title="Brief" text="Design for _interdependence_" >}}
     {{< callout title="Team" text="Kristina Högberg, Edina Niculescu, Lennard Scheibel, Aikaterini Tsioutsia" >}}
 {{< /callout-group >}}
 
