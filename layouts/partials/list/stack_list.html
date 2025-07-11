@@ -1,4 +1,4 @@
-<div class="stack stack--list">
+<div class="stack stack--list wide">
     {{ range where . "Params.hidden" "!=" true }}
         {{ partial "it/item_list" (dict "page" .) }}
     {{ end }}

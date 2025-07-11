@@ -4,7 +4,7 @@ summary: I've always been tinkering with my own games
 published: 2025-02-23
 modified: 2025-02-24
 tags: [game-design, ai]
-tools: [unity, csharp]
+tools: [Unity, C#]
 series: [dh2650]
 keytag: Games
 images: [gamedev-banner.png]

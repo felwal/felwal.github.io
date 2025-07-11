@@ -32,44 +32,38 @@
             <div class="column column-flow">
                 {{ partial "p/caption_dates" .Params }}
 
-                <ul class="bulletless">
-                    <!-- links -->
-                    {{ with .Params.links }}
-                        <li>
-                            Links:
-                            {{ range $i, $map := . }}
-                                {{ range $key, $val := $map }}
-                                    {{ partial "p/link_external" (dict "link" $val "text" $key) }}
-                                {{ end }}
-                            {{ end }}
-                        </li>
-                    {{ end }}
-
-                    <!-- taxonomies -->
-                    {{ with .Params.tools }}
-                        <li>
-                            {{ partial "p/link_tag_list" (dict "taxonomy" "tools" "list" .) }}
-                        </li>
-                    {{ end }}
-                </ul>
-
                 <!-- blocks -->
-                {{ if or .Params.assignment .Params.team }}
+                {{ if or .Params.role .Params.tools .Params.team .Params.links }}
                     <div class="callout-row wide">
-                        {{ with .Params.assignment }}
-                            {{ partial "single/callout" (dict "title" "Assignment" "text" .) }}
+                        {{ with .Params.role }}
+                            {{ partial "single/callout" (dict "title" "Role" "text" .) }}
                         {{ end }}
 
-                        {{ with .Params.role }}
-                            {{ $text := . }}
-                            {{ with $.Params.team }}
-                                {{ $text = add $text " Team: " (collections.Delimit . ", ") }}
+                        {{ with .Params.tools }}
+                            {{ partial "single/callout" (dict "title" "Tools" "text" (delimit . ", ")) }}
+                        {{ end }}
+
+                        {{ with $.Params.team }}
+                            {{ partial "single/callout" (dict "title" "Team" "text" (delimit . ", ")) }}
+                        {{ end }}
+
+                        {{ with .Params.links }}
+                            {{ $list := slice }}
+
+                            {{ range $i, $map := . }}
+                                {{ range $key, $val := $map }}
+                                    {{ $list = $list | append (partial "p/link_external" (dict "link" $val "text" $key)) }}
+                                {{ end }}
                             {{ end }}
 
-                            {{ partial "single/callout" (dict "title" "Role" "text" $text) }}
+                            {{ partial "single/callout" (dict "title" "Links" "text" (delimit $list " · ")) }}
                         {{ end }}
                     </div>
                 {{ end }}
+
+                <!--{{ with .Params.assignment }}
+                    {{ partial "single/callout" (dict "title" "Brief" "text" .) }}
+                {{ end }}-->
 
                 {{ .Content }}
             </div>

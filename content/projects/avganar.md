@@ -6,11 +6,12 @@ modified: 2025-02-24
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26
+role: App design, app development
 links:
-  - Github: https://github.com/felwal/avganar
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
+  - Github: https://github.com/felwal/avganar
 tags: [mobility]
-tools: [garmin, monkeyc]
+tools: [Monkey C]
 keytag: App
 images: [avganar-hero.png]
 thumb: avganar-thumb.png
@@ -21,7 +22,7 @@ weight: 1
 aliases: [apps, appdev]
 ---
 
-Avgånär is a Garmin watch widget for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL), while a second version covers the entire Sweden.
+Avgånär is a Garmin watch widget for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL), while a second version covers entire Sweden.
 
 It's the first personal project I've released officially. After not finalising several Android apps, I wanted a smaller project and to focus on MVP principles. I started from a personal problem and employed autobiographical design, along with formative feedback from users.
 
@@ -54,7 +55,7 @@ Get deviation warnings and handle errors:
 
 ### Avgånär Sweden
 
-I decided to make another version of the app for the entire Sweden. The app is open source, so the idea is to be [replicable](https://journals.sagepub.com/doi/full/10.1177/1350508420973631) to other countries' public transport as well.
+I decided to make another version of the app for the entire Sweden. The app is open source, so the idea is to be [replicable](https://doi.org/10.1177/1350508420973631) to other countries' public transport as well.
 
 {{< devicerow wide=true columns-mobile="2" >}}
     {{< device src="/images/avganar-swe-glance.png" form="watch" color="green" >}}

@@ -2,16 +2,15 @@
 title: AR Escape Room
 summary: Mobile multimodal puzzle-solving
 team: [Prijun Koirala, Luca Lancella, William Zhan]
-assignment: For the course _DT2140 Multimodal Interactions and Interfaces_.
-role: Development of labyrinth, racing, and lock puzzles; puzzle integration and Git coordination; qualitative analysis.
 published: 2025-02-09
 modified: 2025-02-23
 started: 2023-11-23
 completed: 2024-01-10
+role: AR development, user evaluation, qualitative analysis
 links:
-    - demo video: https://www.youtube.com/watch?v=Qgya8fgqN-o
+    - Video: https://www.youtube.com/watch?v=Qgya8fgqN-o
 tags: [xr]
-tools: [unity, csharp, vuforia]
+tools: [Unity, C#, Vuforia]
 series: [dt2140]
 keytag: XR
 images: [escaperoom-hero.png]
@@ -87,6 +86,5 @@ And three different levels of vegetation with accompanying sounds:
 We found that natural elements and sounds had a calming effect, while lighting preferences were mixed.
 
 {{< callout-group >}}
-    {{< callout title="Assignment" text="Demo and study for the course _DM2350 Human Perception for IT_." >}}
     {{< callout title="Team" text="Carl Holmqvist, Pranit Popli, William Rolf, Alexander Widman" >}}
 {{< /callout-group >}}

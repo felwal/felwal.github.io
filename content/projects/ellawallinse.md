@@ -4,10 +4,11 @@ summary: Illustration and concept art portfolio
 published: 2025-07-08
 modified:
 started: 2025-03-12
+role: Web design, web development
 links:
+  - Live: https://ellawallin.se/
   - Github: https://github.com/ellawallin/ellawallin.github.io
-  - ellawallin.se: https://ellawallin.se/
-tools: [hugo]
+tools: [Hugo]
 keytag: Website
 images: [ellawallin-hero.png]
 thumb: ellawallin-thumb.png
