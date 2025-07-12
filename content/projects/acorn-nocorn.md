@@ -3,8 +3,6 @@ title: Acorn, Nocorn
 summary: Design examining the economy–ecology relationship
 team: [William Zhan]
 assignment: Focus on the conceptual meaning of the design; be critical, reflective, speculative and/or provocative.
-published: 2024-11-18
-modified: 2025-02-10
 started: 2024-02-19
 completed: 2024-03-01
 role: Physical interaction, critical design, sensor programming

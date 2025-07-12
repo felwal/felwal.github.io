@@ -3,8 +3,6 @@ title: Spotify Librarian
 summary: Redesign for AI-based music discovery
 team: [William Rolf, Alexander Widman, William Zhan]
 assignment: Serve music discovery behaviors using AI on new or existing surfaces, based on both implicit and explicit signals.
-published: 2025-02-08
-modified: 2025-02-23
 started: 2024-09-18
 completed: 2024-12-20
 role: UX, critical design; hifi individual extension of lofi group work

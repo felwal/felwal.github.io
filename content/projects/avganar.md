@@ -1,8 +1,6 @@
 ---
 title: Avgånär
 summary: Public transport widget for Garmin watches
-published: 2025-01-26
-modified: 2025-02-24
 started: 2021-04-24
 completed: 2024-06-16
 released: 2022-11-26

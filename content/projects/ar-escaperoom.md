@@ -2,8 +2,6 @@
 title: AR Escape Room
 summary: Mobile multimodal puzzle-solving
 team: [Prijun Koirala, Luca Lancella, William Zhan]
-published: 2025-02-09
-modified: 2025-02-23
 started: 2023-11-23
 completed: 2024-01-10
 role: AR development, user evaluation, qualitative analysis

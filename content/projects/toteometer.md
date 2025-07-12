@@ -2,8 +2,6 @@
 title: Toteometer
 summary: RGB color mixer, inspired by totems
 assignment: Make a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way.
-published: 2024-11-18
-modified: 2025-02-23
 started: 2024-01-26
 completed: 2024-02-02
 role: Physical interaction, sensor programming
