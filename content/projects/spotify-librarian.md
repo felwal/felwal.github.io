@@ -91,11 +91,11 @@ Individually I started by exploring the feeding mechanism – I wanted it to be 
 
 ## Related project: Stamped
 
-<p class="caption">Sep – Oct 2023</p>
 
 {{< callout-group >}}
     {{< callout title="Brief" text="Design for _interdependence_" >}}
     {{< callout title="Team" text="Kristina Högberg, Edina Niculescu, Lennard Scheibel, Aikaterini Tsioutsia" >}}
+    {{< callout text="Sep – Oct 2023" outline=true >}}
 {{< /callout-group >}}
 
 While the above project was very limited in scope, this course had a focus on the entire design process and its methods. We designed a mobile app fostering social activities and cultural exchange between new and old Stockholmers:

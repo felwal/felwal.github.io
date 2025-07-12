@@ -9,8 +9,6 @@ I'm currently studying M.Sc. Interactive Media Technology at KTH Royal Institute
 
 I believe the creative process is just as valuable as the outcome. I love coming up with wild ideas and challenging assumptions, and I strive to design interactions that aren't just usable but intrinsically joyful.
 
-Besides the kind of work you see here, I also enjoy running, writing, reading, and collecting fantastical interactions: what could be more joyous than [snail phones](https://onepiece.fandom.com/wiki/Den_Den_Mushi)?
-
 ## Contact and profiles
 
 - Email: felwal.studios@proton.me
@@ -20,4 +18,8 @@ Besides the kind of work you see here, I also enjoy running, writing, reading, a
 
 ## About this site
 
-This website is designed and [developed](https://github.com/felwal/felwal.github.io/) by me, built with Hugo.
+{{< callout-group >}}
+    {{< callout title="Role" text="Web design & development" >}}
+    {{< callout title="Tools" text="Hugo" >}}
+    {{< callout title="Links" text="[Github](https://github.com/felwal/felwal.github.io/)" >}}
+{{< /callout-group >}}

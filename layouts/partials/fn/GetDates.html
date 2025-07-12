@@ -44,8 +44,4 @@
     {{ end }}
 {{ end }}
 
-{{ with $dates }}
-    <p class="caption">
-        <time>{{ delimit $dates " · " }}</time>
-    </p>
-{{ end }}
+{{ return (delimit $dates " · ") }}

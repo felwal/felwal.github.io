@@ -1,10 +1,9 @@
 ---
 title: Game design
-summary: I've always been tinkering with my own games
+summary: Experimentations in mechanics and metaphors
 tags: [game-design, ai]
 tools: [Unity, C#]
 series: [dh2650]
-keytag: Games
 images: [gamedev-banner.png]
 color: blue
 weight: 4
@@ -13,7 +12,10 @@ aliases: [gamedev]
 
 ## Lost in Translatopia
 
-<p class="caption">Mar – May 2024</p>
+{{< callout-group >}}
+    {{< callout title="Team" text="Felix Broberg, Duosi Dai, Carolina Dexwik" >}}
+    {{< callout text="Mar – May 2024" outline=true >}}
+{{< /callout-group >}}
 
 In this role-playing language-learner, the player explores different regions where they speak different languages – and helps humans reconnect with each other.
 
@@ -33,13 +35,9 @@ I was responsible for much of the coding, especially the dialogue and quest syst
     {{< figure src="/images/translatopia-questbook-2.png" >}}
 {{< /figrow >}}
 
-(And the shoggoth of course.)
-
-{{< callout title="Team" text="Felix Broberg, Duosi Dai, Carolina Dexwik" >}}
-
 ## Permatotems
 
-<p class="caption">Jun 2024 – Ongoing</p>
+{{< callout text="Jun 2024 – Ongoing" outline=true >}}
 
 I'm currently working on a game blending totems with ideas from rewilding, Gaia theory, and permacomputing. Totems are animated by wilderness and provide different rewilding capabilities. The player's goal is to support a flourishing ecosystem.
 
@@ -61,7 +59,7 @@ Exploring adjacent design spaces really does facilitate additional inspiration.
 
 ## 4D Labyrinth
 
-<p class="caption">Jun 2023</p>
+{{< callout text="Jun 2023" outline=true >}}
 
 Another experiment is this higher-dimensional variant of the classic board game. Playing requires some thinking, and I've found it helps explain higher dimensions and gain intuition. I also prototyped a 6D variant, but it turned out far too complex for satisfying gameplay.
 

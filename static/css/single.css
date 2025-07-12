@@ -20,10 +20,22 @@ article > :last-child > :last-child {
   margin-bottom: var(--spacing-p);
   padding-top: var(--spacing-tiny);
   padding-bottom: var(--spacing-tiny);
-  padding-left: calc((var(--spacing-small) + var(--spacing-tiny)) * 0.5);
+  padding-left: var(--spacing-small);
   padding-right: var(--spacing-small);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
+}
+
+.callout:has(.callout__icon) {
+  padding-left: calc((var(--spacing-small) + var(--spacing-tiny)) * 0.5);
+}
+
+.callout--secondary {
+  outline-style: solid;
+  outline-width: var(--width-border);
+  outline-color: var(--color-border);
+  outline-offset: -0.085rem;
+  background-color: unset;
 }
 
 .callout-row > .callout {
@@ -33,7 +45,7 @@ article > :last-child > :last-child {
 .callout__title {
   font-weight: bold;
   margin: 0;
-  margin-right: calc((var(--spacing-tiny) + var(--spacing-diminutive)) * 0.5);
+  margin-right: var(--spacing-diminutive);
 }
 
 .callout__body {

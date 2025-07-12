@@ -4,7 +4,7 @@ summary: RGB color mixer, inspired by totems
 assignment: Make a working sensor that challenges the idea of a 'button' or that works in an unusual or unexpected way.
 started: 2024-01-26
 completed: 2024-02-02
-role: Physical interaction, sensor programming
+role: Physical interaction design, sensor programming
 links:
   - Github: https://github.com/felwal-edu/dh2400
 tags: [physical-interaction]

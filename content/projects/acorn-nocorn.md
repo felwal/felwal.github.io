@@ -5,7 +5,7 @@ team: [William Zhan]
 assignment: Focus on the conceptual meaning of the design; be critical, reflective, speculative and/or provocative.
 started: 2024-02-19
 completed: 2024-03-01
-role: Physical interaction, critical design, sensor programming
+role: Physical interaction design, critical design, sensor programming
 links:
   - Github: https://github.com/felwal-edu/dh2400
 tags: [physical-interaction, critical-design]

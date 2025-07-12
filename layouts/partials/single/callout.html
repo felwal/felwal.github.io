@@ -1,4 +1,4 @@
-<div class="callout">
+<div class="callout{{ if .outline }} callout--secondary{{ end }}">
     <p class="caption callout__body">
         {{ $icon := "" }}
 
@@ -19,6 +19,10 @@
             </span>
         {{ end }}
 
-        <span class="callout__title">{{ .title }}</span>{{ markdownify .text }}
+        {{ with .title }}
+            <span class="callout__title">{{ . }}</span>
+        {{ end }}
+
+        {{- markdownify .text -}}
     </p>
 </div>

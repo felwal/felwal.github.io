@@ -1,10 +1,9 @@
 ---
 title: Avgånär
-summary: Public transport widget for Garmin watches
+summary: Public transport app for Garmin watches
 started: 2021-04-24
 completed: 2024-06-16
-released: 2022-11-26
-role: App design, app development
+role: App design & development
 links:
   - Connect IQ Store: https://apps.garmin.com/apps/a96ddb52-3edd-4298-8348-5bd818376a2a
   - Github: https://github.com/felwal/avganar
@@ -20,7 +19,7 @@ weight: 1
 aliases: [apps, appdev]
 ---
 
-Avgånär is a Garmin watch widget for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL), while a second version covers entire Sweden.
+Avgånär is a Garmin watch app for viewing nearby stops and departures at a glance. It is perfect for checking if you can stop stressing on your way to the bus – or if it's time to start running. The base version works within Stockholm (SL), while a second version covers entire Sweden.
 
 It's the first personal project I've released officially. After not finalising several Android apps, I wanted a smaller project and to focus on MVP principles. I started from a personal problem and employed autobiographical design, along with formative feedback from users.
 
@@ -84,7 +83,10 @@ This seemingly simple project is not the most exciting thing ever – yet it was
 
 ## Related projects: Trackfield and Markana
 
-<p class="caption">Aug 2019 – Jan 2022</p>
+{{< callout-group >}}
+    {{< callout title="Tools" text="Android Studio, Java, Kotlin" >}}
+    {{< callout text="Aug 2019 – Jan 2022" outline=true >}}
+{{< /callout-group >}}
 
 I learned app design and development by building these Android apps. I never finished them due to a lack of MVP-strategy; lesson learnt the hard way.
 

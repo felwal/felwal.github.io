@@ -67,7 +67,10 @@ Our main findings include:
 
 ## Related project: VR Urban Stress Mapping
 
-<p class="caption">Dec 2023 – Jan 2024</p>
+{{< callout-group >}}
+    {{< callout title="Team" text="Carl Holmqvist, Pranit Popli, William Rolf, Alexander Widman" >}}
+    {{< callout text="Dec 2023 – Jan 2024" outline=true >}}
+{{< /callout-group >}}
 
 In this VR study we designed a city and examined the impact of environmental variables on perceived stress – including cold vs warm light:
 
@@ -82,5 +85,3 @@ And three different levels of vegetation with accompanying sounds:
 {{< /figrow >}}
 
 We found that natural elements and sounds had a calming effect, while lighting preferences were mixed.
-
-{{< callout title="Team" text="Carl Holmqvist, Pranit Popli, William Rolf, Alexander Widman" >}}

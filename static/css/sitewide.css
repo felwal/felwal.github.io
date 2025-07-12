@@ -99,6 +99,7 @@
 
 .hero:has(.hero__img-container) {
   padding-bottom: 0;
+  margin-bottom: var(--spacing-p);
 }
 
 .hero__content > :last-child {
