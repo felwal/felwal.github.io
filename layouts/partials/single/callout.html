@@ -1,6 +1,24 @@
 <div class="callout">
     <p class="caption callout__body">
-        <span class="callout__title">{{ .title }}:</span>
-        {{ markdownify .text }}
+        {{ $icon := "" }}
+
+        {{ with .icon }}
+            {{ $icon = . }}
+        {{ else with (lower .title) }}
+            {{ if eq . "role" }} {{ $icon = "frame" }}
+            {{ else if eq . "tools" }} {{ $icon = "bolt" }}
+            {{ else if eq . "team" }} {{ $icon = "users" }}
+            {{ else if eq . "links" }} {{ $icon = "link" }}
+            {{ else if eq . "brief" }} {{ $icon = "goal" }}
+            {{ end }}
+        {{ end }}
+
+        {{ with $icon }}
+            <span class="callout__icon">
+                {{ partial "icon" . }}
+            </span>
+        {{ end }}
+
+        <span class="callout__title">{{ .title }}</span>{{ markdownify .text }}
     </p>
 </div>

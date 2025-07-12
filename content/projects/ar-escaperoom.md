@@ -85,6 +85,4 @@ And three different levels of vegetation with accompanying sounds:
 
 We found that natural elements and sounds had a calming effect, while lighting preferences were mixed.
 
-{{< callout-group >}}
-    {{< callout title="Team" text="Carl Holmqvist, Pranit Popli, William Rolf, Alexander Widman" >}}
-{{< /callout-group >}}
+{{< callout title="Team" text="Carl Holmqvist, Pranit Popli, William Rolf, Alexander Widman" >}}

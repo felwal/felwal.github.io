@@ -55,7 +55,7 @@ Get deviation warnings and handle errors:
 
 ### Avgånär Sweden
 
-I decided to make another version of the app for the entire Sweden. The app is open source, so the idea is to be [replicable](https://doi.org/10.1177/1350508420973631) to other countries' public transport as well.
+I decided to make another version of the app for entire Sweden. The app is open source, so the idea is to be [replicable](https://doi.org/10.1177/1350508420973631) to other countries' public transport as well.
 
 {{< devicerow wide=true columns-mobile="2" >}}
     {{< device src="/images/avganar-swe-glance.png" form="watch" color="green" >}}

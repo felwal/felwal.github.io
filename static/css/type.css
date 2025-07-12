@@ -75,10 +75,10 @@ figcaption > p > code {
 
 /* || ICON */
 
-p > svg, a > svg {
+p > svg, p > span > svg, p > a > svg {
   width: 1em;
   height: 1em;
-  margin-bottom: -0.15em;
+  margin-bottom: -0.16em;
 }
 
 .link--external > svg {

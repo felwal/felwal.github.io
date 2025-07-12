@@ -20,7 +20,7 @@ article > :last-child > :last-child {
   margin-bottom: var(--spacing-p);
   padding-top: var(--spacing-tiny);
   padding-bottom: var(--spacing-tiny);
-  padding-left: var(--spacing-small);
+  padding-left: calc((var(--spacing-small) + var(--spacing-tiny)) * 0.5);
   padding-right: var(--spacing-small);
   border-radius: var(--corner-radius-small);
   background-color: var(--color-surface);
@@ -33,11 +33,19 @@ article > :last-child > :last-child {
 .callout__title {
   font-weight: bold;
   margin: 0;
-  margin-bottom: var(--spacing-diminutive);
+  margin-right: calc((var(--spacing-tiny) + var(--spacing-diminutive)) * 0.5);
 }
 
 .callout__body {
   margin: 0;
+}
+
+.callout__icon {
+  margin-right: var(--spacing-diminutive);
+}
+
+.callout__icon > svg {
+  stroke-width: 2.5;
 }
 
 

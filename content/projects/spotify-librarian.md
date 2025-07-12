@@ -7,7 +7,7 @@ published: 2025-02-08
 modified: 2025-02-23
 started: 2024-09-18
 completed: 2024-12-20
-role: UX design, critical design; hifi individual extension of lofi group design
+role: UX, critical design; hifi individual extension of lofi group work
 tags: [concept, critical-design, ai]
 series: [dm2630]
 keytag: UX
